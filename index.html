@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Строительная компания полного цикла — Дома, Бани, Инженерия под ключ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0c0e12;
+      --bg-surface: #14171f;
+      --bg-card: #1a1e28;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+      --accent-soft: rgba(245, 158, 11, 0.12);
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border: #282e3e;
+      --border-focus: #f59e0b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Manrope', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(12, 14, 18, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+    .logo span { color: var(--accent); }
+    .header-contacts {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-size: 14px;
+    }
+    .phone {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #0c0e12;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent-hover); }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 60px;
+      border-bottom: 1px solid var(--border);
+      background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.05), transparent 50%);
+    }
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 800;
+      margin-bottom: 24px;
+      max-width: 900px;
+      letter-spacing: -1px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 36px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .metric-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 4px;
+    }
+    .metric-val {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .metric-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Section Global */
+    section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      max-width: 650px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 4px;
+    }
+    .service-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .tech-specs {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .tech-specs li {
+      list-style: none;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tech-specs li::before {
+      content: '■';
+      color: var(--accent);
+      font-size: 8px;
+    }
+
+    /* Calculator */
+    .calc-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 40px;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+    }
+    .calc-controls label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .calc-range {
+      width: 100%;
+      margin-bottom: 24px;
+      accent-color: var(--accent);
+    }
+    .calc-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .calc-btn-opt {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 12px;
+      font-size: 13px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .calc-btn-opt.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .calc-result {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .calc-total {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--accent);
+      margin: 12px 0 24px;
+    }
+    .schedule-item {
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed var(--border);
+      padding: 8px 0;
+      color: var(--text-muted);
+    }
+
+    /* EPDM Palette */
+    .epdm-section {
+      background: var(--bg-surface);
+    }
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 16px;
+    }
+    .color-chip {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 12px;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .color-swatch {
+      height: 48px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Form Section */
+    .order-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 40px;
+      border-radius: 4px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: var(--text-muted);
+    }
+    .form-input {
+      width: 100%;
+      padding: 12px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: #fff;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 860px) {
+      .calc-box { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <div class="logo">СТРОЙ<span>ИНЖИНИРИНГ</span></div>
+      <div class="header-contacts">
+        <a href="tel:+74956472423" class="phone mono">+7 (495) 647-24-23</a>
+        <a href="#calc" class="btn">Расчет сметы</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="tag">Генеральный подряд • СП 70.13330 • Акты КС-2/КС-3</span>
+        <h1>Капитальное загородное строительство полного цикла на вашем участке</h1>
+        <p>Возведение домов, бань, панорамных террас, чаш бассейнов и монтаж инженерных коммуникаций. Единый ответственный подрядчик от геодезии до чистовой отделки.</p>
+        
+        <div class="metrics mono">
+          <div class="metric-card">
+            <div class="metric-val">B25 W8</div>
+            <div class="metric-desc">Заводской бетон монолитных плит с испытанием прочности</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">10 ЛЕТ</div>
+            <div class="metric-desc">Гарантия на несущие конструкции и инженерные узлы</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">0.1% / день</div>
+            <div class="metric-desc">Фиксированная неустойка в договоре при срыве этапов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Все направления работ</h2>
+        <p class="section-subtitle">Полное оснащение участка без привлечения сторонних бригад и размытия ответственности.</p>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Дома с нуля</h3>
+            <p>Монолитные фундаменты, кладка стен из газобетона D400/D500 или керамоблока, плоские и скатные кровли.</p>
+            <ul class="tech-specs mono">
+              <li>Геология и геодезическая разметка</li>
+              <li>Армопояса в U-блоках без мостиков холода</li>
+              <li>Кладка на клей-пену или тонкий шов 1.5–2 мм</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3>Инженерные сети</h3>
+            <p>Подвод и ввод всех систем жизнеобеспечения дома с гидравлическими и электроиспытаниями.</p>
+            <ul class="tech-specs mono">
+              <li>Электрика 15 кВт: кабели ВВГнг-LS</li>
+              <li>Отопление: трубы PE-Xa, коллекторы Rehau</li>
+              <li>Септики глубокой биоочистки и ввод газа</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3>Бани, террасы и бассейны</h3>
+            <p>Теплые веранды с безрамным остеклением, парные из кедра, гидроизоляция и заливка чаш бассейнов.</p>
+            <ul class="tech-specs mono">
+              <li>Бетон B25 W8 с добавками Пенетрон</li>
+              <li>Настилы из лиственницы и термоясеня</li>
+              <li>Бесшовные EPDM-покрытия зона отдыха</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="epdm-section">
+      <div class="container">
+        <h2 class="section-title">Собственное производство покрытий EPDM</h2>
+        <p class="section-subtitle">Каучуковый гранулят завода ДЗИТ для детских зон, обходных дорожек бассейнов и спортплощадок.</p>
+        
+        <div class="palette-grid mono">
+          <div class="color-chip"><div class="color-swatch" style="background:#0284c7"></div>Голубой</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#1d4ed8"></div>Синий</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#0f172a"></div>Темно-синий</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#7e22ce"></div>Фиолетовый</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#0d9488"></div>Бирюзовый</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#16a34a"></div>Ярко-зеленый</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#047857"></div>Изумрудный</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#eab308"></div>Желтый</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#ea580c"></div>Оранжевый</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#dc2626"></div>Красный</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#be185d"></div>Малиновый</div>
+          <div class="color-chip"><div class="color-swatch" style="background:#d6d3d1"></div>Светло-серый</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calc">
+      <div class="container">
+        <h2 class="section-title">Инженерный калькулятор сметы</h2>
+        <p class="section-subtitle">Предварительный расчет базовых затрат с поэтапным графиком траншей.</p>
+        
+        <div class="calc-box">
+          <div class="calc-controls">
+            <label>Площадь дома: <span id="area-val" class="mono" style="color:var(--accent); font-weight:700;">160</span> м²</label>
+            <input type="range" min="80" max="400" value="160" step="10" class="calc-range" id="area-range" oninput="recalc()">
+
+            <label>Материал несущих стен</label>
+            <div class="calc-options">
+              <button type="button" class="calc-btn-opt active" onclick="setMaterial(this, 38000)">Газобетон D400</button>
+              <button type="button" class="calc-btn-opt" onclick="setMaterial(this, 44000)">Керамоблок 38</button>
+            </div>
+
+            <label>Дополнительные опции на участке</label>
+            <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px;">
+              <label><input type="checkbox" id="opt-bath" checked onchange="recalc()"> Банный комплекс (+1 200 000 ₽)</label>
+              <label><input type="checkbox" id="opt-pool" onchange="recalc()"> Бетонный бассейн скимерный (+1 450 000 ₽)</label>
+              <label><input type="checkbox" id="opt-eng" checked onchange="recalc()"> Полный ввод сетей и котельная (+950 000 ₽)</label>
+            </div>
+          </div>
+
+          <div class="calc-result">
+            <div>
+              <div style="font-size: 13px; color: var(--text-muted);">Ориентировочная стоимость:</div>
+              <div class="calc-total mono" id="total-price">8 230 000 ₽</div>
+              
+              <div class="mono" style="margin-bottom: 20px;">
+                <div class="schedule-item"><span>1. Фундамент и плита (30%)</span><span id="tranche-1">2 469 000 ₽</span></div>
+                <div class="schedule-item"><span>2. Коробка и кровля (40%)</span><span id="tranche-2">3 292 000 ₽</span></div>
+                <div class="schedule-item"><span>3. Инженерия и контур (30%)</span><span id="tranche-3">2 469 000 ₽</span></div>
+              </div>
+            </div>
+            
+            <a href="#order" class="btn" style="width: 100%;">Зафиксировать смету в договоре</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order">
+      <div class="container">
+        <div class="order-box">
+          <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Выезд инженера на объект</h2>
+          <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 24px;">Проведем нивелирование участка, оценим грунты, согласуем точки ввода сетей и составим детальную смету.</p>
+          
+          <form onsubmit="event.preventDefault(); alert('Заявка принята. Главный инженер свяжется с вами в течение рабочего дня.');">
+            <div class="form-group">
+              <label>Ваше имя</label>
+              <input type="text" required class="form-input" placeholder="Алексей">
+            </div>
+            <div class="form-group">
+              <label>Телефон для связи</label>
+              <input type="tel" required class="form-input mono" placeholder="+7 (999) 000-00-00">
+            </div>
+            <div class="form-group">
+              <label>Локация объекта (поселок, район)</label>
+              <input type="text" class="form-input" placeholder="Истринский р-н, КП «Лесное»">
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Вызвать инженера на участок</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Строительная компания полного цикла. Москва и Московская область.</p>
+      <p class="mono" style="margin-top: 6px; font-size: 12px;">sales@dz-it.ru | +7 (495) 647-24-23</p>
+    </div>
+  </footer>
+
+  <script>
+    let baseRate = 38000;
+
+    function setMaterial(btn, rate) {
+      document.querySelectorAll('.calc-btn-opt').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      baseRate = rate;
+      recalc();
+    }
+
+    function recalc() {
+      const area = parseInt(document.getElementById('area-range').value);
+      document.getElementById('area-val').innerText = area;
+
+      let sum = area * baseRate;
+      if (document.getElementById('opt-bath').checked) sum += 1200000;
+      if (document.getElementById('opt-pool').checked) sum += 1450000;
+      if (document.getElementById('opt-eng').checked) sum += 950000;
+
+      document.getElementById('total-price').innerText = sum.toLocaleString('ru-RU') + ' ₽';
+      document.getElementById('tranche-1').innerText = Math.round(sum * 0.3).toLocaleString('ru-RU') + ' ₽';
+      document.getElementById('tranche-2').innerText = Math.round(sum * 0.4).toLocaleString('ru-RU') + ' ₽';
+      document.getElementById('tranche-3').innerText = Math.round(sum * 0.3).toLocaleString('ru-RU') + ' ₽';
+    }
+  </script>
+</body>
+</html>
