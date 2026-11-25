@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-11-22T09:20:40.560Z",
+  "task": "T04",
+  "checks": {
+    "command": "npm run check",
+    "passed": 28,
+    "failed": 0,
+    "log": "implementation-check.log",
+    "buildCommand": "npm run build",
+    "publicFiles": 19,
+    "buildLog": "implementation-build.log"
+  },
+  "boundaries": {
+    "encodedUrlCharacters": 6000,
+    "unicodeCodePoints": 3500,
+    "applicationPolicyNotServiceLimit": true,
+    "truncation": false
+  },
+  "fullCompositionSamples": [
+    {
+      "kit": "shell",
+      "codePoints": 366,
+      "telegramUrlLength": 1889,
+      "whatsappUrlLength": 1889,
+      "exactText": true,
+      "fixedRecipient": "74991306616"
+    },
+    {
+      "kit": "prepared",
+      "codePoints": 337,
+      "telegramUrlLength": 1733,
+      "whatsappUrlLength": 1733,
+      "exactText": true,
+      "fixedRecipient": "74991306616"
+    },
+    {
+      "kit": "turnkey",
+      "codePoints": 342,
+      "telegramUrlLength": 1757,
+      "whatsappUrlLength": 1757,
+      "exactText": true,
+      "fixedRecipient": "74991306616"
+    }
+  ],
+  "longDraft": {
+    "testedCharacters": 7400,
+    "clipboardExact": true,
+    "txtExact": true,
+    "clipboardDenialSelectsFullDraft": true,
+    "directChatFallback": true
+  },
+  "files": {
+    "index.html": {
+      "sha256": "0a14e15674fa88321e6e89c543cb2f9eb969d3829fc2c863afde4e15403f410a",
+      "matchesBuiltFile": true
+    },
+    "project.js": {
+      "sha256": "9d4187480ebe89a3f6ae860ada8a1ba63b9234528b1fb46e80ac40db43907ca5",
+      "matchesBuiltFile": true
+    },
+    "site.js": {
+      "sha256": "85c57ddfbfb55e7923a296018ee8a718a22fb8090ea9c1e8e6d03ba49485e751",
+      "matchesBuiltFile": true
+    }
+  },
+  "notes": [
+    "Browser and live chat checks are delegated to root; this record is code/build evidence only.",
+    "No messages sent. No API, backend, browser storage or runtime dependencies added.",
+    "T03 phone and review changes retained; MAX deferred by user."
+  ]
+}

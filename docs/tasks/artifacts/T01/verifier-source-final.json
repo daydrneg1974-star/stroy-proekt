@@ -1,0 +1,188 @@
+{
+  "method": "Final static HTML parsing, hidden ancestry respected, CSS not evaluated; browser results are attributed to the main agent protocol.",
+  "sha256": "9da200918af2367acd4e0f77ce8941c931985577ce663a422cc8aebdfdf80a2b",
+  "visibleControlsAndNavigation": [
+    {
+      "tag": "nav",
+      "id": "navigation"
+    },
+    {
+      "tag": "textarea",
+      "id": "draft"
+    }
+  ],
+  "noscriptText": [
+    "Что записать в состав проекта",
+    "Площадь дома от 60 до 400 м², комплектацию — коробка, под чистовую или под ключ; материал стен — газобетон D400 или керамоблок 38.",
+    "Дополнительно можно указать баню, бассейн, инженерию, газификацию, EPDM-покрытие, благоустройство и пруд.",
+    "Интерактивный выбор доступен с JavaScript. Ниже можно написать черновик и скопировать текст вручную.",
+    "К черновику проекта",
+    "JavaScript отключён: можно записать состав и скопировать его вручную. Автоматический перенос и скачивание TXT недоступны."
+  ],
+  "allImageDimensionsMatch": true,
+  "images": [
+    {
+      "src": "assets/image-1.webp",
+      "actual": [
+        1920,
+        1080
+      ],
+      "declared": [
+        1920,
+        1080
+      ],
+      "srcset": [
+        {
+          "path": "assets/image-1-480.webp",
+          "actualWidth": 480,
+          "declaredWidth": 480
+        },
+        {
+          "path": "assets/image-1-960.webp",
+          "actualWidth": 960,
+          "declaredWidth": 960
+        },
+        {
+          "path": "assets/image-1.webp",
+          "actualWidth": 1920,
+          "declaredWidth": 1920
+        }
+      ]
+    },
+    {
+      "src": "assets/epdm-samples.webp",
+      "actual": [
+        960,
+        1280
+      ],
+      "declared": [
+        960,
+        1280
+      ],
+      "srcset": [
+        {
+          "path": "assets/epdm-samples-480.webp",
+          "actualWidth": 480,
+          "declaredWidth": 480
+        },
+        {
+          "path": "assets/epdm-samples.webp",
+          "actualWidth": 960,
+          "declaredWidth": 960
+        }
+      ]
+    },
+    {
+      "src": "assets/image-3.webp",
+      "actual": [
+        1920,
+        1280
+      ],
+      "declared": [
+        1920,
+        1280
+      ],
+      "srcset": [
+        {
+          "path": "assets/image-3-480.webp",
+          "actualWidth": 480,
+          "declaredWidth": 480
+        },
+        {
+          "path": "assets/image-3-960.webp",
+          "actualWidth": 960,
+          "declaredWidth": 960
+        },
+        {
+          "path": "assets/image-3.webp",
+          "actualWidth": 1920,
+          "declaredWidth": 1920
+        }
+      ]
+    },
+    {
+      "src": "assets/image-2.webp",
+      "actual": [
+        1920,
+        1280
+      ],
+      "declared": [
+        1920,
+        1280
+      ],
+      "srcset": [
+        {
+          "path": "assets/image-2-480.webp",
+          "actualWidth": 480,
+          "declaredWidth": 480
+        },
+        {
+          "path": "assets/image-2-960.webp",
+          "actualWidth": 960,
+          "declaredWidth": 960
+        },
+        {
+          "path": "assets/image-2.webp",
+          "actualWidth": 1920,
+          "declaredWidth": 1920
+        }
+      ]
+    },
+    {
+      "src": "assets/image-3.webp",
+      "actual": [
+        1920,
+        1280
+      ],
+      "declared": [
+        1920,
+        1280
+      ],
+      "srcset": [
+        {
+          "path": "assets/image-3-480.webp",
+          "actualWidth": 480,
+          "declaredWidth": 480
+        },
+        {
+          "path": "assets/image-3-960.webp",
+          "actualWidth": 960,
+          "declaredWidth": 960
+        },
+        {
+          "path": "assets/image-3.webp",
+          "actualWidth": 1920,
+          "declaredWidth": 1920
+        }
+      ]
+    },
+    {
+      "src": "assets/image-4.webp",
+      "actual": [
+        1920,
+        1440
+      ],
+      "declared": [
+        1920,
+        1440
+      ],
+      "srcset": [
+        {
+          "path": "assets/image-4-480.webp",
+          "actualWidth": 480,
+          "declaredWidth": 480
+        },
+        {
+          "path": "assets/image-4-960.webp",
+          "actualWidth": 960,
+          "declaredWidth": 960
+        },
+        {
+          "path": "assets/image-4.webp",
+          "actualWidth": 1920,
+          "declaredWidth": 1920
+        }
+      ]
+    }
+  ]
+}

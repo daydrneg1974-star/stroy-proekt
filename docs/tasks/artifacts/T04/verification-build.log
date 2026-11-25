@@ -1,0 +1,9 @@
+$ npm run build
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-demo@0.1.0 build
+> node scripts/build.mjs
+
+Сборка готова: 19 публичных файлов в /workspace/scratch/13800b2cf773/stroyengineering/.sites-checkout/dist
+
+EXIT_CODE=0

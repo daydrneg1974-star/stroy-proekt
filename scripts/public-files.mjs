@@ -1,0 +1,28 @@
+// Единственный разрешённый список файлов публикации. Документы, исходные
+// инструменты, тесты и серверные заглушки не копируются в публичную сборку.
+export const PUBLIC_FILES = Object.freeze([
+  'index.html',
+  'privacy.html',
+  'site.js',
+  'project.js',
+  'assets/favicon.svg',
+  'assets/image-1.webp',
+  'assets/image-1-480.webp',
+  'assets/image-1-960.webp',
+  'assets/image-2.webp',
+  'assets/image-2-480.webp',
+  'assets/image-2-960.webp',
+  'assets/image-3.webp',
+  'assets/image-3-480.webp',
+  'assets/image-3-960.webp',
+  'assets/image-4.webp',
+  'assets/image-4-480.webp',
+  'assets/image-4-960.webp',
+  'assets/dzit-playground.webp',
+  'assets/dzit-playground-360.webp',
+  'assets/dzit-sport.webp',
+  'assets/dzit-sport-360.webp',
+  'assets/dzit-colours.webp',
+  'assets/dzit-colours-360.webp',
+  'assets/promo.mp4',
+]);

@@ -1,0 +1,185 @@
+{
+  "checked_at_utc": "2026-11-22T09:19:11.180Z",
+  "source_hashes": {
+    "project.js": "9d4187480ebe89a3f6ae860ada8a1ba63b9234528b1fb46e80ac40db43907ca5",
+    "site.js": "16ea57cbd0036e5d3ed92689a39cc7ccbc6ae4fc5c789805dd4934e13cd54a6f",
+    "index.html": "2a5b90238e1e698e990f19bceedaa757407b861dcf8979a4ad3fc9b4a57d708c"
+  },
+  "samples": [
+    {
+      "name": "Cyrillic, CRLF, spaces, query separators and emoji",
+      "input": "  Ёлка на участке\r\nТерраса & баня + бассейн #2?\n😀\t ",
+      "input_sha256": "d5621df869d7e53830b5328e85b4d4d82fb5acea1ece40183de79caee6c82448",
+      "telegram": {
+        "href": "https://t.me/+74991306616?text=%20%20%D0%81%D0%BB%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BA%D0%B5%0D%0A%D0%A2%D0%B5%D1%80%D1%80%D0%B0%D1%81%D0%B0%20%26%20%D0%B1%D0%B0%D0%BD%D1%8F%20%2B%20%D0%B1%D0%B0%D1%81%D1%81%D0%B5%D0%B9%D0%BD%20%232%3F%0A%F0%9F%98%80%09%20",
+        "url_length": 284,
+        "decoded_text": "  Ёлка на участке\r\nТерраса & баня + бассейн #2?\n😀\t ",
+        "recipient_unchanged": true
+      },
+      "whatsapp": {
+        "href": "https://wa.me/74991306616?text=%20%20%D0%81%D0%BB%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BA%D0%B5%0D%0A%D0%A2%D0%B5%D1%80%D1%80%D0%B0%D1%81%D0%B0%20%26%20%D0%B1%D0%B0%D0%BD%D1%8F%20%2B%20%D0%B1%D0%B0%D1%81%D1%81%D0%B5%D0%B9%D0%BD%20%232%3F%0A%F0%9F%98%80%09%20",
+        "url_length": 284,
+        "decoded_text": "  Ёлка на участке\r\nТерраса & баня + бассейн #2?\n😀\t ",
+        "recipient_unchanged": true
+      }
+    },
+    {
+      "name": "Query, fragment and authority injection remain plain text",
+      "input": "https://evil.example/@fake?text=чужой&phone=79999999999#?+\n%26text%3Dзамена\n&text=ещё один параметр",
+      "input_sha256": "e2cbf469881a630ac3c1c79ac16a5bcb1b9b2dd7c54ed2fa899b5c1eb7972850",
+      "telegram": {
+        "href": "https://t.me/+74991306616?text=https%3A%2F%2Fevil.example%2F%40fake%3Ftext%3D%D1%87%D1%83%D0%B6%D0%BE%D0%B9%26phone%3D79999999999%23%3F%2B%0A%2526text%253D%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%0A%26text%3D%D0%B5%D1%89%D1%91%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80",
+        "url_length": 300,
+        "decoded_text": "https://evil.example/@fake?text=чужой&phone=79999999999#?+\n%26text%3Dзамена\n&text=ещё один параметр",
+        "recipient_unchanged": true
+      },
+      "whatsapp": {
+        "href": "https://wa.me/74991306616?text=https%3A%2F%2Fevil.example%2F%40fake%3Ftext%3D%D1%87%D1%83%D0%B6%D0%BE%D0%B9%26phone%3D79999999999%23%3F%2B%0A%2526text%253D%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%0A%26text%3D%D0%B5%D1%89%D1%91%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80",
+        "url_length": 300,
+        "decoded_text": "https://evil.example/@fake?text=чужой&phone=79999999999#?+\n%26text%3Dзамена\n&text=ещё один параметр",
+        "recipient_unchanged": true
+      }
+    },
+    {
+      "name": "Markup remains text",
+      "input": "<script>alert(\"текст\")</script>\n</textarea><a href=\"https://evil.example\">не ссылка</a>",
+      "input_sha256": "d997a05edf30b813b13c29c9452ef003a3716ba16601dc6451da8034e45dabfe",
+      "telegram": {
+        "href": "https://t.me/+74991306616?text=%3Cscript%3Ealert(%22%D1%82%D0%B5%D0%BA%D1%81%D1%82%22)%3C%2Fscript%3E%0A%3C%2Ftextarea%3E%3Ca%20href%3D%22https%3A%2F%2Fevil.example%22%3E%D0%BD%D0%B5%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%3C%2Fa%3E",
+        "url_length": 231,
+        "decoded_text": "<script>alert(\"текст\")</script>\n</textarea><a href=\"https://evil.example\">не ссылка</a>",
+        "recipient_unchanged": true
+      },
+      "whatsapp": {
+        "href": "https://wa.me/74991306616?text=%3Cscript%3Ealert(%22%D1%82%D0%B5%D0%BA%D1%81%D1%82%22)%3C%2Fscript%3E%0A%3C%2Ftextarea%3E%3Ca%20href%3D%22https%3A%2F%2Fevil.example%22%3E%D0%BD%D0%B5%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%3C%2Fa%3E",
+        "url_length": 231,
+        "decoded_text": "<script>alert(\"текст\")</script>\n</textarea><a href=\"https://evil.example\">не ссылка</a>",
+        "recipient_unchanged": true
+      }
+    },
+    {
+      "name": "Full selected composition plus manual wishes",
+      "input": "Сохранить яблоню.\r\nВыезд после 16:00 & договориться по телефону.\n\nСостав проекта\nПлощадь дома: 400 м²\nКомплектация: Коробка: фундамент, стены, кровля\nМатериал стен: Керамоблок 38\nДополнительно: Банный комплекс; Бетонный бассейн; Инженерия: ввод сетей и котельная; Газификация; EPDM-покрытие; Ландшафтный дизайн и благоустройство; Декоративный пруд\nСтоимость и сроки не рассчитаны.",
+      "input_sha256": "ee8e6b4b4ccc21bb7506348bb85e2c5cfc3fcfae22e4d702bd614472f6222171",
+      "telegram": {
+        "href": "https://t.me/+74991306616?text=%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D1%8F%D0%B1%D0%BB%D0%BE%D0%BD%D1%8E.%0D%0A%D0%92%D1%8B%D0%B5%D0%B7%D0%B4%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%2016%3A00%20%26%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D1%83.%0A%0A%D0%A1%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%0A%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%20%D0%B4%D0%BE%D0%BC%D0%B0%3A%20400%20%D0%BC%C2%B2%0A%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%D1%86%D0%B8%D1%8F%3A%20%D0%9A%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0%3A%20%D1%84%D1%83%D0%BD%D0%B4%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%2C%20%D1%81%D1%82%D0%B5%D0%BD%D1%8B%2C%20%D0%BA%D1%80%D0%BE%D0%B2%D0%BB%D1%8F%0A%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%20%D1%81%D1%82%D0%B5%D0%BD%3A%20%D0%9A%D0%B5%D1%80%D0%B0%D0%BC%D0%BE%D0%B1%D0%BB%D0%BE%D0%BA%2038%0A%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%3A%20%D0%91%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%3B%20%D0%91%D0%B5%D1%82%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B1%D0%B0%D1%81%D1%81%D0%B5%D0%B9%D0%BD%3B%20%D0%98%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%8F%3A%20%D0%B2%D0%B2%D0%BE%D0%B4%20%D1%81%D0%B5%D1%82%D0%B5%D0%B9%20%D0%B8%20%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%3B%20%D0%93%D0%B0%D0%B7%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%3B%20EPDM-%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%3B%20%D0%9B%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%B8%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%3B%20%D0%94%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D1%83%D0%B4%0A%D0%A1%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B8%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%BD%D0%B5%20%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%BD%D1%8B.",
+        "url_length": 2034,
+        "decoded_text": "Сохранить яблоню.\r\nВыезд после 16:00 & договориться по телефону.\n\nСостав проекта\nПлощадь дома: 400 м²\nКомплектация: Коробка: фундамент, стены, кровля\nМатериал стен: Керамоблок 38\nДополнительно: Банный комплекс; Бетонный бассейн; Инженерия: ввод сетей и котельная; Газификация; EPDM-покрытие; Ландшафтный дизайн и благоустройство; Декоративный пруд\nСтоимость и сроки не рассчитаны.",
+        "recipient_unchanged": true
+      },
+      "whatsapp": {
+        "href": "https://wa.me/74991306616?text=%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D1%8F%D0%B1%D0%BB%D0%BE%D0%BD%D1%8E.%0D%0A%D0%92%D1%8B%D0%B5%D0%B7%D0%B4%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%2016%3A00%20%26%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D1%83.%0A%0A%D0%A1%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%0A%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%20%D0%B4%D0%BE%D0%BC%D0%B0%3A%20400%20%D0%BC%C2%B2%0A%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%D1%86%D0%B8%D1%8F%3A%20%D0%9A%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0%3A%20%D1%84%D1%83%D0%BD%D0%B4%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%2C%20%D1%81%D1%82%D0%B5%D0%BD%D1%8B%2C%20%D0%BA%D1%80%D0%BE%D0%B2%D0%BB%D1%8F%0A%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%20%D1%81%D1%82%D0%B5%D0%BD%3A%20%D0%9A%D0%B5%D1%80%D0%B0%D0%BC%D0%BE%D0%B1%D0%BB%D0%BE%D0%BA%2038%0A%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%3A%20%D0%91%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%3B%20%D0%91%D0%B5%D1%82%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B1%D0%B0%D1%81%D1%81%D0%B5%D0%B9%D0%BD%3B%20%D0%98%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%8F%3A%20%D0%B2%D0%B2%D0%BE%D0%B4%20%D1%81%D0%B5%D1%82%D0%B5%D0%B9%20%D0%B8%20%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%3B%20%D0%93%D0%B0%D0%B7%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%3B%20EPDM-%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%3B%20%D0%9B%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%B8%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%3B%20%D0%94%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D1%83%D0%B4%0A%D0%A1%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B8%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%BD%D0%B5%20%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%BD%D1%8B.",
+        "url_length": 2034,
+        "decoded_text": "Сохранить яблоню.\r\nВыезд после 16:00 & договориться по телефону.\n\nСостав проекта\nПлощадь дома: 400 м²\nКомплектация: Коробка: фундамент, стены, кровля\nМатериал стен: Керамоблок 38\nДополнительно: Банный комплекс; Бетонный бассейн; Инженерия: ввод сетей и котельная; Газификация; EPDM-покрытие; Ландшафтный дизайн и благоустройство; Декоративный пруд\nСтоимость и сроки не рассчитаны.",
+        "recipient_unchanged": true
+      }
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "URL 5999",
+      "utf16_length": 998,
+      "codepoints": 998,
+      "needsCopy": false,
+      "telegram_url_length": 5999,
+      "whatsapp_url_length": 5999,
+      "has_text_query": true
+    },
+    {
+      "name": "URL 6000",
+      "utf16_length": 999,
+      "codepoints": 999,
+      "needsCopy": false,
+      "telegram_url_length": 6000,
+      "whatsapp_url_length": 6000,
+      "has_text_query": true
+    },
+    {
+      "name": "URL 6001",
+      "utf16_length": 1000,
+      "codepoints": 1000,
+      "needsCopy": true,
+      "telegram_url_length": 25,
+      "whatsapp_url_length": 25,
+      "has_text_query": false
+    },
+    {
+      "name": "3499 Unicode code points",
+      "utf16_length": 3500,
+      "codepoints": 3499,
+      "needsCopy": false,
+      "telegram_url_length": 3541,
+      "whatsapp_url_length": 3541,
+      "has_text_query": true
+    },
+    {
+      "name": "3500 Unicode code points",
+      "utf16_length": 3501,
+      "codepoints": 3500,
+      "needsCopy": false,
+      "telegram_url_length": 3542,
+      "whatsapp_url_length": 3542,
+      "has_text_query": true
+    },
+    {
+      "name": "3501 Unicode code points",
+      "utf16_length": 3502,
+      "codepoints": 3501,
+      "needsCopy": true,
+      "telegram_url_length": 25,
+      "whatsapp_url_length": 25,
+      "has_text_query": false
+    },
+    {
+      "name": "lone surrogate",
+      "utf16_length": 1,
+      "codepoints": 1,
+      "needsCopy": true,
+      "telegram_url_length": 25,
+      "whatsapp_url_length": 25,
+      "has_text_query": false
+    },
+    {
+      "name": "empty",
+      "utf16_length": 0,
+      "codepoints": 0,
+      "needsCopy": false,
+      "telegram_url_length": 25,
+      "whatsapp_url_length": 25,
+      "has_text_query": false
+    },
+    {
+      "name": "whitespace only",
+      "utf16_length": 5,
+      "codepoints": 5,
+      "needsCopy": false,
+      "telegram_url_length": 25,
+      "whatsapp_url_length": 25,
+      "has_text_query": false
+    }
+  ],
+  "long_draft": {
+    "characters": 5760,
+    "codepoints": 5760,
+    "sha256": "df025fdce61a143eda6677120659f4c58455021f5555503e3f3c4496112943bd",
+    "needsCopy": true,
+    "direct_chat_urls": {
+      "telegram": "https://t.me/+74991306616",
+      "whatsapp": "https://wa.me/74991306616",
+      "needsCopy": true
+    },
+    "copied_characters": 5760,
+    "copied_sha256": "df025fdce61a143eda6677120659f4c58455021f5555503e3f3c4496112943bd",
+    "txt_filename": "stroyengineering-project.txt",
+    "txt_mime": "text/plain;charset=utf-8",
+    "txt_matches_full_text_with_bom": true
+  },
+  "external_requests_performed": false,
+  "scope_limit": "Pure module calls and existing DOM-fixture tests prove local URL/text handling; rendered UI and real chat navigation belong to root browser verification.",
+  "final_source_hashes": {
+    "index.html": "0a14e15674fa88321e6e89c543cb2f9eb969d3829fc2c863afde4e15403f410a",
+    "site.js": "85c57ddfbfb55e7923a296018ee8a718a22fb8090ea9c1e8e6d03ba49485e751",
+    "project.js": "9d4187480ebe89a3f6ae860ada8a1ba63b9234528b1fb46e80ac40db43907ca5"
+  },
+  "final_review_note": "Module hash is unchanged. Final controller differs only in copy/TXT status text; independent check 28/28 was repeated after that change."
+}

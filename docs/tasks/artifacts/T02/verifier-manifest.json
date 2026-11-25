@@ -1,0 +1,132 @@
+{
+  "count": 19,
+  "allowlistOnly": true,
+  "sourceMatchesDist": true,
+  "entry": "site.js?v=fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+  "dependency": "./project.js?v=decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf",
+  "entryHashMatches": true,
+  "dependencyHashMatches": true,
+  "canonical": "https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/",
+  "og": "https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/",
+  "canonicalAndOgMatch": true,
+  "documentation": {
+    "readme": true,
+    "report": true
+  },
+  "files": [
+    {
+      "name": "index.html",
+      "bytes": 42826,
+      "sha256": "24bd3fe1111fa0854de784a70ec35ec8d3ea26f4658dc83d6432df346644e36b",
+      "equal": true
+    },
+    {
+      "name": "site.js",
+      "bytes": 5527,
+      "sha256": "fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+      "equal": true
+    },
+    {
+      "name": "project.js",
+      "bytes": 3198,
+      "sha256": "decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf",
+      "equal": true
+    },
+    {
+      "name": "assets/favicon.svg",
+      "bytes": 201,
+      "sha256": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676",
+      "equal": true
+    },
+    {
+      "name": "assets/image-1.webp",
+      "bytes": 237828,
+      "sha256": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6",
+      "equal": true
+    },
+    {
+      "name": "assets/image-1-480.webp",
+      "bytes": 20976,
+      "sha256": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7",
+      "equal": true
+    },
+    {
+      "name": "assets/image-1-960.webp",
+      "bytes": 71126,
+      "sha256": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8",
+      "equal": true
+    },
+    {
+      "name": "assets/image-2.webp",
+      "bytes": 302628,
+      "sha256": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935",
+      "equal": true
+    },
+    {
+      "name": "assets/image-2-480.webp",
+      "bytes": 31920,
+      "sha256": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0",
+      "equal": true
+    },
+    {
+      "name": "assets/image-2-960.webp",
+      "bytes": 102668,
+      "sha256": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2",
+      "equal": true
+    },
+    {
+      "name": "assets/image-3.webp",
+      "bytes": 360626,
+      "sha256": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f",
+      "equal": true
+    },
+    {
+      "name": "assets/image-3-480.webp",
+      "bytes": 33556,
+      "sha256": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2",
+      "equal": true
+    },
+    {
+      "name": "assets/image-3-960.webp",
+      "bytes": 111814,
+      "sha256": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7",
+      "equal": true
+    },
+    {
+      "name": "assets/image-4.webp",
+      "bytes": 258086,
+      "sha256": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472",
+      "equal": true
+    },
+    {
+      "name": "assets/image-4-480.webp",
+      "bytes": 33428,
+      "sha256": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a",
+      "equal": true
+    },
+    {
+      "name": "assets/image-4-960.webp",
+      "bytes": 94730,
+      "sha256": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4",
+      "equal": true
+    },
+    {
+      "name": "assets/epdm-samples.webp",
+      "bytes": 288170,
+      "sha256": "ba2750b971de4d1e248a1d1dc32540870d95bf4a7814bed843f4d7248815dee0",
+      "equal": true
+    },
+    {
+      "name": "assets/epdm-samples-480.webp",
+      "bytes": 90726,
+      "sha256": "04d76157cb94cad348466949647c8014c54161d4bf087ef90831f1e377903913",
+      "equal": true
+    },
+    {
+      "name": "assets/promo.mp4",
+      "bytes": 4248551,
+      "sha256": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a",
+      "equal": true
+    }
+  ]
+}

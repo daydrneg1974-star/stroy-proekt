@@ -1,0 +1,42 @@
+{
+  "task": "T05",
+  "checkedAt": "2026-11-22T09:47:20.887Z",
+  "runtime": "v24.22.3",
+  "commands": {
+    "npm run check": {
+      "exitCode": 0,
+      "passed": 29,
+      "failed": 0
+    },
+    "npm run build": {
+      "exitCode": 0,
+      "publicFiles": 20
+    },
+    "git diff --check": {
+      "exitCode": 0
+    }
+  },
+  "messengerDestinations": {
+    "telegram": "https://t.me/+74991306616",
+    "whatsapp": "https://wa.me/74991306616"
+  },
+  "checks": [
+    "Базовые URL без query/hash для пустого, длинного, Unicode и синтетического персонального текста; ввод, состав, карточка, pageshow и переход",
+    "Полный Clipboard и UTF-8 TXT; отказ Clipboard/Blob; переход не вызывает копирование",
+    "Ссылки на privacy.html в контактах/подвале, no-JS инструкция, referrer=no-referrer, spellcheck=false, noindex",
+    "Все локальные ссылки, SHA модулей, allowlist и воспроизводимость сборки"
+  ],
+  "reviews": {
+    "sourceCommit": "75a6ee7c1a8a69022e3d8cc533c29a3986443420",
+    "count": 3,
+    "verbatimUnchanged": true
+  },
+  "sha256": {
+    "index.html": "e9d9d37d629dff10f77df3276f20544bfaad9fc485e4ae8a831ed41b8f79981e",
+    "privacy.html": "250d7299684e59bf8bce927e4aa79f26e393eac22847b7fa5ea46cf3bd525088",
+    "site.js": "5c32252f637e2b1b6509441e67c6f147dc753c62eec4116f5fd773dd97b81c08",
+    "project.js": "27b9f367a757b8dee19a38aadf083b79fe17ef4d66ccebeb37dc07dfdf296bce"
+  },
+  "browser": "Проверку браузера, мобильного отображения и настоящего Clipboard выполняет root отдельно.",
+  "legalLimits": "Реквизиты оператора, уведомление и условия обработки/хостинга не закрыты этой технической задачей."
+}

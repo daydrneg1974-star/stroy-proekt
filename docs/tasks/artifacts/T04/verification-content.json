@@ -1,0 +1,122 @@
+{
+  "checked_at_utc": "2026-11-22T09:21:42.208662+00:00",
+  "source_hashes": {
+    "index.html": "0a14e15674fa88321e6e89c543cb2f9eb969d3829fc2c863afde4e15403f410a",
+    "site.js": "85c57ddfbfb55e7923a296018ee8a718a22fb8090ea9c1e8e6d03ba49485e751",
+    "project.js": "9d4187480ebe89a3f6ae860ada8a1ba63b9234528b1fb46e80ac40db43907ca5"
+  },
+  "quotes_verbatim_from_75a6ee7": [
+    {
+      "text": "«Нам было важно не собирать пять бригад. Здесь один инженер вёл и коробку, и отопление — вопросы решались в одном чате».",
+      "sha256": "775de6f18d969786d900de3eff2461d779cfb41609ab50dc1013db292411e7d6",
+      "matches": true
+    },
+    {
+      "text": "«Калькулятор дал понятный порядок цифр ещё до встречи. В итоге смета по основным этапам совпала с договором».",
+      "sha256": "05f93f0d3c3d96f4953ca426da66c4761785b3a316f63f471d6df2458b99b28f",
+      "matches": true
+    },
+    {
+      "text": "«Понравилась инженерная дисциплина: фото скрытых работ, испытания и понятная передача каждого этапа».",
+      "sha256": "18a64df56ef1ef6c565e558b1395638e9def77790284b280e7afc1985e8471b7",
+      "matches": true
+    }
+  ],
+  "direct_links": [
+    {
+      "id": null,
+      "href": "tel:+74991306616",
+      "text": "+7 (499) 130-66-16",
+      "target": null,
+      "rel": null,
+      "static_visible_structure": true
+    },
+    {
+      "id": null,
+      "href": "tel:+74991306616",
+      "text": "+7 (499) 130-66-16",
+      "target": null,
+      "rel": null,
+      "static_visible_structure": true
+    },
+    {
+      "id": "open-telegram",
+      "href": "https://t.me/+74991306616",
+      "text": "Открыть Telegram",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "static_visible_structure": true
+    },
+    {
+      "id": "open-whatsapp",
+      "href": "https://wa.me/74991306616",
+      "text": "Открыть WhatsApp",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "static_visible_structure": true
+    },
+    {
+      "id": null,
+      "href": "tel:+74991306616",
+      "text": "+7 (499) 130-66-16",
+      "target": null,
+      "rel": null,
+      "static_visible_structure": true
+    },
+    {
+      "id": null,
+      "href": "tel:+74991306616",
+      "text": "Позвонить",
+      "target": null,
+      "rel": null,
+      "static_visible_structure": true
+    }
+  ],
+  "draft_editable_without_js": true,
+  "noscript_manual_copy_guidance": true,
+  "delivery_not_claimed": true,
+  "max_absent": true,
+  "backend_api_storage_auto_open_absent": true,
+  "noindex_retained": true,
+  "both_hash_versions_match": true,
+  "builder_and_allowlist_unchanged": true,
+  "public_files": [
+    "assets/epdm-samples-480.webp",
+    "assets/epdm-samples.webp",
+    "assets/favicon.svg",
+    "assets/image-1-480.webp",
+    "assets/image-1-960.webp",
+    "assets/image-1.webp",
+    "assets/image-2-480.webp",
+    "assets/image-2-960.webp",
+    "assets/image-2.webp",
+    "assets/image-3-480.webp",
+    "assets/image-3-960.webp",
+    "assets/image-3.webp",
+    "assets/image-4-480.webp",
+    "assets/image-4-960.webp",
+    "assets/image-4.webp",
+    "assets/promo.mp4",
+    "index.html",
+    "project.js",
+    "site.js"
+  ],
+  "http_response": {
+    "status": 200,
+    "content_type": "text/html",
+    "sha256": "0a14e15674fa88321e6e89c543cb2f9eb969d3829fc2c863afde4e15403f410a",
+    "identical_to_source": true,
+    "javascript_executed": false
+  },
+  "scope_limit": "Static HTML and local HTTP only. Visibility, overflow, native Clipboard/downloads and actual messenger navigation require browser evidence from root.",
+  "final_status_copy_update": {
+    "previous_source_hashes": {
+      "index.html": "2a5b90238e1e698e990f19bceedaa757407b861dcf8979a4ad3fc9b4a57d708c",
+      "site.js": "16ea57cbd0036e5d3ed92689a39cc7ccbc6ae4fc5c789805dd4934e13cd54a6f",
+      "project.js": "9d4187480ebe89a3f6ae860ada8a1ba63b9234528b1fb46e80ac40db43907ca5"
+    },
+    "only_changes_to_previously_verified_public_files": "Removed unknown delivery status from copy/TXT notices and updated HTML script hash; model, all contact/review/chat markup and behavior unchanged. Verified by reconstructing prior file hashes.",
+    "copy_status": "Черновик скопирован.",
+    "txt_status": "TXT-файл подготовлен к скачиванию."
+  }
+}

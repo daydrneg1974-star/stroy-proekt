@@ -1,0 +1,62 @@
+✖ сборка отклоняет опасную цель parent до удаления исходных файлов (27.205402ms)
+ℹ {"destination":"parent","error":"ENOENT: no such file or directory, copyfile '/tmp/stroyengineering-unsafe-build-VYdMdz/parent/project/index.html' -> '/tmp/stroyengineering-unsafe-build-VYdMdz/parent/index.html'","sourcePresent":false,"assetPresent":false,"neighbourPresent":false}
+✖ сборка отклоняет опасную цель assets до удаления исходных файлов (17.798225ms)
+ℹ {"destination":"assets","error":"ENOENT: no such file or directory, copyfile '/tmp/stroyengineering-unsafe-build-pF3e5w/parent/project/assets/favicon.svg' -> '/tmp/stroyengineering-unsafe-build-pF3e5w/parent/project/assets/assets/favicon.svg'","sourcePresent":true,"assetPresent":false,"neighbourPresent":true}
+✖ сборка отклоняет опасную цель index.html до удаления исходных файлов (16.424012ms)
+ℹ {"destination":"index.html","error":"EISDIR: illegal operation on a directory, copyfile '/tmp/stroyengineering-unsafe-build-siiwLp/parent/project/index.html' -> '/tmp/stroyengineering-unsafe-build-siiwLp/parent/project/index.html/index.html'","sourcePresent":true,"assetPresent":true,"neighbourPresent":true}
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.260636
+
+✖ failing tests:
+
+test at tests/build-safety.test.mjs:13:3
+✖ сборка отклоняет опасную цель parent до удаления исходных файлов (27.205402ms)
+  AssertionError [ERR_ASSERTION]: source HTML must survive a rejected build
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/13800b2cf773/stroyengineering/.sites-checkout/tests/build-safety.test.mjs:38:12)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/build-safety.test.mjs:13:3
+✖ сборка отклоняет опасную цель assets до удаления исходных файлов (17.798225ms)
+  AssertionError [ERR_ASSERTION]: source assets must survive a rejected build
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/13800b2cf773/stroyengineering/.sites-checkout/tests/build-safety.test.mjs:39:12)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/build-safety.test.mjs:13:3
+✖ сборка отклоняет опасную цель index.html до удаления исходных файлов (16.424012ms)
+  Error: EISDIR: illegal operation on a directory, read
+      at async readFileHandle (node:internal/fs/promises:1261:24)
+      at async TestContext.<anonymous> (file:///workspace/scratch/13800b2cf773/stroyengineering/.sites-checkout/tests/build-safety.test.mjs:41:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -21,
+    code: 'EISDIR',
+    syscall: 'read'
+  }

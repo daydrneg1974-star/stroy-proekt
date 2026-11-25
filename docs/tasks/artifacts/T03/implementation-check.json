@@ -1,0 +1,119 @@
+{
+  "checkedAt": "2026-11-22T09:11:21.247Z",
+  "sourceCommit": "75a6ee7c1a8a69022e3d8cc533c29a3986443420",
+  "quotesMatchExactly": true,
+  "quotes": [
+    "«Нам было важно не собирать пять бригад. Здесь один инженер вёл и коробку, и отопление — вопросы решались в одном чате».",
+    "«Калькулятор дал понятный порядок цифр ещё до встречи. В итоге смета по основным этапам совпала с договором».",
+    "«Понравилась инженерная дисциплина: фото скрытых работ, испытания и понятная передача каждого этапа»."
+  ],
+  "phones": [
+    {
+      "href": "tel:+74991306616",
+      "label": "+7 (499) 130-66-16"
+    },
+    {
+      "href": "tel:+74991306616",
+      "label": "+7 (499) 130-66-16"
+    },
+    {
+      "href": "tel:+74991306616",
+      "label": "+7 (499) 130-66-16"
+    },
+    {
+      "href": "tel:+74991306616",
+      "label": "Позвонить"
+    }
+  ],
+  "unchangedScripts": {
+    "site.js": "fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+    "project.js": "decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf"
+  },
+  "noindex": true,
+  "onlineSubmission": false,
+  "checks": "npm run check: 23/23; npm run build: PASS; git diff --check: PASS",
+  "build": {
+    "publicFileCount": 19,
+    "bytes": 6340096,
+    "indexBytes": 44337,
+    "files": [
+      {
+        "path": "index.html",
+        "bytes": 44337
+      },
+      {
+        "path": "site.js",
+        "bytes": 5527
+      },
+      {
+        "path": "project.js",
+        "bytes": 3198
+      },
+      {
+        "path": "assets/favicon.svg",
+        "bytes": 201
+      },
+      {
+        "path": "assets/image-1.webp",
+        "bytes": 237828
+      },
+      {
+        "path": "assets/image-1-480.webp",
+        "bytes": 20976
+      },
+      {
+        "path": "assets/image-1-960.webp",
+        "bytes": 71126
+      },
+      {
+        "path": "assets/image-2.webp",
+        "bytes": 302628
+      },
+      {
+        "path": "assets/image-2-480.webp",
+        "bytes": 31920
+      },
+      {
+        "path": "assets/image-2-960.webp",
+        "bytes": 102668
+      },
+      {
+        "path": "assets/image-3.webp",
+        "bytes": 360626
+      },
+      {
+        "path": "assets/image-3-480.webp",
+        "bytes": 33556
+      },
+      {
+        "path": "assets/image-3-960.webp",
+        "bytes": 111814
+      },
+      {
+        "path": "assets/image-4.webp",
+        "bytes": 258086
+      },
+      {
+        "path": "assets/image-4-480.webp",
+        "bytes": 33428
+      },
+      {
+        "path": "assets/image-4-960.webp",
+        "bytes": 94730
+      },
+      {
+        "path": "assets/epdm-samples.webp",
+        "bytes": 288170
+      },
+      {
+        "path": "assets/epdm-samples-480.webp",
+        "bytes": 90726
+      },
+      {
+        "path": "assets/promo.mp4",
+        "bytes": 4248551
+      }
+    ]
+  },
+  "browser": "Не запускался исполнителем; визуальная проверка 320–1440 px передана основному агенту."
+}

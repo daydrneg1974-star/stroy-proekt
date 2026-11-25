@@ -1,0 +1,18 @@
+{
+  "note": "The actual consistency test was run against isolated copies with stale references. No product source changed.",
+  "sourceUnchanged": true,
+  "cases": [
+    {
+      "changedInIsolatedCopy": "site.js",
+      "exitCode": 1,
+      "expectedMessageObserved": true,
+      "stdout": "✖ версии entrypoint и зависимого модуля равны SHA-256 их фактического содержимого (13.71708ms)\nℹ tests 1\nℹ suites 0\nℹ pass 0\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 184.676929\n\n✖ failing tests:\n\ntest at tests/cache-version.test.mjs:8:1\n✖ версии entrypoint и зависимого модуля равны SHA-256 их фактического содержимого (13.71708ms)\n  AssertionError [ERR_ASSERTION]: Обновите версию site.js в HTML после изменения контроллера.\n  + actual - expected\n  \n  + 'fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33'\n  - '3ca3cbb54186f8c92316e6e1c8217b2b40e95fd084398c2312a662bd05d6aa4c'\n  \n      at TestContext.<anonymous> (file:///tmp/stroyengineering-cache-probe-n_ot6o7e/tests/cache-version.test.mjs:17:10)\n      at async Test.run (node:internal/test_runner/test:1409:7)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: 'fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33',\n    expected: '3ca3cbb54186f8c92316e6e1c8217b2b40e95fd084398c2312a662bd05d6aa4c',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n"
+    },
+    {
+      "changedInIsolatedCopy": "project.js",
+      "exitCode": 1,
+      "expectedMessageObserved": true,
+      "stdout": "✖ версии entrypoint и зависимого модуля равны SHA-256 их фактического содержимого (7.617944ms)\nℹ tests 1\nℹ suites 0\nℹ pass 0\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 141.379627\n\n✖ failing tests:\n\ntest at tests/cache-version.test.mjs:8:1\n✖ версии entrypoint и зависимого модуля равны SHA-256 их фактического содержимого (7.617944ms)\n  AssertionError [ERR_ASSERTION]: Обновите версию project.js в импорте, затем версию site.js в HTML.\n  + actual - expected\n  \n  + 'decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf'\n  - 'eef4fc4bc35fa5d13dc8a9ab82d38703a9b2b518d2053a3cd0eecf8686ba6f3e'\n  \n      at TestContext.<anonymous> (file:///tmp/stroyengineering-cache-probe-2i1y9tli/tests/cache-version.test.mjs:16:10)\n      at async Test.run (node:internal/test_runner/test:1409:7)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: 'decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf',\n    expected: 'eef4fc4bc35fa5d13dc8a9ab82d38703a9b2b518d2053a3cd0eecf8686ba6f3e',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n"
+    }
+  ]
+}

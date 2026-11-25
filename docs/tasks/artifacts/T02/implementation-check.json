@@ -1,0 +1,14 @@
+{
+  "tests": "23/23 PASS (22 previous + 1 content-version check)",
+  "sourceRoot": "index.html, site.js, project.js",
+  "siteUrl": "site.js?v=fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+  "projectImport": "./project.js?v=decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf",
+  "siteSHA256": "fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+  "projectSHA256": "decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf",
+  "entryHashMatches": true,
+  "moduleHashMatches": true,
+  "publicFiles": 19,
+  "canonical": "https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/",
+  "ogUrl": "https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/",
+  "browserVerification": "Delegated to the root agent; cause remains unconfirmed."
+}

@@ -1,0 +1,172 @@
+{
+  "kind": "Независимые наблюдения построенных файлов; это не UI и не HTTP-проверка",
+  "date_utc": "2026-11-22T09:54:45.578637+00:00",
+  "source_head": "3604e3f788e7c7b46ea3dc1155bdb1a39ba76c42",
+  "source_sha256": {
+    "index.html": "a731ba6618b13a86bf222ab2063ca97f738f13fd8b52baab4898c8e716955d94",
+    "privacy.html": "03fbd674b3119d6f2ebc334999446fa9a86f1fa72ecfb4894d32db84acb0d4e9",
+    "site.js": "5c32252f637e2b1b6509441e67c6f147dc753c62eec4116f5fd773dd97b81c08",
+    "project.js": "27b9f367a757b8dee19a38aadf083b79fe17ef4d66ccebeb37dc07dfdf296bce"
+  },
+  "dist_matches_current_source": true,
+  "public_file_count": 20,
+  "public_files": [
+    "assets/epdm-samples-480.webp",
+    "assets/epdm-samples.webp",
+    "assets/favicon.svg",
+    "assets/image-1-480.webp",
+    "assets/image-1-960.webp",
+    "assets/image-1.webp",
+    "assets/image-2-480.webp",
+    "assets/image-2-960.webp",
+    "assets/image-2.webp",
+    "assets/image-3-480.webp",
+    "assets/image-3-960.webp",
+    "assets/image-3.webp",
+    "assets/image-4-480.webp",
+    "assets/image-4-960.webp",
+    "assets/image-4.webp",
+    "assets/promo.mp4",
+    "index.html",
+    "privacy.html",
+    "project.js",
+    "site.js"
+  ],
+  "messenger_anchors": [
+    {
+      "attributes": {
+        "class": "btn",
+        "id": "open-telegram",
+        "href": "https://t.me/+74991306616",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "aria-describedby": "messenger-help"
+      },
+      "text": "Открыть Telegram"
+    },
+    {
+      "attributes": {
+        "class": "btn",
+        "id": "open-whatsapp",
+        "href": "https://wa.me/74991306616",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "aria-describedby": "messenger-help"
+      },
+      "text": "Открыть WhatsApp"
+    }
+  ],
+  "instruction_steps": [
+    "Скопируйте текст целиком — кнопкой ниже или вручную.",
+    "Откройте Telegram или WhatsApp.",
+    "Вставьте текст в чат, проверьте его и нажмите «Отправить»."
+  ],
+  "phone_index": [
+    {
+      "attributes": {
+        "href": "tel:+74991306616"
+      },
+      "text": "+7 (499) 130-66-16"
+    },
+    {
+      "attributes": {
+        "class": "big",
+        "href": "tel:+74991306616"
+      },
+      "text": "+7 (499) 130-66-16"
+    },
+    {
+      "attributes": {
+        "href": "tel:+74991306616"
+      },
+      "text": "+7 (499) 130-66-16"
+    },
+    {
+      "attributes": {
+        "class": "btn sm",
+        "href": "tel:+74991306616",
+        "aria-label": "Позвонить по номеру +7 (499) 130-66-16"
+      },
+      "text": "Позвонить"
+    }
+  ],
+  "privacy_links_in_index": [
+    {
+      "attributes": {
+        "href": "privacy.html",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "text": "«Данные и конфиденциальность»"
+    },
+    {
+      "attributes": {
+        "href": "privacy.html"
+      },
+      "text": "Данные и конфиденциальность"
+    },
+    {
+      "attributes": {
+        "href": "privacy.html"
+      },
+      "text": "«Данные и конфиденциальность»"
+    }
+  ],
+  "privacy_outgoing_links": [
+    {
+      "attributes": {
+        "href": "https://telegram.org/privacy",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "text": "Политика конфиденциальности Telegram"
+    },
+    {
+      "attributes": {
+        "href": "https://www.whatsapp.com/legal/privacy-policy",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "text": "Политика конфиденциальности WhatsApp"
+    },
+    {
+      "attributes": {
+        "href": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "text": "официальному описанию cookies Cloudflare"
+    }
+  ],
+  "privacy_phone_count": 3,
+  "privacy_has_no_scripts": true,
+  "referrer_meta_both_pages": true,
+  "noindex_both_pages": true,
+  "spellcheck_disabled": true,
+  "max_absent": true,
+  "quotes_baseline_commit": "75a6ee7c1a8a69022e3d8cc533c29a3986443420",
+  "quotes_equal_to_baseline": true,
+  "quotes": [
+    "«Нам было важно не собирать пять бригад. Здесь один инженер вёл и коробку, и отопление — вопросы решались в одном чате».",
+    "«Калькулятор дал понятный порядок цифр ещё до встречи. В итоге смета по основным этапам совпала с договором».",
+    "«Понравилась инженерная дисциплина: фото скрытых работ, испытания и понятная передача каждого этапа»."
+  ],
+  "t04_history_unchanged": true,
+  "legal_scope": "Техническая минимизация; оператор неизвестен, уведомление РКН не подавалось по ответу пользователя. Соответствие закону, география и условия хостинга не подтверждены.",
+  "full_check_source_sha256": {
+    "index.html": "e9d9d37d629dff10f77df3276f20544bfaad9fc485e4ae8a831ed41b8f79981e",
+    "privacy.html": "250d7299684e59bf8bce927e4aa79f26e393eac22847b7fa5ea46cf3bd525088",
+    "site.js": "5c32252f637e2b1b6509441e67c6f147dc753c62eec4116f5fd773dd97b81c08",
+    "project.js": "27b9f367a757b8dee19a38aadf083b79fe17ef4d66ccebeb37dc07dfdf296bce"
+  },
+  "final_dist_matches_all_public_sources": true,
+  "temporary_qa_page_absent": true,
+  "post_full_check_changes": [
+    "index.html: #draft-privacy a{display:inline-block}",
+    "privacy.html mobile h1: 34px → clamp(24px,7.5vw,34px)"
+  ],
+  "post_full_check_changes_verified_by_hash_reversal": true,
+  "final_targeted_html_checks_exit_code": 0,
+  "browser_observations_author": "root",
+  "browser_observations": "browser-check.md"
+}

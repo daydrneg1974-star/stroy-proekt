@@ -1,0 +1,11 @@
+_archive/
+node_modules/
+.env
+.env.*
+_docs/private/
+/dist/
+docs/tasks/artifacts/**/screenshots/
+docs/tasks/artifacts/**/*.png
+docs/tasks/artifacts/**/*.jpg
+docs/tasks/artifacts/**/*.webp
+docs/tasks/artifacts/**/*.mp4

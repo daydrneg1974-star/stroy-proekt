@@ -1,0 +1,130 @@
+{
+  "checked_at_utc": "2026-11-22T09:12:45.617656+00:00",
+  "base_commit": "82f4dfc42b05375bdd03aacb14deeddf9f740673",
+  "source_index_sha256": "4961fb9c4eb03b55e38ab613d43604ce02639bfb13cb59cbd66d85fa39426128",
+  "review_reference_commit": "75a6ee7c1a8a69022e3d8cc533c29a3986443420",
+  "quotes": [
+    {
+      "number": 1,
+      "source_text": "«Нам было важно не собирать пять бригад. Здесь один инженер вёл и коробку, и отопление — вопросы решались в одном чате».",
+      "current_text": "«Нам было важно не собирать пять бригад. Здесь один инженер вёл и коробку, и отопление — вопросы решались в одном чате».",
+      "verbatim_equal": true,
+      "sha256": "775de6f18d969786d900de3eff2461d779cfb41609ab50dc1013db292411e7d6",
+      "caption": "Комплексное строительство"
+    },
+    {
+      "number": 2,
+      "source_text": "«Калькулятор дал понятный порядок цифр ещё до встречи. В итоге смета по основным этапам совпала с договором».",
+      "current_text": "«Калькулятор дал понятный порядок цифр ещё до встречи. В итоге смета по основным этапам совпала с договором».",
+      "verbatim_equal": true,
+      "sha256": "05f93f0d3c3d96f4953ca426da66c4761785b3a316f63f471d6df2458b99b28f",
+      "caption": "Согласование сметы"
+    },
+    {
+      "number": 3,
+      "source_text": "«Понравилась инженерная дисциплина: фото скрытых работ, испытания и понятная передача каждого этапа».",
+      "current_text": "«Понравилась инженерная дисциплина: фото скрытых работ, испытания и понятная передача каждого этапа».",
+      "verbatim_equal": true,
+      "sha256": "18a64df56ef1ef6c565e558b1395638e9def77790284b280e7afc1985e8471b7",
+      "caption": "Инженерные работы"
+    }
+  ],
+  "review_example_labels_and_ratings_absent": true,
+  "phone_links": [
+    {
+      "context": "faq",
+      "href": "tel:+74991306616",
+      "text": "+7 (499) 130-66-16",
+      "aria_label": null,
+      "static_html": true,
+      "hidden_or_js_only_ancestor": false,
+      "inline_event_handlers": false
+    },
+    {
+      "context": "contact",
+      "href": "tel:+74991306616",
+      "text": "+7 (499) 130-66-16",
+      "aria_label": null,
+      "static_html": true,
+      "hidden_or_js_only_ancestor": false,
+      "inline_event_handlers": false
+    },
+    {
+      "context": "page_footer",
+      "href": "tel:+74991306616",
+      "text": "+7 (499) 130-66-16",
+      "aria_label": null,
+      "static_html": true,
+      "hidden_or_js_only_ancestor": false,
+      "inline_event_handlers": false
+    },
+    {
+      "context": "mobile_bar",
+      "href": "tel:+74991306616",
+      "text": "Позвонить",
+      "aria_label": "Позвонить по номеру +7 (499) 130-66-16",
+      "static_html": true,
+      "hidden_or_js_only_ancestor": false,
+      "inline_event_handlers": false
+    }
+  ],
+  "removed_contradictory_phrases": [
+    "Контакты будут добавлены",
+    "Контакты компании будут добавлены",
+    "В демоверсии вызов инженера недоступен",
+    "Приём заявок, вызов инженера и контакты в демоверсии недоступны"
+  ],
+  "online_submission_status_retained": true,
+  "noindex_retained": true,
+  "unchanged_critical_files": {
+    "site.js": {
+      "sha256": "fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+      "identical_to_HEAD": true
+    },
+    "project.js": {
+      "sha256": "decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf",
+      "identical_to_HEAD": true
+    },
+    "scripts/build.mjs": {
+      "sha256": "ab53f70aa0b61e934090cf8101c43efff1c572b0479170c9ff3b13e8cbab6661",
+      "identical_to_HEAD": true
+    },
+    "scripts/public-files.mjs": {
+      "sha256": "8323170cf16ca5ef4cc4422721ae6a61fbcd90a78c4576397a865291714c47a7",
+      "identical_to_HEAD": true
+    }
+  },
+  "entry_hash": "fda56c3b35543a73fd1943848c4559b66e938b8814b92a95f08105d718e9ee33",
+  "model_import_hash": "decaadfd32bca23f75105747e67b7db9b444216a9752a98bb61480f9c39c54cf",
+  "published_file_count": 19,
+  "published_files": [
+    "assets/epdm-samples-480.webp",
+    "assets/epdm-samples.webp",
+    "assets/favicon.svg",
+    "assets/image-1-480.webp",
+    "assets/image-1-960.webp",
+    "assets/image-1.webp",
+    "assets/image-2-480.webp",
+    "assets/image-2-960.webp",
+    "assets/image-2.webp",
+    "assets/image-3-480.webp",
+    "assets/image-3-960.webp",
+    "assets/image-3.webp",
+    "assets/image-4-480.webp",
+    "assets/image-4-960.webp",
+    "assets/image-4.webp",
+    "assets/promo.mp4",
+    "index.html",
+    "project.js",
+    "site.js"
+  ],
+  "built_http_response": {
+    "url": "http://127.0.0.1:33637/",
+    "status": 200,
+    "content_type": "text/html",
+    "sha256": "4961fb9c4eb03b55e38ab613d43604ce02639bfb13cb59cbd66d85fa39426128",
+    "identical_to_source": true,
+    "javascript_executed": false
+  },
+  "scope_limit": "No browser was used. Static anchors and HTTP content are proven; visual mobile availability, layout, overflow, and rendered no-JS behavior require root browser evidence."
+}

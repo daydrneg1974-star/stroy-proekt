@@ -1,0 +1,13 @@
+{
+  "name": "stroyengineering-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:spaceweb": "node scripts/build-spaceweb.mjs",
+    "test": "node --test",
+    "check": "node --check site.js && node --check project.js && node --test"
+  }
+}
