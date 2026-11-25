@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 build
+> node scripts/build.mjs
+
+Сборка SpaceWeb готова: 26 файлов в /workspace/scratch/0ae38bb7509c/stroy-spaceweb/dist/public_html; манифест — /workspace/scratch/0ae38bb7509c/stroy-spaceweb/dist/release-manifest.json
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 verify:release
+> node scripts/verify-release.mjs
+
+Релиз проверен: 26 файлов, SHA-256, allowlist и версии модулей совпадают.

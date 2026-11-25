@@ -1,0 +1,44 @@
+{
+  "source": "Root Browser plugin observations, independently reviewed; verifier did not control the browser",
+  "url": "https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/index.html#contact",
+  "desktop": {
+    "viewport": 1440,
+    "scrollWidth": 1425
+  },
+  "mobile": {
+    "viewport": 320,
+    "scrollWidth": 305,
+    "waLeft": 40,
+    "waRight": 264.8000030517578
+  },
+  "privacy": {
+    "viewport": 320,
+    "scrollWidth": 305,
+    "noindex": "noindex,nofollow"
+  },
+  "manualNotesPrefixUnchanged": true,
+  "projectBlocks": 1,
+  "clipboardExact": true,
+  "clipboardUtf16Length": 269,
+  "clipboardUtf8Bytes": 477,
+  "clipboardSha256": "ca27763a5483852d28000fa8f176519cf442b2a096628ae2d39f59db0222e8f9",
+  "previewScriptVersion": "site.js?v=79a85e7ead3591412ff5e547a4dbb55479c1dad7083559fe143ebb393e42d2bb",
+  "localManifestSiteSha256": "79a85e7ead3591412ff5e547a4dbb55479c1dad7083559fe143ebb393e42d2bb",
+  "scriptVersionMatchesLocalManifest": true,
+  "emptyActionsDisabled": true,
+  "consoleErrors": [],
+  "notRun": [
+    "Real no-JavaScript browser mode",
+    "Real denied Clipboard permission",
+    "Automated headless e2e scenarios",
+    "Actual messenger conversation/delivery"
+  ],
+  "notObserved": [
+    "Downloaded TXT path and bytes; click alone is not a saved-file result"
+  ],
+  "screenshotsReviewed": [
+    "desktop.jpg",
+    "mobile.jpg"
+  ],
+  "observedProductDefects": []
+}

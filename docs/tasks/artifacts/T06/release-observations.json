@@ -1,0 +1,202 @@
+{
+  "sourceUnchanged": true,
+  "sourceSha256": {
+    "index.html": "04cf58498ef32360dcbcb4566c6bc2199c04ba873aab7d8a00ab8a1a03a97550",
+    "privacy.html": "b02a287560cdc0d9b1c59d77fa55cf82c02b2f91fd281f9e396c1b7795565498",
+    "site.js": "086d7e00adf2d98d2f02b64d68f2b443ae14386a7863ad1cf99163366126da75",
+    "project.js": "3713dd170450e62dd9602a5cca87bad4a857238fa371431b9638dcf1b097b567",
+    ".htaccess": "e94592ca153c1e3b7c8c62b7b2df001bdbfb076f38179ee99baaacc96f461de8",
+    "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+    "contacts.json": "a55e585f0f32b0b0bd494988f8a8b094c2be99730d174384d6f3cba05e368a6e",
+    "package.json": "d88f743287cc2d367a2db732d24f615baa05e93a575742ed37eadf98dc9ece71",
+    "assets/dzit-colours-360.webp": "be96e907620767ec65c06bd3ce0f860c879a0ab21eb54902fe58379ba63c610d",
+    "assets/dzit-colours.webp": "07970f531f04c259e1fbef30b3f3f367352cf427495338dfcb357497bfc8ac4b",
+    "assets/dzit-playground-360.webp": "8d0d1465fc9f5f8a4f29f2d7fe314fc79567af3fafe154a6aa1ffd14dee6391f",
+    "assets/dzit-playground.webp": "f8cf34210bc62374b490db0b5d5a2296d2b2eef00fbb4f4bb8d14814535aca94",
+    "assets/dzit-sport-360.webp": "91a68d3a4776d2156756441216da72ed463a35d9e3668bea8c5d3e7e0062d0dd",
+    "assets/dzit-sport.webp": "419c910f6eb9ca0056009ad2755048376d1f6b34ac35175d88324afbbc0117cc",
+    "assets/epdm-samples-480.webp": "04d76157cb94cad348466949647c8014c54161d4bf087ef90831f1e377903913",
+    "assets/epdm-samples.webp": "ba2750b971de4d1e248a1d1dc32540870d95bf4a7814bed843f4d7248815dee0",
+    "assets/favicon.svg": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676",
+    "assets/image-1-480.webp": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7",
+    "assets/image-1-960.webp": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8",
+    "assets/image-1.webp": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6",
+    "assets/image-2-480.webp": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0",
+    "assets/image-2-960.webp": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2",
+    "assets/image-2.webp": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935",
+    "assets/image-3-480.webp": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2",
+    "assets/image-3-960.webp": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7",
+    "assets/image-3.webp": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f",
+    "assets/image-4-480.webp": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a",
+    "assets/image-4-960.webp": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4",
+    "assets/image-4.webp": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472",
+    "assets/promo.mp4": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a",
+    "scripts/build.mjs": "569ee5f615a7bd57a807288a3e4f4ddfeb99220d1bd24d895b31e34761e9ee4c",
+    "scripts/contacts.mjs": "69d2f1365055b7fa977cf877f58ec06f0e2931715c70893b313f0e2d92074622",
+    "scripts/public-files.mjs": "adc598523b8bbd112f358c783f1b31c23bc7c67e216dedfd737df3cddcc1717e",
+    "scripts/verify-release.mjs": "07731bc22419e068ef829d25c18c2d7dddfd7f08e7f6b5abbaa23addc6dbb654"
+  },
+  "manifestSha256": "32e9979fafa410a12ab31ee859df7e9c0c846161ecdd0ed9342d95a552a9bfb9",
+  "manifest": {
+    "version": 1,
+    "origin": "https://stroyinzh-dom.ru",
+    "publicDirectory": "public_html",
+    "files": [
+      {
+        "name": ".htaccess",
+        "size": 726,
+        "sha256": "636fa6b6bc76acd7a817592b97d1c8f561a9bff907404b2b1604ae99be8ea491"
+      },
+      {
+        "name": "robots.txt",
+        "size": 25,
+        "sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce"
+      },
+      {
+        "name": "index.html",
+        "size": 48002,
+        "sha256": "494165b44cc736d4feeeb54e0821b4b5dd772f5adac8f430852650194f988764"
+      },
+      {
+        "name": "privacy.html",
+        "size": 9488,
+        "sha256": "0feab87ca7fef7301acb221f3b7f396a67ff21c93c7c7ca62192b51e6aeeb5b3"
+      },
+      {
+        "name": "site.js",
+        "size": 5650,
+        "sha256": "79a85e7ead3591412ff5e547a4dbb55479c1dad7083559fe143ebb393e42d2bb"
+      },
+      {
+        "name": "project.js",
+        "size": 3153,
+        "sha256": "39a60082d0fb328b5f1a28cc563fa64662d9d0fb9539e6f7c07a2a2a21a9eac0"
+      },
+      {
+        "name": "assets/favicon.svg",
+        "size": 201,
+        "sha256": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676"
+      },
+      {
+        "name": "assets/image-1.webp",
+        "size": 237828,
+        "sha256": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6"
+      },
+      {
+        "name": "assets/image-1-480.webp",
+        "size": 20976,
+        "sha256": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7"
+      },
+      {
+        "name": "assets/image-1-960.webp",
+        "size": 71126,
+        "sha256": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8"
+      },
+      {
+        "name": "assets/image-2.webp",
+        "size": 302628,
+        "sha256": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935"
+      },
+      {
+        "name": "assets/image-2-480.webp",
+        "size": 31920,
+        "sha256": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0"
+      },
+      {
+        "name": "assets/image-2-960.webp",
+        "size": 102668,
+        "sha256": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2"
+      },
+      {
+        "name": "assets/image-3.webp",
+        "size": 360626,
+        "sha256": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f"
+      },
+      {
+        "name": "assets/image-3-480.webp",
+        "size": 33556,
+        "sha256": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2"
+      },
+      {
+        "name": "assets/image-3-960.webp",
+        "size": 111814,
+        "sha256": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7"
+      },
+      {
+        "name": "assets/image-4.webp",
+        "size": 258086,
+        "sha256": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472"
+      },
+      {
+        "name": "assets/image-4-480.webp",
+        "size": 33428,
+        "sha256": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a"
+      },
+      {
+        "name": "assets/image-4-960.webp",
+        "size": 94730,
+        "sha256": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4"
+      },
+      {
+        "name": "assets/dzit-playground.webp",
+        "size": 65440,
+        "sha256": "f8cf34210bc62374b490db0b5d5a2296d2b2eef00fbb4f4bb8d14814535aca94"
+      },
+      {
+        "name": "assets/dzit-playground-360.webp",
+        "size": 19752,
+        "sha256": "8d0d1465fc9f5f8a4f29f2d7fe314fc79567af3fafe154a6aa1ffd14dee6391f"
+      },
+      {
+        "name": "assets/dzit-sport.webp",
+        "size": 129546,
+        "sha256": "419c910f6eb9ca0056009ad2755048376d1f6b34ac35175d88324afbbc0117cc"
+      },
+      {
+        "name": "assets/dzit-sport-360.webp",
+        "size": 18868,
+        "sha256": "91a68d3a4776d2156756441216da72ed463a35d9e3668bea8c5d3e7e0062d0dd"
+      },
+      {
+        "name": "assets/dzit-colours.webp",
+        "size": 124338,
+        "sha256": "07970f531f04c259e1fbef30b3f3f367352cf427495338dfcb357497bfc8ac4b"
+      },
+      {
+        "name": "assets/dzit-colours-360.webp",
+        "size": 38596,
+        "sha256": "be96e907620767ec65c06bd3ce0f860c879a0ab21eb54902fe58379ba63c610d"
+      },
+      {
+        "name": "assets/promo.mp4",
+        "size": 4248551,
+        "sha256": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a"
+      }
+    ]
+  },
+  "html": {
+    "index.html": {
+      "noindex": "<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "referrer": "<meta name=\"referrer\" content=\"no-referrer\">",
+      "phone": true,
+      "whatsappDirect": true,
+      "telegramAbsent": true,
+      "emailMaxAbsent": true,
+      "unresolvedTemplate": false,
+      "policyIncomplete": true
+    },
+    "privacy.html": {
+      "noindex": "<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "referrer": "<meta name=\"referrer\" content=\"no-referrer\">",
+      "phone": true,
+      "whatsappDirect": false,
+      "telegramAbsent": true,
+      "emailMaxAbsent": true,
+      "unresolvedTemplate": false,
+      "policyIncomplete": true
+    }
+  },
+  "robots": "User-agent: *\nDisallow: /",
+  "previousCommit": "fc899b3743501248e692ab8b06b4c5dc3cf2697b Replace EPDM material catalog with Dzit photo gallery",
+  "changedHistoricalReportsOrAssets": ""
+}

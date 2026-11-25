@@ -1,4 +1,4 @@
-import { appendDraft, copyDraft, createMessengerLinks, createProject, createTextExport, describeProject } from './project.js?v=27b9f367a757b8dee19a38aadf083b79fe17ef4d66ccebeb37dc07dfdf296bce';
+import { appendDraft, copyDraft, createProject, createTextExport, describeProject } from './project.js';
 
 const root = document.documentElement;
 const header = document.querySelector('header');
@@ -41,11 +41,6 @@ const draft = document.querySelector('#draft');
 const status = document.querySelector('#draft-status');
 const copyButton = document.querySelector('#copy-draft');
 const downloadButton = document.querySelector('#download-draft');
-const telegramLink = document.querySelector('#open-telegram');
-const whatsappLink = document.querySelector('#open-whatsapp');
-const messengerLinks = createMessengerLinks();
-if (telegramLink) telegramLink.href = messengerLinks.telegram;
-if (whatsappLink) whatsappLink.href = messengerLinks.whatsapp;
 let separateEngineering = false;
 
 function updateProject() {

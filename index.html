@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>СТРОЙИНЖИНИРИНГ — демоверсия и состав проекта</title>
-<meta name="description" content="Демонстрационная версия сайта СТРОЙИНЖИНИРИНГ. Подготовьте состав проекта дома и участка и отправьте его в Telegram или WhatsApp. Без расчёта цены.">
+<meta name="description" content="Демонстрационная версия сайта СТРОЙИНЖИНИРИНГ. Подготовьте состав проекта дома и участка, сохраните и обсудите с исполнителем. Без расчёта цены.">
 <meta property="og:title" content="СТРОЙИНЖИНИРИНГ — демоверсия">
-<meta property="og:description" content="Подготовьте состав проекта и отправьте его в Telegram или WhatsApp. Демоверсия без расчёта цены.">
+<meta property="og:description" content="Подготовьте состав проекта и обсудите его с исполнителем. Демоверсия без расчёта цены.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/">
-<link rel="canonical" href="https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/">
-<meta property="og:image" content="assets/image-1.webp">
+<meta property="og:url" content="https://stroyinzh-dom.ru/">
+<link rel="canonical" href="https://stroyinzh-dom.ru/">
+<meta property="og:image" content="https://stroyinzh-dom.ru/assets/image-1.webp">
 <meta property="og:image:alt" content="Иллюстрация загородного дома с бассейном — демоверсия СТРОЙИНЖИНИРИНГ">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
@@ -305,7 +305,7 @@ input[type=range]{margin:0}
   <div>
    <h2>Соберите свой проект</h2>
    <p class="lead">Выберите площадь, комплектацию, материал стен и работы на участке. Актуальный состав появится рядом — его можно добавить в редактируемый черновик.</p>
-   <p class="note demo-notice">Конфигуратор собирает состав без расчёта цены. Добавьте его в черновик, чтобы отправить в выбранном мессенджере.</p>
+   <p class="note demo-notice">Конфигуратор собирает состав без расчёта цены. Добавьте его в черновик и сохраните свои пожелания.</p>
   </div>
   <div class="panel" id="calc" data-js-only hidden>
    <div class="row"><label class="h" for="area">Площадь дома <output id="areaOut" for="area">160 м²</output></label><input id="area" type="range" min="60" max="400" step="5" value="160" aria-describedby="area-help"><p class="note" id="area-help">От 60 до 400 м², шаг 5 м²</p></div>
@@ -350,7 +350,7 @@ input[type=range]{margin:0}
 
 <section id="reviews" style="background:var(--bg2)">
  <div class="wrap">
-  <h2>Отзывы клиентов</h2>
+  <h2>Отзывы клиентов</h2><p class="note">Текущий конфигуратор помогает выбрать состав работ и не рассчитывает стоимость.</p>
   <div class="cases">
    <blockquote class="rev"><p>«Нам было важно не собирать пять бригад. Здесь один инженер вёл и коробку, и отопление — вопросы решались в одном чате».</p><footer>Комплексное строительство</footer></blockquote>
    <blockquote class="rev"><p>«Калькулятор дал понятный порядок цифр ещё до встречи. В итоге смета по основным этапам совпала с договором».</p><footer>Согласование сметы</footer></blockquote>
@@ -367,7 +367,7 @@ input[type=range]{margin:0}
    <details><summary>Сколько длится строительство?</summary><p>Сроки каждого этапа фиксируются в договоре. Продолжительность зависит от проекта, технологии и условий участка.</p></details>
    <details><summary>Что будет, если вы сорвёте сроки?</summary><p>Сроки и ответственность сторон согласуются до начала работ и закрепляются в договоре.</p></details>
    <details><summary>Какая у вас гарантия?</summary><p>Срок и условия гарантии определяются для конкретных работ и закрепляются в договоре.</p></details>
-   <details><summary>Как вызвать инженера на участок?</summary><p>Позвоните по номеру <a href="tel:+74991306616">+7 (499) 130-66-16</a> или <a href="#contact">подготовьте заявку ниже</a>. Скопируйте текст, откройте Telegram или WhatsApp, вставьте его и нажмите «Отправить», чтобы обсудить задачу и согласовать выезд инженера.</p></details>
+   <details><summary>Как вызвать инженера на участок?</summary><p>Позвоните по номеру <a href="tel:+74991306616">+7 (499) 130-66-16</a>{{MESSENGER_FAQ}}</p></details>
   </div>
  </div>
 </section>
@@ -376,9 +376,9 @@ input[type=range]{margin:0}
  <div class="wrap contact-grid">
   <div>
    <h2>Обсудим ваш проект</h2>
-   <p class="lead">Подготовьте состав работ и пожелания. Скопируйте текст, откройте Telegram или WhatsApp, вставьте и отправьте сообщение. Или позвоните, чтобы обсудить проект и выезд инженера.</p>
-   <p>Ссылки открывают чат без текста. Вы сами вставляете черновик и нажимаете «Отправить» в мессенджере.</p>
+   <p class="lead">{{CONTACT_LEAD}}</p>
    <dl>
+    <dt>Исполнитель</dt><dd>СтройИнжиниринг</dd>
     <dt>Телефон</dt><dd><a class="big" href="tel:+74991306616">+7 (499) 130-66-16</a></dd>
     <dt>Территория</dt><dd>Москва и Московская область</dd>
    </dl>
@@ -386,12 +386,11 @@ input[type=range]{margin:0}
   <div class="draft-editor">
    <p class="note demo-notice" id="draft-help">Поле — для состава работ и общих пожеланий. Не указывайте ФИО, телефон, точный адрес, данные документов и другие персональные сведения.</p>
    <div class="f"><label for="draft">Черновик заявки</label><textarea id="draft" rows="10" autocomplete="off" spellcheck="false" aria-describedby="draft-help draft-privacy" placeholder="Например: одноэтажный дом, терраса и место для бани. Сохранить взрослые деревья на участке."></textarea></div>
-   <p class="note" id="draft-privacy">Черновик остаётся в памяти вкладки. Перед закрытием страницы скопируйте его или скачайте TXT. О технических данных при загрузке сайта и переходе в мессенджеры — на странице <a href="privacy.html" target="_blank" rel="noopener noreferrer">«Данные и конфиденциальность»</a>.</p>
-   <ol class="note messenger-steps" id="messenger-help"><li>Скопируйте текст целиком — кнопкой ниже или вручную.</li><li>Откройте Telegram или WhatsApp.</li><li>Вставьте текст в чат, проверьте его и нажмите «Отправить».</li></ol>
+   <p class="note" id="draft-privacy">Черновик остаётся в памяти вкладки. Перед закрытием страницы скопируйте его или скачайте TXT. О технических данных при загрузке сайта — на странице <a href="privacy.html" target="_blank" rel="noopener noreferrer">«Данные и конфиденциальность»</a>.</p>
+   {{MESSENGER_STEPS}}
    <div class="draft-actions" data-js-only hidden><button class="btn ghost sm" id="copy-draft" type="button" disabled>Скопировать текст</button><button class="btn ghost sm" id="download-draft" type="button" disabled>Скачать TXT</button></div>
-   <div class="draft-actions" role="group" aria-label="Выберите мессенджер"><a class="btn" id="open-telegram" href="https://t.me/+74991306616" target="_blank" rel="noopener noreferrer" aria-describedby="messenger-help">Открыть Telegram</a><a class="btn" id="open-whatsapp" href="https://wa.me/74991306616" target="_blank" rel="noopener noreferrer" aria-describedby="messenger-help">Открыть WhatsApp</a></div>
-   <p class="note">Ссылки открывают чат без текста. Если чат недоступен, воспользуйтесь другим мессенджером или позвоните. Переход в чат не подтверждает отправку или доставку сообщения.</p>
-   <noscript><p class="note">JavaScript отключён: ссылки открывают чат без текста. Запишите состав, скопируйте его вручную, откройте мессенджер и вставьте текст. Затем нажмите «Отправить». Кнопки копирования и скачивания TXT недоступны.</p></noscript>
+   {{MESSENGER_ACTIONS}}
+   <noscript><p class="note">{{NOSCRIPT_GUIDANCE}}</p></noscript>
    <p class="note" id="draft-status" role="status" aria-live="polite"></p>
   </div>
  </div>
@@ -405,10 +404,10 @@ input[type=range]{margin:0}
   <div>© 2026 СТРОЙИНЖИНИРИНГ<br><a href="privacy.html">Данные и конфиденциальность</a></div>
  </div>
 </footer>
-<section id="privacy"><div class="wrap"><h2>Данные в демоверсии</h2><p>Черновик существует в памяти вкладки; копирование и скачивание сохраняют текст у вас. В коде сайта нет серверного приёма черновиков, аналитики и рекламных cookies. Ссылки мессенджеров не содержат черновик: вы сами копируете, вставляете и отправляете текст.</p><p>При загрузке сайта инфраструктура получает IP-адрес и технические параметры запроса и может вести журналы. При проверке 22 ноября 2026 года наблюдался защитный cookie <code>__cf_bm</code>. Сроки хранения технических данных и настройки инфраструктуры отдельно не подтверждены.</p><p>При переходе в Telegram или WhatsApp сервис получает технический запрос; дальнейшая работа с данными регулируется его правилами. Подробнее — <a href="privacy.html">«Данные и конфиденциальность»</a>. Это описание демоверсии; полная политика с реквизитами оператора будет опубликована после их подтверждения.</p></div></section>
+<section id="privacy"><div class="wrap"><h2>Данные в демоверсии</h2><p>Черновик существует в памяти вкладки; копирование и скачивание сохраняют текст у вас. В коде сайта нет серверного приёма черновиков, аналитики и рекламных cookies.{{MESSENGER_DRAFT}}</p><p>Сайт размещён на SpaceWeb. При загрузке страниц и файлов хостинг получает IP-адрес и технические параметры запроса. При проверке 23 ноября 2026 года в панели были отключены журналы посещений, ошибок и AWStats; служебные журналы провайдера этим не исключаются. Их сроки хранения и условия обработки отдельно не подтверждены.</p><p>{{MESSENGER_SUMMARY}}Подробнее — <a href="privacy.html">«Данные и конфиденциальность»</a>. Это описание демоверсии; полная политика с реквизитами оператора будет опубликована после их подтверждения.</p></div></section>
 
 <div class="mbar"><a class="btn ghost sm" href="#calculator">Собрать проект</a><a class="btn sm" href="tel:+74991306616" aria-label="Позвонить по номеру +7 (499) 130-66-16">Позвонить</a></div>
 
-<script src="site.js?v=abbed8e5b764922b2ca7a92991475228948e263307e57004c01377368f08d61d" type="module"></script>
+<script src="site.js" type="module"></script>
 </body>
 </html>

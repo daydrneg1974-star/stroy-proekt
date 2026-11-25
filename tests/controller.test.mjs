@@ -2,14 +2,17 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { URL as URLParser } from 'node:url';
+import { renderContacts } from '../scripts/contacts.mjs';
 
-const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const sourceHtml = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const actualContacts = JSON.parse(await readFile(new URL('../contacts.json', import.meta.url), 'utf8'));
 let loadNumber = 0;
 
 // This is a controller fixture, not a browser or a layout/accessibility test.
 // Nodes and initial form values come from the page; native events are supplied
 // explicitly so unavailable platform APIs can be tested without a dependency.
-async function page(t, { clipboard, exportError = false } = {}) {
+async function page(t, { clipboard, exportError = false, contacts = actualContacts } = {}) {
+  const html = renderContacts(sourceHtml, contacts);
   const eventHub = () => {
     const handlers = new Map();
     return {
@@ -31,6 +34,8 @@ async function page(t, { clipboard, exportError = false } = {}) {
     return {
       ...eventHub(), tag, attrs, offset, textContent: '', value: attrs.value || '',
       checked: 'checked' in attrs, disabled: 'disabled' in attrs, hidden: 'hidden' in attrs,
+      get href() { return this.attrs.href; },
+      set href(value) { this.attrs.href = value; },
       dataset: Object.fromEntries(Object.entries(attrs).filter(([key]) => key.startsWith('data-'))
         .map(([key, value]) => [key.slice(5).replace(/-([a-z])/g, (_, letter) => letter.toUpperCase()), value])),
       style: { values: new Map(), setProperty(key, value) { this.values.set(key, value); } },
@@ -233,7 +238,6 @@ test('ссылки чатов неизменны после ввода, пере
   const writes = [];
   const p = await page(t, { clipboard: { async writeText(text) { writes.push(text); } } });
   const destinations = [
-    ['open-telegram', 'https://t.me/+74991306616'],
     ['open-whatsapp', 'https://wa.me/74991306616'],
   ];
   const assertDirectLinks = () => {
@@ -283,7 +287,7 @@ test('длинная заявка остаётся целой: подсказк�
   const draft = 'Пожелания: ёлка & терраса + баня #1?\n'.repeat(200);
   await p.write(draft);
   assert.equal(p.byId('draft').value, draft);
-  assert.equal(p.byId('open-telegram').href, 'https://t.me/+74991306616');
+  assert.equal(p.byId('open-telegram'), undefined);
   assert.equal(p.byId('open-whatsapp').href, 'https://wa.me/74991306616');
   await p.byId('copy-draft').fire('click');
   assert.deepEqual(writes, [draft]);
@@ -297,6 +301,6 @@ test('длинная заявка остаётся целой: подсказк�
   assert.match(p.byId('draft-status').textContent, /скопируйте его вручную/);
   await p.write('Короткая заявка после длинной');
   assert.equal(p.byId('open-whatsapp').href, 'https://wa.me/74991306616');
-  assert.equal(p.byId('open-telegram').href, 'https://t.me/+74991306616');
+  assert.equal(p.byId('open-telegram'), undefined);
   t.diagnostic(JSON.stringify({ fullDraftLength: draft.length, copiedLength: writes[0].length, manualSelectionEnd: draft.length, shortenedDraftUsesDirectChat: true }));
 });

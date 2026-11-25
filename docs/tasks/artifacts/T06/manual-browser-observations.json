@@ -1,0 +1,99 @@
+{
+  "qaDesktop": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"contacts\":\"Обсудим ваш проект\\n\\nПодготовьте состав работ и пожелания. Скопируйте текст, откройте WhatsApp, вставьте и отправьте сообщение. Или позвоните, чтобы обсудить проект и выезд инженера.\\n\\nИсполнитель\\nСтройИнжиниринг\\nТелефон\\n+7 (499) 130-66-16\\nТерритория\\nМосква и Московская область\\n\\nПоле — для состава работ и общих пожеланий. Не указывайте ФИО, телефон, точный адрес, данные документов и другие персональные сведения.\\n\\nЧерновик заявки\\n\\nЧерновик остаётся в памяти вкладки. Перед закрытием страницы скопируйте его или скачайте TXT. О технических данных при загрузке сайта — на странице «Данные и конфиденциальность».\\n\\nСкопируйте текст целиком — кнопкой ниже или вручную.\\nОткройте WhatsApp.\\nВставьте текст в чат, проверьте его и нажмите «Отправить».\\nСкопировать текст\\nСкачать TXT\\n\\nПолучатель: СтройИнжиниринг.\\n\\nОткрыть WhatsApp\\n\\nСсылки открывают чат без текста. Если чат не открывается, позвоните. Переход в чат не подтверждает отправку или доставку сообщения.\",\"links\":[{\"href\":\"tel:+74991306616\",\"rel\":\"\",\"target\":\"\",\"text\":\"+7 (499) 130-66-16\"},{\"href\":\"privacy.html\",\"rel\":\"noopener noreferrer\",\"target\":\"_blank\",\"text\":\"«Данные и конфиденциальность»\"},{\"href\":\"https://wa.me/74991306616\",\"rel\":\"noopener noreferrer\",\"target\":\"_blank\",\"text\":\"Открыть WhatsApp\"}],\"referrer\":\"no-referrer\",\"script\":\"site.js?v=79a85e7ead3591412ff5e547a4dbb55479c1dad7083559fe143ebb393e42d2bb\",\"scrollWidth\":1425,\"url\":\"https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/index.html#contact\",\"width\":1440}"
+      }
+    ],
+    "isError": false
+  },
+  "qaViewport": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"badLinks\":[],\"contact\":{\"bottom\":10218.25,\"height\":2184.25,\"left\":0,\"right\":304.8000183105469,\"top\":8034,\"width\":304.8000183105469,\"x\":0,\"y\":8034},\"phone\":{\"bottom\":8555.500587463379,\"height\":58.900001525878906,\"left\":18,\"right\":286.8000183105469,\"top\":8496.6005859375,\"width\":268.8000183105469,\"x\":18,\"y\":8496.6005859375},\"scrollWidth\":305,\"wa\":{\"bottom\":9955.8505859375,\"height\":56,\"left\":40,\"right\":264.8000030517578,\"top\":9899.8505859375,\"width\":224.8000030517578,\"x\":40,\"y\":9899.8505859375},\"width\":320}"
+      }
+    ],
+    "isError": false
+  },
+  "qaMobileStep": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"contactTop\":4670.02490234375,\"phone\":{\"bottom\":5191.525001525879,\"height\":58.900001525878906,\"left\":18,\"right\":286.8000183105469,\"top\":5132.625,\"width\":268.8000183105469,\"x\":18,\"y\":5132.625},\"scrollWidth\":305,\"width\":320}"
+      }
+    ],
+    "isError": false
+  },
+  "qaDraftFirst": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"length\":235,\"scrollWidth\":305,\"status\":\"Добавлено в конец черновика. Ваш текст сохранён.\",\"summary\":\"Состав проекта\\nПлощадь дома: 400 м²\\nКомплектация: Коробка: фундамент, стены, кровля\\nМатериал стен: Керамоблок 38\\nДополнительно: Декоративный пруд\\nСтоимость и сроки не рассчитаны.\",\"value\":\"  Проверка T06: сохранить яблоню. ё 🏡\\nВторая строка.  \\n\\nСостав проекта\\nПлощадь дома: 400 м²\\nКомплектация: Коробка: фундамент, стены, кровля\\nМатериал стен: Керамоблок 38\\nДополнительно: Декоративный пруд\\nСтоимость и сроки не рассчитаны.\",\"width\":320}"
+      }
+    ],
+    "isError": false
+  },
+  "qaClipboard": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"expected\":\"  Проверка T06: сохранить яблоню. ё 🏡\\nВторая строка.  \\n\\nСостав проекта\\nПлощадь дома: 400 м²\\nКомплектация: Коробка: фундамент, стены, кровля\\nМатериал стен: Керамоблок 38\\nДополнительно: Декоративный пруд\\nСтоимость и сроки не рассчитаны.\\n\\nИдея: Озеленение и полив участка\",\"copied\":\"  Проверка T06: сохранить яблоню. ё 🏡\\nВторая строка.  \\n\\nСостав проекта\\nПлощадь дома: 400 м²\\nКомплектация: Коробка: фундамент, стены, кровля\\nМатериал стен: Керамоблок 38\\nДополнительно: Декоративный пруд\\nСтоимость и сроки не рассчитаны.\\n\\nИдея: Озеленение и полив участка\",\"expectedLength\":269,\"copiedLength\":269,\"exact\":true,\"blocks\":1}"
+      },
+      {
+        "type": "text",
+        "text": "{\"links\":[\"tel:+74991306616\",\"https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/privacy.html\",\"https://wa.me/74991306616\"],\"scrollWidth\":305,\"wa\":{\"bottom\":677.2750244140625,\"height\":56,\"left\":40,\"right\":264.8000030517578,\"top\":621.2750244140625,\"width\":224.8000030517578,\"x\":40,\"y\":621.2750244140625},\"width\":320}"
+      }
+    ],
+    "isError": false
+  },
+  "qaDownload": {
+    "content": [
+      {
+        "type": "text",
+        "text": "tool call error: tool call failed for `codex_apps/browser.js`\n\nCaused by:\n    Mcp error: -32603: MCP request timed out"
+      }
+    ],
+    "isError": true
+  },
+  "qaEmptyPrivacyNavigation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Черновик скопирован."
+      },
+      {
+        "type": "text",
+        "text": "{\"copyEnabled\":false,\"downloadEnabled\":false}"
+      },
+      {
+        "type": "text",
+        "text": "Error: Browser Use encountered an error interacting with this webpage: Error: strict mode violation: getByRole('link', { name: '«Данные и конфиденциальность»', exact: true }) resolved to 2 elements:\n    1) <a target=\"_blank\" href=\"privacy.html\" rel=\"noopener noreferrer\">«Данные и конфиденциальность»</a> aka locator('#draft-privacy').getByRole('link', { name: '«Данные и конфиденциальность»' })\n    2) <a href=\"privacy.html\">«Данные и конфиденциальность»</a> aka locator('#privacy').getByRole('link', { name: '«Данные и конфиденциальность»' })\n\nwaiting on click for selector internal:role=link[name=\"«Данные и конфиденциальность»\"s]\nLocator diagnostics: {\"kind\":\"multiple_matches\",\"action\":\"click\",\"locator\":\"internal:role=link[name=\\\"«Данные и конфиденциальность»\\\"s]\",\"matchCount\":2,\"matches\":[{\"ariaLabel\":null,\"disabled\":false,\"role\":null,\"tag\":\"a\",\"text\":\"«Данные и конфиденциальность»\",\"type\":null,\"visible\":true},{\"ariaLabel\":null,\"disabled\":false,\"role\":null,\"tag\":\"a\",\"text\":\"«Данные и конфиденциальность»\",\"type\":null,\"visible\":true}],\"visibleCount\":2,\"truncated\":false}"
+      }
+    ],
+    "isError": true
+  },
+  "qaPrivacyDownload": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"links\":[\"https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/privacy.html#content\",\"https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/index.html\",\"tel:+74991306616\",\"https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/index.html#contact\",\"https://www.whatsapp.com/legal/privacy-policy\",\"tel:+74991306616\",\"https://vh404-fm.sweb.ru/files/stroyinzh-dom_ru/next_public_html_20261126/index.html#privacy\",\"tel:+74991306616\"],\"noindex\":\"noindex,nofollow\",\"notice\":\"Это техническое описание текущей демоверсии. Полная политика обработки персональных данных с реквизитами оператора будет опубликована после их подтверждения.\\n\\nОписание технических функций не подтверждает полное соответствие требованиям законодательства.\",\"phone\":\"tel:+74991306616\",\"scrollWidth\":305,\"title\":\"Данные и конфиденциальность\",\"width\":320}"
+      },
+      {
+        "type": "text",
+        "text": ""
+      }
+    ],
+    "isError": false
+  },
+  "qaCleanup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"copyEnabled\":false,\"downloadEnabled\":false,\"errors\":[]}"
+      }
+    ],
+    "isError": false
+  }
+}

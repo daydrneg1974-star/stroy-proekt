@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { appendDraft, copyDraft, createMessengerLinks, createProject, createTextExport, describeProject, EXTRAS, KITS, WALLS } from '../project.js';
+import { appendDraft, copyDraft, createProject, createTextExport, describeProject, EXTRAS, KITS, WALLS } from '../project.js';
 
 test('полный диапазон площади, все комплектации, материалы и опции дают актуальный состав', () => {
   for (let area = 60; area <= 400; area += 5) {
@@ -73,30 +73,6 @@ test('копирование передаёт точный текст и соо�
   await assert.rejects(copyDraft(content, undefined), /недоступно/);
   await assert.rejects(copyDraft(content, { writeText: async () => { throw new Error('denied'); } }), /denied/);
   await assert.rejects(copyDraft('', { writeText: async () => {} }), /пуст/);
-});
-
-test('любой состав и пользовательский текст оставляют только фиксированные адреса чатов без query и hash', () => {
-  const manual = '  Тестовый пользователь; +7 999 000-00-00; условный адрес\nПожелания: ёлка & терраса + баня #1?\n&phone=79999999999&text=чужой текст\n😀\n';
-  const drafts = ['', ' \n\t ', manual, 'Пожелания\n'.repeat(2000), '\ud800', 'https://example.invalid/?text=данные#фрагмент'];
-  for (const kit of Object.keys(KITS)) {
-    const composition = describeProject(createProject({ area: 400, kit, wall: 'ceramic', extras: Object.keys(EXTRAS) }));
-    drafts.push(appendDraft(manual, composition).text);
-  }
-  for (const draft of drafts) {
-    const links = createMessengerLinks(draft);
-    assert.deepEqual(links, { telegram: 'https://t.me/+74991306616', whatsapp: 'https://wa.me/74991306616' });
-    for (const [service, origin, path] of [
-      ['telegram', 'https://t.me', '/+74991306616'],
-      ['whatsapp', 'https://wa.me', '/74991306616'],
-    ]) {
-      const url = new URL(links[service]);
-      assert.equal(url.origin, origin);
-      assert.equal(url.pathname, path);
-      assert.equal(url.hash, '');
-      assert.equal(url.search, '');
-      assert.deepEqual([...url.searchParams.keys()], []);
-    }
-  }
 });
 
 test('без переноса через URL копирование и TXT сохраняют полный текст независимо от длины и символов', async () => {

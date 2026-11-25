@@ -76,11 +76,3 @@ export async function copyDraft(draft, clipboard) {
   if (!clipboard?.writeText) throw new Error('Копирование недоступно.');
   await clipboard.writeText(String(draft));
 }
-
-// Черновик не включается в URL. Посетитель копирует и вставляет текст сам.
-export function createMessengerLinks() {
-  return {
-    telegram: 'https://t.me/+74991306616',
-    whatsapp: 'https://wa.me/74991306616',
-  };
-}

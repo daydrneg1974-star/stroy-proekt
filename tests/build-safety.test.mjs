@@ -21,7 +21,10 @@ async function fixture(t) {
     await mkdir(dirname(join(root, name)), { recursive: true });
     await writeFile(join(root, name), `original public source: ${name}`);
   }
-  for (const name of ['build.mjs', 'public-files.mjs']) {
+  await writeFile(join(root, 'index.html'), '<script src="site.js" type="module"></script>');
+  await writeFile(join(root, 'site.js'), "import {} from './project.js';\n");
+  await writeFile(join(root, 'contacts.json'), '{"whatsapp":null,"telegram":null}');
+  for (const name of ['build.mjs', 'public-files.mjs', 'contacts.mjs']) {
     await copyFile(new URL(`../scripts/${name}`, import.meta.url), join(root, 'scripts', name));
   }
   const { build } = await import(pathToFileURL(join(root, 'scripts/build.mjs')));
@@ -43,13 +46,14 @@ for (const destination of ['parent', 'assets', 'index.html']) {
     assert.equal(sourcePresent, true, 'source HTML must survive a rejected build');
     assert.equal(assetPresent, true, 'source assets must survive a rejected build');
     assert.equal(neighbourPresent, true, 'neighbouring files must survive a rejected build');
-    assert.equal(await readFile(join(root, 'index.html'), 'utf8'), 'original public source: index.html');
+    assert.equal(await readFile(join(root, 'index.html'), 'utf8'), '<script src="site.js" type="module"></script>');
   });
 }
 
 test('обычная повторная сборка очищает dist от посторонних файлов и сохраняет исходники', async t => {
   const { root, sentinel, build } = await fixture(t);
-  const output = await build();
+  const release = await build();
+  const output = join(release, 'public_html');
   await writeFile(join(output, '__qa.html'), 'temporary private test harness');
   await writeFile(join(output, '.env'), 'not a public resource');
   await build();
@@ -57,7 +61,7 @@ test('обычная повторная сборка очищает dist от п
     .filter(entry => entry.isFile())
     .map(entry => join(entry.parentPath, entry.name).slice(output.length + 1)).sort();
   assert.deepEqual(actual, [...PUBLIC_FILES].sort());
-  assert.equal(await readFile(join(root, 'index.html'), 'utf8'), 'original public source: index.html');
+  assert.equal(await readFile(join(root, 'index.html'), 'utf8'), '<script src="site.js" type="module"></script>');
   assert.equal(await readFile(sentinel, 'utf8'), 'unrelated neighbouring file');
   t.diagnostic(JSON.stringify({ count: actual.length, hasQAPage: actual.includes('__qa.html'), hasEnv: actual.includes('.env'), sourcePreserved: true, neighbourPreserved: true }));
 });

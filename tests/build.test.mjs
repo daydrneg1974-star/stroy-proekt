@@ -6,13 +6,19 @@ import { tmpdir } from 'node:os';
 import { join, parse } from 'node:path';
 import { build, ROOT, validateBuildDestination } from '../scripts/build.mjs';
 import { PUBLIC_FILES } from '../scripts/public-files.mjs';
+import { renderContacts } from '../scripts/contacts.mjs';
+
+const contacts = JSON.parse(await readFile(join(ROOT, 'contacts.json'), 'utf8'));
+const readPage = async name => renderContacts(await readFile(join(ROOT, name), 'utf8'), contacts);
 
 test('сборка воспроизводима в новых и пустых каталогах, публикуется только allowlist', async () => {
   const temporary = await mkdtemp(join(tmpdir(), 'stroyengineering-build-'));
   try {
-    const first = await build(join(temporary, 'one'));
+    const firstRelease = await build(join(temporary, 'one'));
+    const first = join(firstRelease, 'public_html');
     await mkdir(join(temporary, 'two'));
-    const second = await build(join(temporary, 'two'));
+    const secondRelease = await build(join(temporary, 'two'));
+    const second = join(secondRelease, 'public_html');
     const actual = (await readdir(first, { recursive: true, withFileTypes: true }))
       .filter(entry => entry.isFile())
       .map(entry => join(entry.parentPath, entry.name).slice(first.length + 1));
@@ -21,6 +27,8 @@ test('сборка воспроизводима в новых и пустых к
       const hash = async directory => createHash('sha256').update(await readFile(join(directory, name))).digest('hex');
       assert.equal(await hash(first), await hash(second), name);
     }
+    assert.equal(await readFile(join(firstRelease, 'release-manifest.json'), 'utf8'), await readFile(join(secondRelease, 'release-manifest.json'), 'utf8'));
+    assert.deepEqual((await readdir(firstRelease)).sort(), ['public_html', 'release-manifest.json']);
     assert.ok(!actual.some(name => /(?:php|\.env|app\.js|style\.css|README|docs\/)/.test(name)));
   } finally {
     await rm(temporary, { recursive: true, force: true });
@@ -52,22 +60,20 @@ test('внешний непустой каталог и симлинк откл�
 });
 
 test('каждая локальная ссылка, картинка, srcset и импорт имеют цель, лишних публичных файлов нет', async () => {
-  const used = new Set(['index.html']);
+  const used = new Set(['index.html', '.htaccess', 'robots.txt']);
   for (const page of PUBLIC_FILES.filter(name => name.endsWith('.html'))) {
-    const html = await readFile(join(ROOT, page), 'utf8');
+    const html = await readPage(page);
     const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
     assert.equal(new Set(ids).size, ids.length, `id должны быть уникальны: ${page}`);
     for (const [, reference] of html.matchAll(/\b(?:href|src|poster)="([^"]+)"/g)) {
       if (reference.startsWith('#')) assert.ok(ids.includes(reference.slice(1)), reference);
       else if (/^https?:/.test(reference)) {
         assert.ok([
-          'https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/',
-          'https://stroyengineering-demo-rifkat.daydrneg1974.chatgpt.site/privacy.html',
-          'https://t.me/+74991306616',
+          'https://stroyinzh-dom.ru/',
+          'https://stroyinzh-dom.ru/privacy.html',
           'https://wa.me/74991306616',
           'https://telegram.org/privacy',
           'https://www.whatsapp.com/legal/privacy-policy',
-          'https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/',
         ].includes(reference), reference);
       }
       else if (reference.startsWith('tel:')) {
@@ -78,7 +84,7 @@ test('каждая локальная ссылка, картинка, srcset и 
         assert.ok(PUBLIC_FILES.includes(path), reference);
         used.add(path);
         if (reference.includes('#')) {
-          const target = await readFile(join(ROOT, path), 'utf8');
+          const target = await readPage(path);
           assert.ok(target.includes(`id="${reference.split('#')[1]}"`), reference);
         }
       }
@@ -106,7 +112,7 @@ test('каждая локальная ссылка, картинка, srcset и 
 });
 
 test('демо не собирает контакты, не отправляет данные через API и не создаёт скрытое хранилище', async () => {
-  const html = await readFile(join(ROOT, 'index.html'), 'utf8');
+  const html = await readPage('index.html');
   const script = await readFile(join(ROOT, 'site.js'), 'utf8');
   const model = await readFile(join(ROOT, 'project.js'), 'utf8');
   assert.doesNotMatch(html, /<form\b|type="(?:email|tel)"|autocomplete="(?:name|tel|email)"/);
@@ -126,10 +132,9 @@ test('демо не собирает контакты, не отправляет
   assert.ok(html.indexOf('Демоверсия ·') < html.indexOf('<input'));
 });
 
-test('без JavaScript доступны прямые чаты и ручное копирование; ссылки безопасно открываются отдельно', async () => {
-  const html = await readFile(join(ROOT, 'index.html'), 'utf8');
+test('без JavaScript доступны подтверждённый WhatsApp и ручное копирование; ссылка безопасно открывается отдельно', async () => {
+  const html = await readPage('index.html');
   for (const [id, href] of [
-    ['open-telegram', 'https://t.me/+74991306616'],
     ['open-whatsapp', 'https://wa.me/74991306616'],
   ]) {
     const anchor = html.match(new RegExp(`<a\\b[^>]*id="${id}"[^>]*>`))?.[0];
@@ -137,7 +142,7 @@ test('без JavaScript доступны прямые чаты и ручное �
     assert.ok(anchor.includes(`href="${href}"`));
     assert.match(anchor, /target="_blank"/);
     assert.match(anchor, /rel="noopener noreferrer"/);
-    assert.match(anchor, /aria-describedby="messenger-help"/);
+    assert.match(anchor, /aria-describedby="messenger-help messenger-recipient"/);
     assert.doesNotMatch(anchor, /\bhidden\b|data-js-only|download=/);
   }
   const noScript = [...html.matchAll(/<noscript>([\s\S]*?)<\/noscript>/g)].map(match => match[1]).join('\n');
@@ -145,15 +150,19 @@ test('без JavaScript доступны прямые чаты и ручное �
   assert.match(noScript, /скопируйте его вручную/);
   const steps = html.match(/<ol\b[^>]*id="messenger-help"[^>]*>([\s\S]*?)<\/ol>/)?.[1];
   assert.ok(steps);
-  assert.match(steps, /Скопируйте текст целиком[\s\S]*Откройте Telegram или WhatsApp[\s\S]*Вставьте текст[\s\S]*«Отправить»/);
+  assert.match(steps, /Скопируйте текст целиком[\s\S]*Откройте WhatsApp[\s\S]*Вставьте текст[\s\S]*«Отправить»/);
   assert.equal([...steps.matchAll(/<li>/g)].length, 3);
-  assert.ok(html.indexOf('id="copy-draft"') < html.indexOf('id="open-telegram"'), 'Копирование показано перед открытием чата');
+  assert.ok(html.indexOf('id="copy-draft"') < html.indexOf('id="open-whatsapp"'), 'Копирование показано перед открытием чата');
+  assert.match(html, /<dt>Исполнитель<\/dt><dd>СтройИнжиниринг<\/dd>/);
+  assert.match(html, /Получатель: СтройИнжиниринг\./);
+  assert.doesNotMatch(html, /Telegram|аккаунт.*не подтвержд|ожида.*владельц/);
+  assert.doesNotMatch(html, /mailto:|type="email"/);
   assert.doesNotMatch(html, /MAX|Заявка отправлена|Онлайн-отправка заявок пока не подключена|без расчёта цены и отправки заявок/);
 });
 
 test('информация о данных доступна без JS из контактов и подвала, публичная страница не обещает юридическую готовность', async () => {
-  const html = await readFile(join(ROOT, 'index.html'), 'utf8');
-  const privacy = await readFile(join(ROOT, 'privacy.html'), 'utf8');
+  const html = await readPage('index.html');
+  const privacy = await readPage('privacy.html');
   const contact = html.match(/<section id="contact"[\s\S]*?<\/section>/)?.[0];
   const footer = html.slice(html.indexOf('</main>')).match(/<footer>[\s\S]*?<\/footer>/)?.[0];
   for (const section of [contact, footer]) {
@@ -170,7 +179,9 @@ test('информация о данных доступна без JS из ко�
   assert.doesNotMatch(privacy, /<script\b|<form\b|<iframe\b|data-js-only|\bhidden\b/);
   assert.match(privacy, /памяти открытой вкладки/);
   assert.match(privacy, /IP-адрес/);
-  assert.match(privacy, /__cf_bm/);
+  assert.match(privacy, /SpaceWeb/);
+  assert.match(privacy, /При проверке 23 ноября 2026 года[\s\S]*были отключены журналы посещений, ошибок и AWStats/);
+  assert.doesNotMatch(html + privacy, /__cf_bm|Cloudflare|chatgpt\.site/);
   assert.match(privacy, /реквизитами оператора будет опубликована после их подтверждения/);
   assert.match(privacy, /не подтверждает полное соответствие/);
   assert.match(privacy, /Сроки хранения технических данных[\s\S]*отдельно не подтверждены/);

@@ -1,6 +1,8 @@
 // Единственный разрешённый список файлов публикации. Документы, исходные
 // инструменты, тесты и серверные заглушки не копируются в публичную сборку.
 export const PUBLIC_FILES = Object.freeze([
+  '.htaccess',
+  'robots.txt',
   'index.html',
   'privacy.html',
   'site.js',

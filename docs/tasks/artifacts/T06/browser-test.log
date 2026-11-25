@@ -1,0 +1,66 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 e2e
+> node --test e2e/contact-release.browser.mjs
+
+✖ контакты, privacy и макет доступны при JS/no-JS и 320–1440 px (196.103713ms)
+✖ длинные заметки + состав → настоящий Clipboard/TXT → прямой чат без текста и отправки (0.936692ms)
+✖ пустой ввод, отказ Clipboard и недоступный TXT сохраняют ручной запасной путь (0.165589ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 805.636556
+
+✖ failing tests:
+
+test at e2e/contact-release.browser.mjs:112:1
+✖ контакты, privacy и макет доступны при JS/no-JS и 320–1440 px (196.103713ms)
+  browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+  ╔════════════════════════════════════════════════════════════╗
+  ║ Looks like Playwright was just installed or updated.       ║
+  ║ Please run the following command to download new browsers: ║
+  ║                                                            ║
+  ║     npx playwright install                                 ║
+  ║                                                            ║
+  ║ <3 Playwright Team                                         ║
+  ╚════════════════════════════════════════════════════════════╝
+      at TestContext.<anonymous> (/workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/contact-release.browser.mjs:54:28) {
+    name: 'Error',
+    log: []
+  }
+
+test at e2e/contact-release.browser.mjs:159:1
+✖ длинные заметки + состав → настоящий Clipboard/TXT → прямой чат без текста и отправки (0.936692ms)
+  browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+  ╔════════════════════════════════════════════════════════════╗
+  ║ Looks like Playwright was just installed or updated.       ║
+  ║ Please run the following command to download new browsers: ║
+  ║                                                            ║
+  ║     npx playwright install                                 ║
+  ║                                                            ║
+  ║ <3 Playwright Team                                         ║
+  ╚════════════════════════════════════════════════════════════╝
+      at TestContext.<anonymous> (/workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/contact-release.browser.mjs:54:28) {
+    name: 'Error',
+    log: []
+  }
+
+test at e2e/contact-release.browser.mjs:227:1
+✖ пустой ввод, отказ Clipboard и недоступный TXT сохраняют ручной запасной путь (0.165589ms)
+  browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+  ╔════════════════════════════════════════════════════════════╗
+  ║ Looks like Playwright was just installed or updated.       ║
+  ║ Please run the following command to download new browsers: ║
+  ║                                                            ║
+  ║     npx playwright install                                 ║
+  ║                                                            ║
+  ║ <3 Playwright Team                                         ║
+  ╚════════════════════════════════════════════════════════════╝
+      at TestContext.<anonymous> (/workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/contact-release.browser.mjs:54:28) {
+    name: 'Error',
+    log: []
+  }

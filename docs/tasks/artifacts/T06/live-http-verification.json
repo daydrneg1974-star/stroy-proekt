@@ -1,0 +1,346 @@
+{
+  "manifestSha256": "32e9979fafa410a12ab31ee859df7e9c0c846161ecdd0ed9342d95a552a9bfb9",
+  "files": [
+    {
+      "file": "robots.txt",
+      "status": 200,
+      "size": 25,
+      "sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "size": 48002,
+      "sha256": "494165b44cc736d4feeeb54e0821b4b5dd772f5adac8f430852650194f988764",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "size": 9488,
+      "sha256": "0feab87ca7fef7301acb221f3b7f396a67ff21c93c7c7ca62192b51e6aeeb5b3",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "site.js",
+      "status": 200,
+      "size": 5650,
+      "sha256": "79a85e7ead3591412ff5e547a4dbb55479c1dad7083559fe143ebb393e42d2bb",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "project.js",
+      "status": 200,
+      "size": 3153,
+      "sha256": "39a60082d0fb328b5f1a28cc563fa64662d9d0fb9539e6f7c07a2a2a21a9eac0",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/favicon.svg",
+      "status": 200,
+      "size": 201,
+      "sha256": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-1.webp",
+      "status": 200,
+      "size": 237828,
+      "sha256": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-1-480.webp",
+      "status": 200,
+      "size": 20976,
+      "sha256": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-1-960.webp",
+      "status": 200,
+      "size": 71126,
+      "sha256": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-2.webp",
+      "status": 200,
+      "size": 302628,
+      "sha256": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-2-480.webp",
+      "status": 200,
+      "size": 31920,
+      "sha256": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-2-960.webp",
+      "status": 200,
+      "size": 102668,
+      "sha256": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-3.webp",
+      "status": 200,
+      "size": 360626,
+      "sha256": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f",
+      "matches": true,
+      "retryOf": "Initial HTTP 503"
+    },
+    {
+      "file": "assets/image-3-480.webp",
+      "status": 200,
+      "size": 33556,
+      "sha256": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-3-960.webp",
+      "status": 200,
+      "size": 111814,
+      "sha256": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-4.webp",
+      "status": 200,
+      "size": 258086,
+      "sha256": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-4-480.webp",
+      "status": 200,
+      "size": 33428,
+      "sha256": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/image-4-960.webp",
+      "status": 200,
+      "size": 94730,
+      "sha256": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/dzit-playground.webp",
+      "status": 200,
+      "size": 65440,
+      "sha256": "f8cf34210bc62374b490db0b5d5a2296d2b2eef00fbb4f4bb8d14814535aca94",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/dzit-playground-360.webp",
+      "status": 200,
+      "size": 19752,
+      "sha256": "8d0d1465fc9f5f8a4f29f2d7fe314fc79567af3fafe154a6aa1ffd14dee6391f",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/dzit-sport.webp",
+      "status": 200,
+      "size": 129546,
+      "sha256": "419c910f6eb9ca0056009ad2755048376d1f6b34ac35175d88324afbbc0117cc",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/dzit-sport-360.webp",
+      "status": 200,
+      "size": 18868,
+      "sha256": "91a68d3a4776d2156756441216da72ed463a35d9e3668bea8c5d3e7e0062d0dd",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/dzit-colours.webp",
+      "status": 200,
+      "size": 124338,
+      "sha256": "07970f531f04c259e1fbef30b3f3f367352cf427495338dfcb357497bfc8ac4b",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/dzit-colours-360.webp",
+      "status": 200,
+      "size": 38596,
+      "sha256": "be96e907620767ec65c06bd3ce0f860c879a0ab21eb54902fe58379ba63c610d",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    },
+    {
+      "file": "assets/promo.mp4",
+      "status": 200,
+      "size": 4248551,
+      "sha256": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a",
+      "matches": true,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Robots-Tag": "noindex, nofollow, noarchive"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "path": "/.htaccess",
+      "status": 403
+    },
+    {
+      "path": "/.git/config",
+      "status": 403
+    },
+    {
+      "path": "/README.md",
+      "status": 404
+    },
+    {
+      "path": "/release-manifest.json",
+      "status": 404
+    },
+    {
+      "path": "/assets/",
+      "status": 403
+    },
+    {
+      "path": "/public_html_before_contacts_20261126.zip",
+      "status": 403
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "final_url": "https://stroyinzh-dom.ru/privacy.html"
+    },
+    {
+      "path": "/privacy/",
+      "status": 200,
+      "final_url": "https://stroyinzh-dom.ru/privacy.html"
+    },
+    {
+      "path": "http-root",
+      "status": 200,
+      "final_url": "https://stroyinzh-dom.ru/"
+    }
+  ],
+  "initialTransientFailure": {
+    "file": "assets/image-3.webp",
+    "status": 503
+  }
+}
