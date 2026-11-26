@@ -1,0 +1,58 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 e2e:php
+> node --test e2e/request-form.browser.mjs
+
+✔ публичная форма остаётся выключенной с JS и без JS (1596.460662ms)
+✔ JS: ошибки сервера сохраняют текст и переводят фокус к полю (891.984605ms)
+✖ JS: ошибка в закрытом составе видна и получает фокус (2485.466856ms)
+✔ JS: повтор submit во время ожидания вызывает подставной транспорт один раз (663.206203ms)
+✖ без JS: POST → 303 → GET, исправление и reload без повторной отправки (30118.571028ms)
+✔ ошибка транспорта и ручной повтор сохраняют текст без повторного вызова (2140.42013ms)
+✔ потеря ответа после приёма: таймаут 15 секунд сохраняет текст без автоматического повтора (15640.250451ms)
+✔ шестая попытка за час: настоящий PHP 429 сохраняет текст (3246.190874ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 6
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 56993.558411
+
+✖ failing tests:
+
+test at e2e/request-form.browser.mjs:198:1
+✖ JS: ошибка в закрытом составе видна и получает фокус (2485.466856ms)
+  AssertionError [ERR_ASSERTION]: optional field error must be visible
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/request-form.browser.mjs:206:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at e2e/request-form.browser.mjs:241:1
+✖ без JS: POST → 303 → GET, исправление и reload без повторной отправки (30118.571028ms)
+  locator.click: Timeout 30000ms exceeded.
+  Call log:
+  [2m  - waiting for locator('.request-options summary')[22m
+  [2m    - locator resolved to <summary>Уточнить состав дома</summary>[22m
+  [2m  - attempting click action[22m
+  [2m    2 × waiting for element to be visible, enabled and stable[22m
+  [2m      - element is not stable[22m
+  [2m    - retrying click action[22m
+  [2m    - waiting 20ms[22m
+  
+      at fill (/workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/request-form.browser.mjs:134:52)
+      at async TestContext.<anonymous> (/workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/request-form.browser.mjs:244:28) {
+    name: 'TimeoutError',
+    log: [ "  - waiting for locator('.request-options summary')", '    - locator resolved to <summary>Уточнить состав дома</summary>', '  - attempting click action', '    2 × waiting for element to be visible, enabled and stable', '      - element is not stable', '    - retrying click action', '    - waiting 20ms' ]
+  }

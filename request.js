@@ -26,7 +26,11 @@ if (form && form.dataset.enabled === 'true') {
         const field = form.elements.namedItem(name);
         const error = document.getElementById(`error-${name}`);
         if (field instanceof HTMLElement) field.setAttribute('aria-invalid', 'true');
-        if (error && typeof message === 'string') error.textContent = message;
+        if (error && typeof message === 'string') {
+          error.textContent = message;
+          const details = error.closest('details');
+          if (details) details.open = true;
+        }
       }
       if (response.ok && result.code === 'accepted') {
         form.reset();

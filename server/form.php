@@ -3,6 +3,7 @@ namespace Stroy;
 $e=fn($s)=>htmlspecialchars((string)$s,ENT_QUOTES|ENT_SUBSTITUTE,'UTF-8');
 $val=fn($key)=>is_string($values[$key]??null)?$e($values[$key]):'';
 $errors=$out['errors']??[];
+$optionErrors=array_intersect_key($errors,array_flip(['area','kit','wall','extras']));
 $selectedExtras=is_array($values['extras']??null)?$values['extras']:[];
 $err=function($key) use ($errors,$e) {return isset($errors[$key])?'<span class="field-error" id="error-'.$key.'">'.$e($errors[$key]).'</span>':'<span class="field-error" id="error-'.$key.'"></span>';};
 $invalid=fn($key)=>isset($errors[$key])?' aria-invalid="true"':'';
@@ -18,7 +19,7 @@ $invalid=fn($key)=>isset($errors[$key])?' aria-invalid="true"':'';
 <div class="f"><label for="request-name">Как к вам обращаться</label><input id="request-name" name="name" autocomplete="given-name" maxlength="80" value="<?= $val('name') ?>" aria-describedby="error-name"<?= $invalid('name') ?>><?= $err('name') ?></div>
 <div class="f"><label for="request-phone">Телефон для ответа *</label><input id="request-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="40" value="<?= $val('phone') ?>" aria-describedby="error-phone"<?= $invalid('phone') ?>><?= $err('phone') ?></div>
 <div class="f"><label for="request-message">Состав работ или вопрос *</label><textarea id="request-message" name="message" rows="9" maxlength="6000" required aria-describedby="message-help error-message"<?= $invalid('message') ?>><?= $val('message') ?></textarea><span class="note" id="message-help">Вставьте подготовленный черновик или опишите задачу. Не указывайте данные документов и точный адрес.</span><?= $err('message') ?></div>
-<details class="request-options"><summary>Уточнить состав дома</summary><p>Необязательно. Можно оставить эти поля пустыми и описать задачу выше. Стоимость не рассчитывается.</p>
+<details class="request-options"<?= $optionErrors?' open':'' ?>><summary>Уточнить состав дома</summary><p>Необязательно. Можно оставить эти поля пустыми и описать задачу выше. Стоимость не рассчитывается.</p>
 <div class="f"><label for="request-area">Площадь дома, м²</label><input id="request-area" type="number" name="area" min="60" max="400" step="5" value="<?= $val('area') ?>" aria-describedby="error-area"<?= $invalid('area') ?>><?= $err('area') ?></div>
 <?php foreach (['kit'=>['Комплектация',KITS],'wall'=>['Материал стен',WALLS]] as $key=>[$label,$options]): ?><div class="f"><label for="request-<?= $key ?>"><?= $label ?></label><select id="request-<?= $key ?>" name="<?= $key ?>" aria-describedby="error-<?= $key ?>"<?= $invalid($key) ?>><option value="">Не выбрано</option><?php foreach($options as $keyValue=>$text): ?><option value="<?= $keyValue ?>" <?= ($values[$key]??'')===$keyValue?'selected':'' ?>><?= $e($text) ?></option><?php endforeach; ?></select><?= $err($key) ?></div><?php endforeach; ?>
 <fieldset class="row"><legend>Дополнительные работы</legend><?php foreach(EXTRAS as $key=>$text): ?><label class="opt"><input type="checkbox" name="extras[]" value="<?= $key ?>" <?= in_array($key,$selectedExtras,true)?'checked':'' ?>><span><?= $e($text) ?></span></label><?php endforeach; ?><?= $err('extras') ?></fieldset></details>

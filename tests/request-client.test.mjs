@@ -5,7 +5,7 @@ import {readFile} from 'node:fs/promises';
 const code=await readFile(new URL('../request.js',import.meta.url),'utf8');
 function harness(fetchImpl, enabled=true) {
   class Field { constructor(){this.value='Тестовый черновик ё 🌳';this.attributes={};} setAttribute(k,v){this.attributes[k]=v;} removeAttribute(k){delete this.attributes[k];} focus(){this.focused=true;} }
-  const field=new Field(),status=new Field(),error={textContent:''},button={disabled:false};
+  const field=new Field(),status=new Field(),error={textContent:'',closest:()=>null},button={disabled:false};
   let submit, reset=0, calls=0, abort;
   const form={dataset:{enabled:String(enabled)},action:'http://localhost/request.php',reportValidity:()=>true,elements:{namedItem:()=>field},addEventListener:(type,fn)=>{submit=fn;},reset:()=>{reset++;field.value='';},querySelectorAll:s=>s==='[aria-invalid]'?[field]:[error],querySelector:()=>field.attributes['aria-invalid']?field:null};
   const context={document:{querySelector:s=>({'#request-form':form,'#send-request':button,'#request-status':status}[s]),getElementById:()=>error},HTMLElement:Field,AbortController,URLSearchParams,FormData:class{*[Symbol.iterator](){yield ['message',field.value];}},fetch:(...args)=>{calls++;return fetchImpl(...args);},setTimeout:fn=>{abort=fn;return 1;},clearTimeout:()=>{}};

@@ -1,0 +1,83 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 check:php
+> node scripts/check-php.mjs
+
+No syntax errors detected in request.php
+No syntax errors detected in scripts/dev-router.php
+No syntax errors detected in server/app.php
+No syntax errors detected in server/bootstrap.php
+No syntax errors detected in server/config.example.php
+No syntax errors detected in server/form.php
+No syntax errors detected in server/transport.php
+No syntax errors detected in tests/php/run.php
+PASS valid complete configuration
+PASS invalid configuration smtp_host fails closed
+PASS invalid configuration recipient fails closed
+PASS invalid configuration secret fails closed
+PASS invalid configuration origin fails closed
+PASS invalid configuration storage fails closed
+PASS invalid configuration privacy_ready fails closed
+PASS symlink ancestor cannot expose storage
+PASS valid Unicode accepted by fake transport
+PASS server canonical composition without engineering duplication
+PASS same nonce does not send twice
+PASS same nonce with changed payload conflicts
+PASS validation phone
+PASS validation phone
+PASS validation phone
+PASS validation name
+PASS validation message
+PASS validation message
+PASS validation message
+PASS validation area
+PASS validation area
+PASS validation area
+PASS validation kit
+PASS validation wall
+PASS validation extras
+PASS validation extras
+PASS validation recipient
+PASS validation website
+PASS validation consent
+PASS invalid inputs never call transport
+PASS POST only
+PASS content type
+PASS content type must match exactly
+PASS body limit
+PASS foreign origin rejected
+PASS null origin rejected
+PASS cross site rejected
+PASS csrf mismatch
+PASS expired ticket
+PASS disabled configuration fails closed
+PASS same-origin referrer fallback
+PASS lookalike referer rejected
+PASS same content with new token deduplicated
+PASS per-client rate 1
+PASS per-client rate 2
+PASS per-client rate 3
+PASS per-client rate 4
+PASS per-client rate 5
+PASS ledger stores hashes and states only
+PASS corrupt ledger fails closed
+PASS transport rejection has no false success or diagnostics
+PASS uncertain attempt never automatically retried rejection
+PASS transport timeout has no false success or diagnostics
+PASS uncertain attempt never automatically retried timeout
+PASS expired ledger records cleaned
+PASS parallel worker result
+PASS parallel worker result
+PASS parallel worker result
+PASS parallel worker result
+PASS parallel worker result
+PASS parallel worker result
+PASS parallel worker result
+PASS parallel worker result
+PASS 8 parallel requests produce exactly one transport call
+PASS PHPMailer MIME preparation
+PASS recipient and sender fixed by server
+PASS TLS verification enabled
+PASS error form renders fully and escapes values even with malformed extras
+PASS native POST retains same-origin provenance
+{"passed":69,"realMessages":0,"phpmailer":"7.2.0"}

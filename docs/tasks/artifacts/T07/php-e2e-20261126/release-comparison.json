@@ -1,0 +1,12 @@
+{
+  "beforeHead": "f58a7a43627397c018633eadaa3e2a8161cf7841",
+  "changedFiles": [
+    "private/form.php",
+    "public_html/request.js",
+    "release-manifest.json"
+  ],
+  "publicFiles": 32,
+  "privateFiles": 11,
+  "manifestSha256": "daac9bec671bb6d303149c370e3abcf70663f80fbb87a5913fe300e35653e7ec",
+  "realConfigPresent": false
+}

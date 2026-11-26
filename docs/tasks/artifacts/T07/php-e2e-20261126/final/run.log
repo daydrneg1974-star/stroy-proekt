@@ -1,0 +1,21 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 e2e:php
+> node --test e2e/request-form.browser.mjs
+
+✔ публичная форма остаётся выключенной с JS и без JS (1280.45552ms)
+✔ JS: ошибки сервера сохраняют текст и переводят фокус к полю (895.798553ms)
+✔ JS: ошибка в закрытом составе видна и получает фокус (1302.580734ms)
+✔ JS: повтор submit во время ожидания вызывает подставной транспорт один раз (764.569686ms)
+✔ без JS: POST → 303 → GET, исправление и reload без повторной отправки (748.144774ms)
+✔ ошибка транспорта и ручной повтор сохраняют текст без повторного вызова (2130.500656ms)
+✔ потеря ответа после приёма: таймаут 15 секунд сохраняет текст без автоматического повтора (15637.999337ms)
+✔ шестая попытка за час: настоящий PHP 429 сохраняет текст (3165.097808ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 26126.928378

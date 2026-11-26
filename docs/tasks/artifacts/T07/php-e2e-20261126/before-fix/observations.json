@@ -1,0 +1,68 @@
+{
+  "localOnly": true,
+  "realSmtpCalls": 0,
+  "cases": [
+    {
+      "name": "disabled",
+      "javaScriptEnabled": true,
+      "status": 503,
+      "cookies": 0
+    },
+    {
+      "name": "disabled",
+      "javaScriptEnabled": false,
+      "status": 503,
+      "cookies": 0
+    },
+    {
+      "name": "js-validation",
+      "status": 422,
+      "exactText": true,
+      "fakeCalls": 0,
+      "focus": "request-phone"
+    },
+    {
+      "name": "pending-and-accepted",
+      "posts": 1,
+      "fakeCalls": 1,
+      "reset": true,
+      "receiptNotClaimed": true
+    },
+    {
+      "name": "transport-uncertain",
+      "statuses": [
+        503,
+        409
+      ],
+      "posts": 2,
+      "fakeCalls": 1,
+      "exactText": true
+    },
+    {
+      "name": "lost-response",
+      "serverStatus": 200,
+      "elapsedMs": 15040,
+      "posts": 1,
+      "fakeCalls": 1,
+      "exactText": true,
+      "noAutomaticRetry": true
+    },
+    {
+      "name": "rate-limit",
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        429
+      ],
+      "posts": 6,
+      "fakeCalls": 5,
+      "exactTextOnLimit": true
+    }
+  ],
+  "manifestSha256": "11157bf2095dc9816b4b94483f49e8e46df65fc5be470815234b09d9e938b9c2",
+  "php": "8.4.27",
+  "browser": "156.0.8078.108"
+}

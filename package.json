@@ -10,6 +10,7 @@
     "build": "node scripts/build.mjs",
     "verify:release": "node scripts/verify-release.mjs",
     "e2e": "node --test e2e/contact-release.browser.mjs",
+    "e2e:php": "node --test e2e/request-form.browser.mjs",
     "test": "node --test",
     "check": "node --check navigation.js && node --check request.js && node --check site.js && node --check project.js && node --check scripts/build.mjs && node --check scripts/contacts.mjs && node --check scripts/verify-release.mjs && node --test",
     "check:php": "node scripts/check-php.mjs",

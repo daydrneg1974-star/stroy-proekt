@@ -1,0 +1,89 @@
+{
+  "localOnly": true,
+  "realSmtpCalls": 0,
+  "cases": [
+    {
+      "name": "disabled",
+      "javaScriptEnabled": true,
+      "status": 503,
+      "cookies": 0
+    },
+    {
+      "name": "disabled",
+      "javaScriptEnabled": false,
+      "status": 503,
+      "cookies": 0
+    },
+    {
+      "name": "js-validation",
+      "status": 422,
+      "exactText": true,
+      "fakeCalls": 0,
+      "focus": "request-phone"
+    },
+    {
+      "name": "collapsed-options",
+      "status": 422,
+      "errorVisible": true,
+      "focus": "request-area",
+      "fakeCalls": 0
+    },
+    {
+      "name": "pending-and-accepted",
+      "posts": 1,
+      "fakeCalls": 1,
+      "reset": true,
+      "receiptNotClaimed": true
+    },
+    {
+      "name": "native-prg",
+      "postStatuses": [
+        303,
+        303
+      ],
+      "reloadStatuses": [
+        422,
+        200
+      ],
+      "posts": 2,
+      "fakeCalls": 1,
+      "exactTextAfterError": true
+    },
+    {
+      "name": "transport-uncertain",
+      "statuses": [
+        503,
+        409
+      ],
+      "posts": 2,
+      "fakeCalls": 1,
+      "exactText": true
+    },
+    {
+      "name": "lost-response",
+      "serverStatus": 200,
+      "elapsedMs": 15048,
+      "posts": 1,
+      "fakeCalls": 1,
+      "exactText": true,
+      "noAutomaticRetry": true
+    },
+    {
+      "name": "rate-limit",
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        429
+      ],
+      "posts": 6,
+      "fakeCalls": 5,
+      "exactTextOnLimit": true
+    }
+  ],
+  "manifestSha256": "daac9bec671bb6d303149c370e3abcf70663f80fbb87a5913fe300e35653e7ec",
+  "php": "8.4.27",
+  "browser": "156.0.8078.108"
+}
