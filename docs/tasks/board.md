@@ -1,6 +1,6 @@
 # Состояние задач
 
-Обновлено 26.11.2026. Исходники T07 сохранены в GitHub-ветке `codex/t07-reliability-local` по отдельному поручению владельца; [протокол](T07-github-sync-20261126.md). `not_published` означает, что T07 не размещена на SpaceWeb. T01–T05 относятся к историческому варианту Sites; текущий выпуск SpaceWeb — T06. Историческая T04 заменена работой T06, её прежний журнал сохранён.
+Обновлено 26.11.2026. **Текущий выпуск SpaceWeb — T07**, исходный коммит `7fb8039` ветки `codex/t07-reliability-local`; [протокол публикации](T07-spaceweb-deployment-20261126.md). Серверная часть размещена с выключенной отправкой: получатель и реквизиты отложены владельцем. Исторические `not_published` ниже описывают этапы до разрешённой публикации. T01–T05 относятся к варианту Sites; история T04/T06 сохранена.
 
 | Задача | Записанный статус |
 |---|---|
@@ -10,7 +10,7 @@
 | [T04](T04-messenger-requests.md) | in_progress |
 | [T05](T05-privacy-minimization.md) | done |
 | [T06](T06-contact-release.md) | needs_human |
-| [T07](T07-reliability-local.md) | local_review; phone_checked_with_limits; sending_disabled; not_published |
+| [T07](T07-spaceweb-deployment-20261126.md) | published; phone_checked_with_limits; sending_disabled; smtp_setup_deferred |
 
 Телефон и WhatsApp опубликованы. Полная приёмка T06 и контакт Telegram остаются открытыми; подробности в docs/status.md.
 

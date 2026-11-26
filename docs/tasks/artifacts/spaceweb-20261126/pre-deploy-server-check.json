@@ -1,0 +1,426 @@
+{
+    "php": "8.4.28",
+    "mbstring": true,
+    "openssl": true,
+    "zip": true,
+    "smtp_attempted": false,
+    "manifest_sha256": "daac9bec671bb6d303149c370e3abcf70663f80fbb87a5913fe300e35653e7ec",
+    "files": [
+        {
+            "name": ".htaccess",
+            "size": 813,
+            "sha256": "8148f58b746a13e2474b53d41743dd48ae152c929211882ca6a55655d28393ff",
+            "ok": true
+        },
+        {
+            "name": "robots.txt",
+            "size": 25,
+            "sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce",
+            "ok": true
+        },
+        {
+            "name": "index.html",
+            "size": 33187,
+            "sha256": "d4b922869a4b0aefaadcfea0d9ec9bfb7b1ac88a35b6b7d6e5b83771aeaba8c9",
+            "ok": true
+        },
+        {
+            "name": "privacy.html",
+            "size": 7883,
+            "sha256": "9913dbf8763615a2e346f4f03416f715a84b8da0bfc469fb6a0718cc0154bd77",
+            "ok": true
+        },
+        {
+            "name": "styles.css",
+            "size": 16625,
+            "sha256": "822e42fcb3dffa2749276f550f079cab598bb03f50d9ce1c53510dd54706bf3d",
+            "ok": true
+        },
+        {
+            "name": "privacy.css",
+            "size": 2355,
+            "sha256": "aab15999f9faca043a2fdd940d0ec6abf4da52c88f50b4fe34370d97f866cf2c",
+            "ok": true
+        },
+        {
+            "name": "site.js",
+            "size": 4995,
+            "sha256": "fbbf937839c9a4955f03aa81b5a2a4346763ba2a9f7df3521a771ecb46fae71f",
+            "ok": true
+        },
+        {
+            "name": "navigation.js",
+            "size": 1642,
+            "sha256": "93c26909bb9122f7eda2b6f89e122378955f3e5dbf0fc9e9e310ce8a8e390690",
+            "ok": true
+        },
+        {
+            "name": "request.php",
+            "size": 913,
+            "sha256": "910271b64342be0141ff72eb76ec83588f4d4c5e81967aef7689a93255f52271",
+            "ok": true
+        },
+        {
+            "name": "request.js",
+            "size": 2551,
+            "sha256": "ad2437a4d99d2f48dcb15fc4b4072af2220c1411420fc032235e2ddb8532e4ab",
+            "ok": true
+        },
+        {
+            "name": "request.css",
+            "size": 917,
+            "sha256": "97608291a46236abb8b8e297dd1d45345ec150273cf6a31fa0545d08d5c0955c",
+            "ok": true
+        },
+        {
+            "name": "project.js",
+            "size": 3310,
+            "sha256": "9c9e8dd490aae6ad2a59f3b0459c8d1732916a1465dd7fbdd596919ec36748bc",
+            "ok": true
+        },
+        {
+            "name": "assets/favicon.svg",
+            "size": 201,
+            "sha256": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676",
+            "ok": true
+        },
+        {
+            "name": "assets/image-1.webp",
+            "size": 237828,
+            "sha256": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6",
+            "ok": true
+        },
+        {
+            "name": "assets/image-1-480.webp",
+            "size": 20976,
+            "sha256": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7",
+            "ok": true
+        },
+        {
+            "name": "assets/image-1-960.webp",
+            "size": 71126,
+            "sha256": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8",
+            "ok": true
+        },
+        {
+            "name": "assets/image-2.webp",
+            "size": 302628,
+            "sha256": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935",
+            "ok": true
+        },
+        {
+            "name": "assets/image-2-480.webp",
+            "size": 31920,
+            "sha256": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0",
+            "ok": true
+        },
+        {
+            "name": "assets/image-2-960.webp",
+            "size": 102668,
+            "sha256": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2",
+            "ok": true
+        },
+        {
+            "name": "assets/image-3.webp",
+            "size": 360626,
+            "sha256": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f",
+            "ok": true
+        },
+        {
+            "name": "assets/image-3-480.webp",
+            "size": 33556,
+            "sha256": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2",
+            "ok": true
+        },
+        {
+            "name": "assets/image-3-960.webp",
+            "size": 111814,
+            "sha256": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7",
+            "ok": true
+        },
+        {
+            "name": "assets/image-4.webp",
+            "size": 258086,
+            "sha256": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472",
+            "ok": true
+        },
+        {
+            "name": "assets/image-4-480.webp",
+            "size": 33428,
+            "sha256": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a",
+            "ok": true
+        },
+        {
+            "name": "assets/image-4-960.webp",
+            "size": 94730,
+            "sha256": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4",
+            "ok": true
+        },
+        {
+            "name": "assets/dzit-playground.webp",
+            "size": 65440,
+            "sha256": "f8cf34210bc62374b490db0b5d5a2296d2b2eef00fbb4f4bb8d14814535aca94",
+            "ok": true
+        },
+        {
+            "name": "assets/dzit-playground-360.webp",
+            "size": 19752,
+            "sha256": "8d0d1465fc9f5f8a4f29f2d7fe314fc79567af3fafe154a6aa1ffd14dee6391f",
+            "ok": true
+        },
+        {
+            "name": "assets/dzit-sport.webp",
+            "size": 129546,
+            "sha256": "419c910f6eb9ca0056009ad2755048376d1f6b34ac35175d88324afbbc0117cc",
+            "ok": true
+        },
+        {
+            "name": "assets/dzit-sport-360.webp",
+            "size": 18868,
+            "sha256": "91a68d3a4776d2156756441216da72ed463a35d9e3668bea8c5d3e7e0062d0dd",
+            "ok": true
+        },
+        {
+            "name": "assets/dzit-colours.webp",
+            "size": 124338,
+            "sha256": "07970f531f04c259e1fbef30b3f3f367352cf427495338dfcb357497bfc8ac4b",
+            "ok": true
+        },
+        {
+            "name": "assets/dzit-colours-360.webp",
+            "size": 38596,
+            "sha256": "be96e907620767ec65c06bd3ce0f860c879a0ab21eb54902fe58379ba63c610d",
+            "ok": true
+        },
+        {
+            "name": "assets/promo.mp4",
+            "size": 4248551,
+            "sha256": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a",
+            "ok": true
+        }
+    ],
+    "privateFiles": [
+        {
+            "name": "app.php",
+            "size": 13362,
+            "sha256": "148eda69b0f0b19d016d9fca759adff4476dc77190f6a838d97704d78ab94873",
+            "ok": true
+        },
+        {
+            "name": "bootstrap.php",
+            "size": 5138,
+            "sha256": "e8430567ef93bf2137388cfbe4747287fde0ddff9761d3d81d9e9e5ebfe3a4e3",
+            "ok": true
+        },
+        {
+            "name": "form.php",
+            "size": 6639,
+            "sha256": "4e062ec5b5e88307df4b4d1aa13fbf8db5f23d5ca0786f04107c46141d65f91c",
+            "ok": true
+        },
+        {
+            "name": "transport.php",
+            "size": 954,
+            "sha256": "d2c45665467bc2ef8c78d529c5bbee2b16a22f529516bb1e5c3d6ffa9bb7efe8",
+            "ok": true
+        },
+        {
+            "name": "config.example.php",
+            "size": 554,
+            "sha256": "e9bc07b563bf7e9311fab520e2345adffa15aff225e6f37a3b292e0582fad380",
+            "ok": true
+        },
+        {
+            "name": "composer.json",
+            "size": 260,
+            "sha256": "32aceb1d56a9c04ba6b3e77aa4b73784a7073d1231ea47b563005450368f5040",
+            "ok": true
+        },
+        {
+            "name": "composer.lock",
+            "size": 4428,
+            "sha256": "4afe96a19e4abf0f0aac6337b0c16268ccb92807795b0adfd8356e0cff01610f",
+            "ok": true
+        },
+        {
+            "name": "vendor/phpmailer/phpmailer/src/Exception.php",
+            "size": 1255,
+            "sha256": "7e8795723a67942c5540ddc6a6083d4155363d08bce792a6f738014b63e9a201",
+            "ok": true
+        },
+        {
+            "name": "vendor/phpmailer/phpmailer/src/PHPMailer.php",
+            "size": 198172,
+            "sha256": "4777d4149512a8f0373f4d378d4279e324fc127d109289ffcc60baed29787ae3",
+            "ok": true
+        },
+        {
+            "name": "vendor/phpmailer/phpmailer/src/SMTP.php",
+            "size": 55716,
+            "sha256": "f76176b143f5d5381bedd6c295d266730b258d745a53768c0cec52abbc1cfec4",
+            "ok": true
+        },
+        {
+            "name": "vendor/phpmailer/phpmailer/LICENSE",
+            "size": 26529,
+            "sha256": "a1a33180d02960ab1c5de36cf20b1a2f0fe9888d83826ad263da5db52f1b183b",
+            "ok": true
+        }
+    ],
+    "upload_sha256": "08e1ab8d3e37dd5a314c6308ba4995e3a3177a95d3ae5862e1fd3ac88fa18d32",
+    "private_mode": "0700",
+    "config_present": false,
+    "runtime_mode": "0700",
+    "lock": true,
+    "write": true,
+    "rename": true,
+    "readback": true,
+    "backup_open": true,
+    "backup_files": [
+        {
+            "name": "public_html/assets/image-2.webp",
+            "size": 302628,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-4-960.webp",
+            "size": 94730,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-4.webp",
+            "size": 258086,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-3-960.webp",
+            "size": 111814,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/dzit-playground-360.webp",
+            "size": 19752,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/dzit-colours.webp",
+            "size": 124338,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-1-960.webp",
+            "size": 71126,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/dzit-sport-360.webp",
+            "size": 18868,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/promo.mp4",
+            "size": 4248551,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-1.webp",
+            "size": 237828,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-2-480.webp",
+            "size": 31920,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-1-480.webp",
+            "size": 20976,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/favicon.svg",
+            "size": 201,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-3-480.webp",
+            "size": 33556,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-3.webp",
+            "size": 360626,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/dzit-sport.webp",
+            "size": 129546,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/epdm-samples-480.webp",
+            "size": 90726,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/dzit-playground.webp",
+            "size": 65440,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/dzit-colours-360.webp",
+            "size": 38596,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-2-960.webp",
+            "size": 102668,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/epdm-samples.webp",
+            "size": 288170,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/assets/image-4-480.webp",
+            "size": 33428,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/.htaccess",
+            "size": 726,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/index.html",
+            "size": 48002,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/site.js",
+            "size": 5650,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/privacy.html",
+            "size": 9488,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/favicon.svg",
+            "size": 201,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/project.js",
+            "size": 3153,
+            "matches_live": true
+        },
+        {
+            "name": "public_html/robots.txt",
+            "size": 25,
+            "matches_live": true
+        }
+    ]
+}

@@ -1,0 +1,856 @@
+{
+  "verified_at_utc": "2026-11-26T06:35:12.865175+00:00",
+  "source_commit": "7fb8039ed312991190405eb927558635d83aa117",
+  "static_files": [
+    {
+      "path": "/robots.txt",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/robots.txt",
+      "size": 25,
+      "sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/plain",
+        "content-length": "25",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131f-19-66126877c8480\""
+      },
+      "expected_sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce",
+      "match": true
+    },
+    {
+      "path": "/index.html",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/index.html",
+      "size": 33187,
+      "sha256": "d4b922869a4b0aefaadcfea0d9ec9bfb7b1ac88a35b6b7d6e5b83771aeaba8c9",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html",
+        "content-length": "33187",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901317-81a3-66126877c8480\""
+      },
+      "expected_sha256": "d4b922869a4b0aefaadcfea0d9ec9bfb7b1ac88a35b6b7d6e5b83771aeaba8c9",
+      "match": true
+    },
+    {
+      "path": "/privacy.html",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/privacy.html",
+      "size": 7883,
+      "sha256": "9913dbf8763615a2e346f4f03416f715a84b8da0bfc469fb6a0718cc0154bd77",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html",
+        "content-length": "7883",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131a-1ecb-66126877c8480\""
+      },
+      "expected_sha256": "9913dbf8763615a2e346f4f03416f715a84b8da0bfc469fb6a0718cc0154bd77",
+      "match": true
+    },
+    {
+      "path": "/styles.css",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/styles.css",
+      "size": 16625,
+      "sha256": "822e42fcb3dffa2749276f550f079cab598bb03f50d9ce1c53510dd54706bf3d",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/css",
+        "content-length": "16625",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901321-40f1-66126877c8480\""
+      },
+      "expected_sha256": "822e42fcb3dffa2749276f550f079cab598bb03f50d9ce1c53510dd54706bf3d",
+      "match": true
+    },
+    {
+      "path": "/privacy.css",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/privacy.css",
+      "size": 2355,
+      "sha256": "aab15999f9faca043a2fdd940d0ec6abf4da52c88f50b4fe34370d97f866cf2c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/css",
+        "content-length": "2355",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901319-933-66126877c8480\""
+      },
+      "expected_sha256": "aab15999f9faca043a2fdd940d0ec6abf4da52c88f50b4fe34370d97f866cf2c",
+      "match": true
+    },
+    {
+      "path": "/site.js",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/site.js",
+      "size": 4995,
+      "sha256": "fbbf937839c9a4955f03aa81b5a2a4346763ba2a9f7df3521a771ecb46fae71f",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/javascript",
+        "content-length": "4995",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901320-1383-66126877c8480\""
+      },
+      "expected_sha256": "fbbf937839c9a4955f03aa81b5a2a4346763ba2a9f7df3521a771ecb46fae71f",
+      "match": true
+    },
+    {
+      "path": "/navigation.js",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/navigation.js",
+      "size": 1642,
+      "sha256": "93c26909bb9122f7eda2b6f89e122378955f3e5dbf0fc9e9e310ce8a8e390690",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/javascript",
+        "content-length": "1642",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901318-66a-66126877c8480\""
+      },
+      "expected_sha256": "93c26909bb9122f7eda2b6f89e122378955f3e5dbf0fc9e9e310ce8a8e390690",
+      "match": true
+    },
+    {
+      "path": "/request.js",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/request.js",
+      "size": 2551,
+      "sha256": "ad2437a4d99d2f48dcb15fc4b4072af2220c1411420fc032235e2ddb8532e4ab",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/javascript",
+        "content-length": "2551",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131d-9f7-66126877c8480\""
+      },
+      "expected_sha256": "ad2437a4d99d2f48dcb15fc4b4072af2220c1411420fc032235e2ddb8532e4ab",
+      "match": true
+    },
+    {
+      "path": "/request.css",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/request.css",
+      "size": 917,
+      "sha256": "97608291a46236abb8b8e297dd1d45345ec150273cf6a31fa0545d08d5c0955c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/css",
+        "content-length": "917",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131c-395-66126877c8480\""
+      },
+      "expected_sha256": "97608291a46236abb8b8e297dd1d45345ec150273cf6a31fa0545d08d5c0955c",
+      "match": true
+    },
+    {
+      "path": "/project.js",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/project.js",
+      "size": 3310,
+      "sha256": "9c9e8dd490aae6ad2a59f3b0459c8d1732916a1465dd7fbdd596919ec36748bc",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/javascript",
+        "content-length": "3310",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131b-cee-66126877c8480\""
+      },
+      "expected_sha256": "9c9e8dd490aae6ad2a59f3b0459c8d1732916a1465dd7fbdd596919ec36748bc",
+      "match": true
+    },
+    {
+      "path": "/assets/favicon.svg",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/favicon.svg",
+      "size": 201,
+      "sha256": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/svg+xml",
+        "content-length": "201",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901301-c9-66126877c8480\""
+      },
+      "expected_sha256": "fd7f05c6869d7ad75136edd04f8038e3dfe524ad5810b51f82aa999e345d0676",
+      "match": true
+    },
+    {
+      "path": "/assets/image-1.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-1.webp",
+      "size": 237828,
+      "sha256": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "237828",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901309-3a104-66126877c8480\""
+      },
+      "expected_sha256": "e68fcb15951be5908e1851909a57bcccb02689bf9d1449c0cb21eac10f3e7fa6",
+      "match": true
+    },
+    {
+      "path": "/assets/image-1-480.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-1-480.webp",
+      "size": 20976,
+      "sha256": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "20976",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901305-51f0-66126877c8480\""
+      },
+      "expected_sha256": "96a61825e45288669cba2f166f3da7b1ffe875de6a4df792d538e21ea1d815e7",
+      "match": true
+    },
+    {
+      "path": "/assets/image-1-960.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-1-960.webp",
+      "size": 71126,
+      "sha256": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "71126",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901306-115d6-66126877c8480\""
+      },
+      "expected_sha256": "544e06d91f94b427b4754223b0335c3c08960586e360dc94921671889747dea8",
+      "match": true
+    },
+    {
+      "path": "/assets/image-2.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-2.webp",
+      "size": 302628,
+      "sha256": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "302628",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90130f-49e24-66126877c8480\""
+      },
+      "expected_sha256": "71d2ec51b2701adc68136ff70068a0b2cd4aea59d6ab9a7f9cd5553532ebf935",
+      "match": true
+    },
+    {
+      "path": "/assets/image-2-480.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-2-480.webp",
+      "size": 31920,
+      "sha256": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "31920",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90130d-7cb0-66126877c8480\""
+      },
+      "expected_sha256": "90e0f7a04154bfb9afed2afaf33a8aba5a4e3fe0e76aa9f88a751c9b910857a0",
+      "match": true
+    },
+    {
+      "path": "/assets/image-2-960.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-2-960.webp",
+      "size": 102668,
+      "sha256": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "102668",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90130e-1910c-66126877c8480\""
+      },
+      "expected_sha256": "3776bab01eb913c1162e00eaf9cc7a3b626327df3e3c3dc0c57ecff4d921b8f2",
+      "match": true
+    },
+    {
+      "path": "/assets/image-3.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-3.webp",
+      "size": 360626,
+      "sha256": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "360626",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901312-580b2-66126877c8480\""
+      },
+      "expected_sha256": "d666dfefd10796473fb47e43ed78f23f102011bdd3026c9ad62fa9dd5200644f",
+      "match": true
+    },
+    {
+      "path": "/assets/image-3-480.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-3-480.webp",
+      "size": 33556,
+      "sha256": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "33556",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901310-8314-66126877c8480\""
+      },
+      "expected_sha256": "ef41e5dfcc252d5b5ab432442f35016a48b469fc1157189ea603f827280f03d2",
+      "match": true
+    },
+    {
+      "path": "/assets/image-3-960.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-3-960.webp",
+      "size": 111814,
+      "sha256": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "111814",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901311-1b4c6-66126877c8480\""
+      },
+      "expected_sha256": "bf6fd2f785528ef35f1ec006012a86d088df370a86f377f6464b7a22804106c7",
+      "match": true
+    },
+    {
+      "path": "/assets/image-4.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-4.webp",
+      "size": 258086,
+      "sha256": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "258086",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901315-3f026-66126877c8480\""
+      },
+      "expected_sha256": "474ae47ad31af4bf9d7663afc944f113bc11a91165166a663f7661995894b472",
+      "match": true
+    },
+    {
+      "path": "/assets/image-4-480.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-4-480.webp",
+      "size": 33428,
+      "sha256": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "33428",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901313-8294-66126877c8480\""
+      },
+      "expected_sha256": "7d1bfaa054b6c85f45dd2503a001f08d7b6009108e959e2dd78ecbf4779e855a",
+      "match": true
+    },
+    {
+      "path": "/assets/image-4-960.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/image-4-960.webp",
+      "size": 94730,
+      "sha256": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "94730",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901314-1720a-66126877c8480\""
+      },
+      "expected_sha256": "a44d10777164394051a472dfe33ce5b37bc072ea7f3acc3075765c0b6174a2c4",
+      "match": true
+    },
+    {
+      "path": "/assets/dzit-playground.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/dzit-playground.webp",
+      "size": 65440,
+      "sha256": "f8cf34210bc62374b490db0b5d5a2296d2b2eef00fbb4f4bb8d14814535aca94",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "65440",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a9012fa-ffa0-66126877c8480\""
+      },
+      "expected_sha256": "f8cf34210bc62374b490db0b5d5a2296d2b2eef00fbb4f4bb8d14814535aca94",
+      "match": true
+    },
+    {
+      "path": "/assets/dzit-playground-360.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/dzit-playground-360.webp",
+      "size": 19752,
+      "sha256": "8d0d1465fc9f5f8a4f29f2d7fe314fc79567af3fafe154a6aa1ffd14dee6391f",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "19752",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a9012f6-4d28-66126877c8480\""
+      },
+      "expected_sha256": "8d0d1465fc9f5f8a4f29f2d7fe314fc79567af3fafe154a6aa1ffd14dee6391f",
+      "match": true
+    },
+    {
+      "path": "/assets/dzit-sport.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/dzit-sport.webp",
+      "size": 129546,
+      "sha256": "419c910f6eb9ca0056009ad2755048376d1f6b34ac35175d88324afbbc0117cc",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "129546",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a9012fe-1fa0a-66126877c8480\""
+      },
+      "expected_sha256": "419c910f6eb9ca0056009ad2755048376d1f6b34ac35175d88324afbbc0117cc",
+      "match": true
+    },
+    {
+      "path": "/assets/dzit-sport-360.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/dzit-sport-360.webp",
+      "size": 18868,
+      "sha256": "91a68d3a4776d2156756441216da72ed463a35d9e3668bea8c5d3e7e0062d0dd",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "18868",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a9012fb-49b4-66126877c8480\""
+      },
+      "expected_sha256": "91a68d3a4776d2156756441216da72ed463a35d9e3668bea8c5d3e7e0062d0dd",
+      "match": true
+    },
+    {
+      "path": "/assets/dzit-colours.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/dzit-colours.webp",
+      "size": 124338,
+      "sha256": "07970f531f04c259e1fbef30b3f3f367352cf427495338dfcb357497bfc8ac4b",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "124338",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a9012f5-1e5b2-66126877c8480\""
+      },
+      "expected_sha256": "07970f531f04c259e1fbef30b3f3f367352cf427495338dfcb357497bfc8ac4b",
+      "match": true
+    },
+    {
+      "path": "/assets/dzit-colours-360.webp",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/dzit-colours-360.webp",
+      "size": 38596,
+      "sha256": "be96e907620767ec65c06bd3ce0f860c879a0ab21eb54902fe58379ba63c610d",
+      "headers": {
+        "server": "envoy",
+        "content-type": "image/webp",
+        "content-length": "38596",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a9012f4-96c4-66126877c8480\""
+      },
+      "expected_sha256": "be96e907620767ec65c06bd3ce0f860c879a0ab21eb54902fe58379ba63c610d",
+      "match": true
+    },
+    {
+      "path": "/assets/promo.mp4",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/assets/promo.mp4",
+      "size": 4248551,
+      "sha256": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a",
+      "headers": {
+        "server": "envoy",
+        "content-type": "video/mp4",
+        "content-length": "4248551",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901316-40d3e7-66126877c8480\""
+      },
+      "expected_sha256": "5e6167c3a7a7a28c2939c62d289ce6875515a320490256317877f8ef8a7d8a1a",
+      "match": true
+    }
+  ],
+  "checks": [
+    {
+      "path": "/request.php",
+      "method": "GET",
+      "status": 503,
+      "url": "https://stroyinzh-dom.ru/request.php",
+      "size": 6142,
+      "sha256": "382beab178530312044c95483b82d0f15c3b479cce1c5ac961fa3d459dba7e7d",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8",
+        "content-length": "6142",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "same-origin",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'self'"
+      },
+      "disabled_notice": true,
+      "fieldset_disabled": true,
+      "fieldset_check": "HTML attribute matcher; confirmed with live DOM"
+    },
+    {
+      "path": "/private/",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/private/",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/private/config.php",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/private/config.php",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/server/",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/server/",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/.git/config",
+      "method": "GET",
+      "status": 403,
+      "url": "https://stroyinzh-dom.ru/.git/config",
+      "size": 998,
+      "sha256": "f2e83357d3c8bd8fcdd439aaf68d5f76cb58f33378cad15c75b4565bfb6090ed",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/config.php",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/config.php",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/release-manifest.json",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/release-manifest.json",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/stroy-t07-spaceweb-7fb8039.zip",
+      "method": "GET",
+      "status": 403,
+      "url": "https://stroyinzh-dom.ru/stroy-t07-spaceweb-7fb8039.zip",
+      "size": 998,
+      "sha256": "f2e83357d3c8bd8fcdd439aaf68d5f76cb58f33378cad15c75b4565bfb6090ed",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/public_html_before_t07_20261126.zip",
+      "method": "GET",
+      "status": 403,
+      "url": "https://stroyinzh-dom.ru/public_html_before_t07_20261126.zip",
+      "size": 998,
+      "sha256": "f2e83357d3c8bd8fcdd439aaf68d5f76cb58f33378cad15c75b4565bfb6090ed",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/assets/",
+      "method": "GET",
+      "status": 403,
+      "url": "https://stroyinzh-dom.ru/assets/",
+      "size": 1012,
+      "sha256": "0e28f9071f2adf05f2e10e62e8f54622d823a9be1b767142b59f5cea4626ab4c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/t07-probe-7fb8039-9c0a.php",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/t07-probe-7fb8039-9c0a.php",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/privacy",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/privacy.html",
+      "size": 7883,
+      "sha256": "9913dbf8763615a2e346f4f03416f715a84b8da0bfc469fb6a0718cc0154bd77",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html",
+        "content-length": "7883",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131a-1ecb-66126877c8480\""
+      },
+      "match_privacy": true
+    },
+    {
+      "path": "/privacy/",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/privacy.html",
+      "size": 7883,
+      "sha256": "9913dbf8763615a2e346f4f03416f715a84b8da0bfc469fb6a0718cc0154bd77",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html",
+        "content-length": "7883",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a90131a-1ecb-66126877c8480\""
+      },
+      "match_privacy": true
+    },
+    {
+      "path": "/tests/",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/tests/",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/private/runtime/",
+      "method": "GET",
+      "status": 404,
+      "url": "https://stroyinzh-dom.ru/private/runtime/",
+      "size": 1008,
+      "sha256": "79a97c888d3e92d228153d4f9e2615bc83dd18590d723843d90de0690aed764c",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "path": "/request.php",
+      "method": "POST",
+      "status": 503,
+      "url": "https://stroyinzh-dom.ru/request.php",
+      "size": 6142,
+      "sha256": "382beab178530312044c95483b82d0f15c3b479cce1c5ac961fa3d459dba7e7d",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html; charset=utf-8",
+        "content-length": "6142",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "same-origin",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'self'"
+      },
+      "disabled_notice": true,
+      "fieldset_disabled": true,
+      "fieldset_check": "HTML attribute matcher; confirmed with live DOM"
+    },
+    {
+      "path": "http://stroyinzh-dom.ru/",
+      "method": "GET",
+      "status": 200,
+      "url": "https://stroyinzh-dom.ru/",
+      "size": 33187,
+      "sha256": "d4b922869a4b0aefaadcfea0d9ec9bfb7b1ac88a35b6b7d6e5b83771aeaba8c9",
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/html",
+        "content-length": "33187",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-robots-tag": "noindex, nofollow, noarchive",
+        "last-modified": "Thu, 26 Nov 2026 04:39:30 GMT",
+        "etag": "\"a901317-81a3-66126877c8480\""
+      }
+    },
+    {
+      "path": "/.htaccess",
+      "method": "GET",
+      "status": 403
+    }
+  ],
+  "noindex_header_confirmed": true
+}
