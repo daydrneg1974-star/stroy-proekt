@@ -13,3 +13,5 @@
 | [T07](T07-reliability-local.md) | local_review; sending_disabled; not_published |
 
 Телефон и WhatsApp опубликованы. Полная приёмка T06 и контакт Telegram остаются открытыми; подробности в docs/status.md.
+
+Продолжение T07: [200% и TXT на диске проверены](T07-local-followup-20261126.md). Автоматический e2e блокируется отсутствующим Chromium; физическое устройство не проверено. Статус `local_review; sending_disabled; not_published` сохраняется.

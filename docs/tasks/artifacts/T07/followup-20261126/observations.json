@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-26",
+  "branch": "codex/t07-reliability-local",
+  "sourceHead": "9a7c5d2f538fb309003da478290879c0c8151c17",
+  "githubMain": "02c5cddc5d6d79942f4b22ecdda916751e94e4af",
+  "initialWorkingTreeClean": true,
+  "productSourceChanged": false,
+  "sendingEnabled": false,
+  "realMessagesSent": 0,
+  "push": false,
+  "published": false,
+  "releaseVerification": "PASS",
+  "manifestSha256": "11157bf2095dc9816b4b94483f49e8e46df65fc5be470815234b09d9e938b9c2",
+  "browser": "desktop Chrome in work environment",
+  "zoom": {
+    "baseline": {
+      "width": 1363,
+      "height": 936,
+      "dpr": 1
+    },
+    "percent": 200,
+    "chromeUiIndicator": "200%",
+    "width": 681,
+    "height": 468,
+    "dpr": 2,
+    "visualViewportScale": 1,
+    "main": {
+      "documentWidth": 674,
+      "bodyWidth": 674
+    },
+    "privacy": {
+      "documentWidth": 674,
+      "bodyWidth": 674,
+      "clippedTextElements": []
+    },
+    "disabledForm": {
+      "documentWidth": 674,
+      "bodyWidth": 674,
+      "fieldsetDisabled": true,
+      "sendButtonAXDisabled": true
+    },
+    "menu": {
+      "expanded": true,
+      "top": 70,
+      "bottom": 275.59375,
+      "clientHeight": 206,
+      "scrollHeight": 206,
+      "overflowY": "auto",
+      "closedOnLink": true
+    },
+    "reset": {
+      "area": "160",
+      "kit": "turnkey",
+      "wall": "aerated",
+      "longDraftPreserved": true
+    },
+    "restoredDpr": 1
+  },
+  "emptyDraft": {
+    "copyEnabled": false,
+    "downloadEnabled": false
+  },
+  "downloads": [
+    {
+      "file": "long-after-reset.txt",
+      "bytes": 117449,
+      "utf16Units": 67207,
+      "sha256": "38b71ffc811958d515f0946483e55fd7e4d8c06d515a808fece8ba1b584b3e50",
+      "bom": true,
+      "actualFileRead": true,
+      "expectedSha256Matched": true
+    },
+    {
+      "file": "short.txt",
+      "bytes": 89,
+      "utf16Units": 50,
+      "sha256": "8e1a79b45ebda4eacf154a81b63eda454d503885fa45be27376905a923694a11",
+      "bom": true,
+      "actualFileRead": true,
+      "expectedSha256Matched": true
+    },
+    {
+      "file": "short-edited.txt",
+      "bytes": 170,
+      "utf16Units": 94,
+      "sha256": "82026d43e3a3f3a321752a06fd8fd0eb2b76365dc88ac3abbaf817fa8fdf0c02",
+      "bom": true,
+      "actualFileRead": true,
+      "expectedSha256Matched": true
+    }
+  ],
+  "e2e": {
+    "command": "npm run e2e",
+    "status": "BLOCKED_BEFORE_SCENARIOS",
+    "runnerPass": 0,
+    "runnerFail": 3,
+    "cause": "before-hook: missing browser executable",
+    "missingPath": "/home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell",
+    "downloadInstallAttempted": false
+  },
+  "limitations": [
+    "One earlier short-download wait timed out; cause unknown. Two downloads in a fresh tab including edit/repeat were subsequently saved and verified.",
+    "Physical phone/mobile download, native Clipboard denial, mobile Safari/Chrome, screen reader not tested.",
+    "200% is desktop browser zoom, not mobile system font scaling.",
+    "Existing 45 Node and 69 PHP checks not rerun; no product code change.",
+    "Live public HTTP files not rechecked.",
+    "SMTP, hosting settings, ownership/delivery not tested."
+  ]
+}
