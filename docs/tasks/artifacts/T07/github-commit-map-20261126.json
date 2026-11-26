@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-26",
+  "repository": "daydrneg1974-star/stroy-proekt",
+  "branch": "codex/t07-reliability-local",
+  "base": "02c5cddc5d6d79942f4b22ecdda916751e94e4af",
+  "sourceHead": "64320f147243765b3c5edde30548a94cc06b687b",
+  "importedHead": "daddae9292167608f047c2e591937f3ce9155369",
+  "mappings": [
+    {
+      "source": "d9a1271b468f8a00210c05277646610b69342e15",
+      "github": "9675c79eab0453866f45bce366861e8b09899e19",
+      "tree": "e1344be4f8482a598a28cc19fedd6b68ee3d2261",
+      "treeVerified": true
+    },
+    {
+      "source": "9a7c5d2f538fb309003da478290879c0c8151c17",
+      "github": "c72e7c40891dd3c836718cd4384b0a800f7ad168",
+      "tree": "9d6b4f123c94ae6c83e65e60903cef87ac934d51",
+      "treeVerified": true
+    },
+    {
+      "source": "33f42a8bba6cf855539e601180242210dc9bc4f1",
+      "github": "f21efafec5b1bea2ca39a29e80c659d0855692ee",
+      "tree": "8fe0cec68409ff4fa2879aafd7d0e3d33c2e1bae",
+      "treeVerified": true
+    },
+    {
+      "source": "b21c579d93fa5ead9789bd982a15bc31568ef9a5",
+      "github": "db982dfcfeeb8a26331416190e4de082d7fd93db",
+      "tree": "0344d1a449a0ab870af92e71f4697d8e8943de5d",
+      "treeVerified": true
+    },
+    {
+      "source": "f58a7a43627397c018633eadaa3e2a8161cf7841",
+      "github": "7f98f4963d977a99951167709bf77f50fe6acf1d",
+      "tree": "2f93cc3d2a3e749a275296d9cc05abb4e0e899f2",
+      "treeVerified": true
+    },
+    {
+      "source": "ff92105bf9b4380f51fd6da348d6b3c848b23588",
+      "github": "fcfee03ed84048ce50bc83b5d81a7938cf94c49a",
+      "tree": "be1c9fac81ef87c1318e8d631dfd010233e5e3f9",
+      "treeVerified": true
+    },
+    {
+      "source": "b274db48fb54864dbde4a6203e8efb4fcda06b85",
+      "github": "b616ec5b9a2e1695668358484e1cf2ab443b6c3d",
+      "tree": "3359307459ab603391d283b8d0e85dd026af7d36",
+      "treeVerified": true
+    },
+    {
+      "source": "64320f147243765b3c5edde30548a94cc06b687b",
+      "github": "daddae9292167608f047c2e591937f3ce9155369",
+      "tree": "fa2b3606b3ef84e4d451d46fd66f57369170c84e",
+      "treeVerified": true
+    }
+  ],
+  "allTreesVerified": true,
+  "forceUsed": false,
+  "mainChanged": false,
+  "sitePublished": false,
+  "sendingEnabled": false
+}
