@@ -10,9 +10,11 @@
 | [T04](T04-messenger-requests.md) | in_progress |
 | [T05](T05-privacy-minimization.md) | done |
 | [T06](T06-contact-release.md) | needs_human |
-| [T07](T07-reliability-local.md) | local_review; sending_disabled; not_published |
+| [T07](T07-reliability-local.md) | local_review; phone_checked_with_limits; sending_disabled; not_published |
 
 Телефон и WhatsApp опубликованы. Полная приёмка T06 и контакт Telegram остаются открытыми; подробности в docs/status.md.
+
+**Актуально после возврата Windows-пакета b274db4:** пакет/история/готовый релиз проверены, код не менялся. TXT в увеличенном альбоме PASS, TalkBack — ограниченные фокус/активация PASS, полное озвучивание NOT RUN. Результаты телефона приняты с этими границами; повторные прогоны без причины не нужны. [Итог обзора](T07-return-review-20261126.md). Абзацы ниже сохраняют историю более ранних этапов.
 
 Продолжение T07: [200% и TXT на диске проверены](T07-local-followup-20261126.md). Автоматический e2e блокируется отсутствующим Chromium; физическое устройство не проверено. Статус `local_review; sending_disabled; not_published` сохраняется.
 

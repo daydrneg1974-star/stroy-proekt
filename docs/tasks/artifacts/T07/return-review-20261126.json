@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-26",
+  "archive": {
+    "name": "stroy_t07_b274db4.zip",
+    "bytes": 42120062,
+    "sha256": "a53be5c6dee1df4a0db4fec4488a265a3f549648a7dcd74ecb04ac4b518cc48e",
+    "crc": "PASS",
+    "manifestFilesVerified": 256
+  },
+  "git": {
+    "receivedHead": "b274db48fb54864dbde4a6203e8efb4fcda06b85",
+    "codeHead": "ff92105bf9b4380f51fd6da348d6b3c848b23588",
+    "completeBundle": true,
+    "fsck": "PASS",
+    "isDescendant": true,
+    "changedFiles": 9,
+    "changedOnlyDocs": true,
+    "trackedFilesMatched": 210,
+    "crlfOnlyDifferences": 163
+  },
+  "release": {
+    "publicFiles": 32,
+    "privateFiles": 11,
+    "verification": "PASS",
+    "manifestSha256": "daac9bec671bb6d303149c370e3abcf70663f80fbb87a5913fe300e35653e7ec",
+    "unchangedSinceCodeHead": true,
+    "realConfigPresent": false,
+    "exampleEnabled": false,
+    "examplePrivacyReady": false
+  },
+  "phoneReview": {
+    "evidence": "received protocol and JSON measurements; no new phone run",
+    "txtEnlargedLandscape": "PASS within documented scrollIntoView + touch method",
+    "talkbackFocusActivation": "PASS per local agent observations",
+    "talkbackFullAudio": "NOT RUN",
+    "initialChromeInstabilityCause": "unknown",
+    "newProductDefectEstablished": false
+  },
+  "productCodeChanged": false,
+  "testsRepeated": false,
+  "sendingEnabled": false,
+  "pushPerformed": false,
+  "publicationPerformed": false
+}
