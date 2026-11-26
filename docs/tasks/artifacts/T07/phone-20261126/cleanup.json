@@ -1,0 +1,17 @@
+{
+  "fontScale": "1.0",
+  "density": "Physical density: 480",
+  "rotation": "lock 0",
+  "autoRotation": "0",
+  "accessibilityServices": "null",
+  "accessibilityEnabled": "0",
+  "touchExploration": "0",
+  "screenTimeoutBefore": "600000",
+  "screenTimeoutAfter": "600000",
+  "serverStopped": true,
+  "reverseAfter": "",
+  "forwardAfter": "",
+  "testDownloadsAfter": "",
+  "hostTemporaryFilesRemoved": true,
+  "deviceTemporaryFilesRemoved": true
+}

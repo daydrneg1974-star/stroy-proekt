@@ -1,0 +1,11 @@
+{
+  "title": "Контроль TalkBack",
+  "text": "Контрольная страница\nТестовая заметкаПроверить кнопку\n\nГотово",
+  "metrics": {
+    "width": 360,
+    "height": 707,
+    "visibility": "visible",
+    "focus": true
+  },
+  "input": "PASS"
+}

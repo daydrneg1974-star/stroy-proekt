@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-26",
+  "sourceHead": "ff92105bf9b4380f51fd6da348d6b3c848b23588",
+  "branch": "codex/t07-reliability-local",
+  "device": {
+    "model": "Infinix X676B",
+    "android": "12",
+    "chrome": "157.0.8103.80",
+    "physicalPixels": "1080x2400",
+    "physicalDensity": 480
+  },
+  "server": "PHP 8.4.27 on 127.0.0.1:4173 via ADB reverse",
+  "manifestSha256": "daac9bec671bb6d303149c370e3abcf70663f80fbb87a5913fe300e35653e7ec",
+  "constructor": {
+    "anchor": {
+      "top": 10382.052734375,
+      "headerBottom": 77
+    },
+    "area": "400",
+    "duplicateStatus": "Этот состав или идея уже есть в черновике.",
+    "reset": {
+      "area": "160",
+      "kit": "turnkey",
+      "wall": "aerated",
+      "summary": "Состав проекта\nПлощадь дома: 160 м²\nКомплектация: Под ключ: коробка, инженерия, сети и отделка\nМатериал стен: Газобетон D400\nДополнительно: не выбрано\nСтоимость и сроки не рассчитаны.\nПредварительный список пожеланий, не смета и не договор."
+    },
+    "utf16": 65060,
+    "utf8": 116568,
+    "metrics": {
+      "width": 360,
+      "height": 707,
+      "dpr": 3,
+      "scrollWidth": 360,
+      "bodyWidth": 360,
+      "orientation": "portrait-primary",
+      "visualScale": 1
+    },
+    "permissions": {
+      "write": "granted",
+      "read": "prompt"
+    }
+  },
+  "clipboard": {
+    "before": {
+      "write": "granted",
+      "read": "prompt"
+    },
+    "copy": {
+      "utf16": 65060,
+      "sha256": "b99c3af018ada7b7b40ecd40a3bf0a05f8294afa2a4d041f6c6c6e662ed2456a",
+      "matches": true
+    },
+    "deniedPermission": {
+      "write": "denied",
+      "read": "granted"
+    },
+    "denial": {
+      "status": "Не удалось скопировать автоматически. Текст выделен: скопируйте его вручную или скачайте TXT.",
+      "selection": {
+        "start": 0,
+        "end": 65060,
+        "active": true
+      },
+      "preserved": true,
+      "native": true
+    },
+    "restored": {
+      "write": "granted",
+      "read": "prompt"
+    }
+  },
+  "landscape": {
+    "metrics": {
+      "width": 764,
+      "height": 276,
+      "dpr": 3,
+      "scrollWidth": 764,
+      "bodyWidth": 764,
+      "orientation": "landscape-primary",
+      "visualScale": 1
+    },
+    "menu": {
+      "rect": {
+        "x": 24,
+        "y": 70,
+        "width": 716,
+        "height": 106,
+        "top": 70,
+        "right": 740,
+        "bottom": 176,
+        "left": 24
+      },
+      "height": 276
+    },
+    "anchor": {
+      "top": 93.515625,
+      "headerBottom": 77
+    },
+    "preserved": true
+  },
+  "enlargedPortrait": {
+    "metrics": {
+      "width": 288,
+      "height": 566,
+      "dpr": 3.75,
+      "scrollWidth": 288,
+      "bodyWidth": 288,
+      "orientation": "portrait-primary",
+      "visualScale": 1
+    },
+    "menu": {
+      "rect": {
+        "x": 18,
+        "y": 118.55000305175781,
+        "width": 252.00001525878906,
+        "height": 232.00001525878906,
+        "top": 118.55000305175781,
+        "right": 270.00001525878906,
+        "bottom": 350.5500183105469,
+        "left": 18
+      },
+      "viewport": 566
+    },
+    "anchor": {
+      "top": 203.34584045410156,
+      "headerBottom": 123.35000610351562
+    },
+    "contacts": [
+      {
+        "text": "+7 (499) 130-66-16",
+        "href": "tel:+74991306616",
+        "rel": null
+      },
+      {
+        "text": "Открыть WhatsApp",
+        "href": "https://wa.me/74991306616",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "copyStatus": "Черновик скопирован."
+  },
+  "enlargedLandscapeAttempt": {
+    "metrics": {
+      "width": 611,
+      "height": 209,
+      "dpr": 3.75,
+      "scrollWidth": 611,
+      "bodyWidth": 611,
+      "orientation": "landscape-primary",
+      "visualScale": 1
+    },
+    "menu": {
+      "rect": {
+        "x": 24.000001907348633,
+        "y": 70,
+        "width": 563.2000122070312,
+        "height": 39.60000228881836,
+        "top": 70,
+        "right": 587.2000141143799,
+        "bottom": 109.60000228881836,
+        "left": 24.000001907348633
+      },
+      "clientHeight": 40,
+      "scrollHeight": 206,
+      "overflowY": "auto",
+      "viewport": 209,
+      "mbar": {
+        "x": 0,
+        "y": 140.8000030517578,
+        "width": 611.2000122070312,
+        "height": 68.80000305175781,
+        "top": 140.8000030517578,
+        "right": 611.2000122070312,
+        "bottom": 209.60000610351562,
+        "left": 0
+      }
+    },
+    "navClosed": "false",
+    "downloadHit": false
+  },
+  "disabledForm": {
+    "status": 503,
+    "cache": "no-store, max-age=0",
+    "text": "К черновику и контактам\nОбсудить состав проекта\n\nПолучатель: СтройИнжиниринг. Отправка не означает заключение договора или бронирование выезда.\n\nОтправка через сайт пока недоступна. Позвоните по номеру, указанному на странице.\n\nМожно подготовить состав на главной странице, скопировать его или скачать TXT. Здесь поля и отправка отключены.\n\nОставьте это поле пустым\nКонтакт и пожелания\nКак к вам обращаться\nТелефон для ответа *\nСостав работ или вопрос *\nВставьте подготовленный черновик или опишите задачу. Не указывайте данные документов и точный адрес.\nУточнить состав дома\nОтправить состав проекта\n\nПозвонить · Открыть WhatsApp",
+    "metrics": {
+      "width": 360,
+      "scrollWidth": 360
+    },
+    "controls": [
+      {
+        "tag": "INPUT",
+        "type": "hidden",
+        "disabled": false,
+        "name": "csrf",
+        "visible": false,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "hidden",
+        "disabled": false,
+        "name": "request_id",
+        "visible": false,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "disabled": false,
+        "name": "website",
+        "visible": true,
+        "ariaHidden": true
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "disabled": true,
+        "name": "name",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "tel",
+        "disabled": true,
+        "name": "phone",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "disabled": true,
+        "name": "message",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "number",
+        "disabled": true,
+        "name": "area",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "SELECT",
+        "type": "select-one",
+        "disabled": true,
+        "name": "kit",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "SELECT",
+        "type": "select-one",
+        "disabled": true,
+        "name": "wall",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "disabled": true,
+        "name": "extras[]",
+        "visible": true,
+        "ariaHidden": false
+      },
+      {
+        "tag": "BUTTON",
+        "type": "submit",
+        "disabled": true,
+        "name": "",
+        "visible": true,
+        "ariaHidden": false
+      }
+    ]
+  },
+  "downloads": [
+    {
+      "test": "first",
+      "bytes": 116571,
+      "utf8Bom": "EF-BB-BF",
+      "exactMatch": true,
+      "sha256": "b99f060eb0280498f43c97bb8ed66f8e83c4b52a30d52207998218597cc9b90f"
+    },
+    {
+      "test": "second",
+      "bytes": 116686,
+      "utf8Bom": "EF-BB-BF",
+      "exactMatch": true,
+      "sha256": "42a22a4bcbb201106865d6b4c19f4c8d83d23cdfbbc8d02be386c560ce3a9c44"
+    }
+  ],
+  "limitations": [
+    "TalkBack enabled and bound; native navigation and audible output NOT CONFIRMED. Native Chrome not responding dialog observed; cause not established.",
+    "At enlarged landscape, menu/contact navigation observed, but TXT touch-target check failed once; stable repeat was blocked by orientation/configuration waits. This is not a confirmed product defect."
+  ],
+  "testInfrastructure": [
+    "Initial Playwright CDP connection changed Android download destination to a Windows artifacts path; download failed. Changed verification helper to noDefaults:true and restored Browser.setDownloadBehavior=default. Both real Android downloads then passed.",
+    "Target hit checks while Android keyboard was open rejected button coverage; after closing keyboard, taps worked.",
+    "Disabled-form assertions initially included the honeypot and checked element.disabled instead of effective :disabled; corrected verification only."
+  ],
+  "productCodeChanged": false,
+  "fullPhoneAcceptance": "PARTIAL",
+  "sendingEnabled": false,
+  "pushPerformed": false,
+  "publicationPerformed": false
+}

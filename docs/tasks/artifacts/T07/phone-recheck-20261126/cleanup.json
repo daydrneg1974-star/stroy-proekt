@@ -1,0 +1,12 @@
+{
+  "fontScale": "1.0",
+  "density": "Physical density: 480",
+  "rotation": "lock 0",
+  "services": "null",
+  "accessibility": "0",
+  "screenTimeout": "600000",
+  "reverse": "",
+  "forward": "",
+  "serverStopped": true,
+  "tempRemoved": true
+}
