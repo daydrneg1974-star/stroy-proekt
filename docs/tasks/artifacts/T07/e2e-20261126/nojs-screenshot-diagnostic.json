@@ -1,0 +1,38 @@
+{
+  "javaScriptEnabled": false,
+  "boxes": [
+    {
+      "x": 0,
+      "y": 16930.90625,
+      "width": 320,
+      "height": 2384.4375
+    },
+    {
+      "x": 0,
+      "y": 15358.90625,
+      "width": 320,
+      "height": 2384.4375
+    },
+    {
+      "x": 0,
+      "y": 7191.90625,
+      "width": 320,
+      "height": 2384.4375
+    },
+    {
+      "x": 0,
+      "y": 3162.90625,
+      "width": 320,
+      "height": 2384.4375
+    },
+    {
+      "x": 0,
+      "y": 1380.90625,
+      "width": 320,
+      "height": 2384.4375
+    }
+  ],
+  "boxesIdentical": false,
+  "fullPageScreenshot": "PASS",
+  "draft": "Ручная запись без JavaScript — ёж 🏡"
+}

@@ -1,0 +1,34 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 e2e
+> node --test e2e/contact-release.browser.mjs
+
+✖ контакты, privacy и макет доступны при JS/no-JS и 320–1440 px (3090.65101ms)
+✔ длинные заметки + состав → настоящий Clipboard/TXT → прямой чат без текста и отправки (14959.756034ms)
+ℹ Наблюдаемое совпадение: 74870 UTF-16 единиц / 131562 байт; Clipboard SHA-256=c6479af28bcd182d4cd869b8b785347fc7d68d288654ee2e97ecd2b1e97a0936; TXT полностью совпал; popup=https://wa.me/74991306616; storage пуст.
+✔ пустой ввод, отказ Clipboard и недоступный TXT сохраняют ручной запасной путь (5984.469809ms)
+ℹ Отказ Clipboard: выделено [0,14546], фокус в поле; TXT после отказа совпал; ошибка подготовки TXT не изменила текст; телефон и WhatsApp доступны.
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24221.067116
+
+✖ failing tests:
+
+test at e2e/contact-release.browser.mjs:112:1
+✖ контакты, privacy и макет доступны при JS/no-JS и 320–1440 px (3090.65101ms)
+  locator.isVisible: Error: strict mode violation: locator('a[href="tel:+74991306616"]') resolved to 3 elements:
+      1) <a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a> aka getByRole('banner').getByRole('link', { name: '+7 (499) 130-66-' })
+      2) <a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a> aka locator('#content').getByRole('link', { name: '+7 (499) 130-66-' })
+      3) <a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a> aka getByRole('contentinfo').getByRole('link', { name: '+7 (499) 130-66-' })
+  
+  Call log:
+  [2m    - checking visibility of locator('a[href="tel:+74991306616"]')[22m
+  
+      at TestContext.<anonymous> (/workspace/scratch/0ae38bb7509c/stroy-spaceweb/e2e/contact-release.browser.mjs:145:71) {
+    log: [ `    - checking visibility of locator('a[href="tel:+74991306616"]')` ]
+  }

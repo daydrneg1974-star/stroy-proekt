@@ -133,7 +133,13 @@ test('контакты, privacy и макет доступны при JS/no-JS �
           assert.equal(await page.locator('#menu-toggle').evaluate(element => document.activeElement === element), true);
         }
         if (width === 320 || width === 1440) {
-          await page.locator('#contact').screenshot({ path: join(artifacts, `screenshots/contact-${width}-${js ? 'js' : 'nojs'}.png`) });
+          if (js) {
+            await page.locator('#contact').screenshot({ path: join(artifacts, `screenshots/contact-${width}-js.png`) });
+          } else {
+            // Capture the full document without asking element screenshots to
+            // resize and scroll a tall section while native smooth scrolling runs.
+            await page.screenshot({ path: join(artifacts, `screenshots/page-${width}-nojs.png`), fullPage: true });
+          }
         }
         await page.goto(`${origin}/privacy.html`, { waitUntil: 'networkidle' });
         const privacyText = await page.locator('body').innerText();
@@ -142,7 +148,9 @@ test('контакты, privacy и макет доступны при JS/no-JS �
         assert.match(privacyText, /Сроки хранения технических данных[\s\S]*отдельно не подтверждены/);
         assert.match(privacyText, /не подтверждает полное соответствие/);
         assert.doesNotMatch(privacyText, /Telegram|\bMAX\b|__cf_bm|Cloudflare|ChatGPT Sites/);
-        assert.equal(await page.locator('a[href="tel:+74991306616"]').isVisible(), true);
+        const privacyPhone = page.locator('#content a[href="tel:+74991306616"]');
+        assert.equal(await privacyPhone.count(), 1);
+        assert.equal(await privacyPhone.isVisible(), true);
         assert.match(await page.locator('meta[name="robots"]').getAttribute('content'), /noindex/);
         const privacyWidth = await page.evaluate(() => document.documentElement.scrollWidth);
         assert.ok(privacyWidth <= width, `privacy overflows ${width}px`);
@@ -265,5 +273,35 @@ test('пустой ввод, отказ Clipboard и недоступный TXT 
     assert.deepEqual(errors, []);
     evidence.tests.push({ test: 'api-failures', emptyActionsDisabled: true, selection, fallbackStatus, downloadAfterClipboardFailureMatches: true, statusAfterTxtFailure: await page.locator('#draft-status').innerText(), draftUnchangedAfterBothFailures: true, externalRequests: external.length, errors });
     t.diagnostic(`Отказ Clipboard: выделено [0,${selection.end}], фокус в поле; TXT после отказа совпал; ошибка подготовки TXT не изменила текст; телефон и WhatsApp доступны.`);
+  } finally { await context.close(); }
+});
+
+test('нативный запрет Clipboard в Chromium сохраняет текст и ручное копирование', async t => {
+  const { context, external, errors } = await createContext({ viewport: { width: 320, height: 1000 } });
+  try {
+    // Chromium grants none and denies the rest for this isolated test origin.
+    // navigator.clipboard is left intact; the rejection must come from the browser.
+    await context.grantPermissions([], { origin });
+    const page = await context.newPage();
+    await page.goto(origin, { waitUntil: 'networkidle' });
+    const permission = await page.evaluate(async () => (await navigator.permissions.query({ name: 'clipboard-write' })).state);
+    assert.equal(permission, 'denied');
+    const value = '  Нативный запрет: сохранить ёлку и террасу 🏡.\n\n' + 'Общие пожелания без персональных данных.\n'.repeat(50);
+    const draft = page.getByLabel('Черновик заявки', { exact: true });
+    await draft.fill(value);
+    await page.getByRole('button', { name: 'Скопировать текст', exact: true }).click();
+    await page.waitForFunction(() => document.querySelector('#draft-status').textContent.includes('Текст выделен'));
+    const selection = await draft.evaluate(element => ({ start: element.selectionStart, end: element.selectionEnd, active: document.activeElement === element }));
+    assert.deepEqual(selection, { start: 0, end: value.length, active: true });
+    assert.equal(await draft.inputValue(), value);
+    const status = await page.locator('#draft-status').innerText();
+    assert.match(status, /скопируйте его вручную или скачайте TXT/);
+    await assertContact(page);
+    await assertWidth(page, 320);
+    assert.deepEqual(external, []);
+    assert.deepEqual(errors, []);
+    await page.locator('#contact').screenshot({ path: join(artifacts, 'screenshots/clipboard-native-denied-320.png') });
+    evidence.tests.push({ test: 'native-clipboard-denial', permission, apiReplaced: false, draftLength: value.length, draftSha256: sha256(value), selection, status, draftPreserved: true, externalRequests: external.length, errors });
+    t.diagnostic(`Настоящее разрешение clipboard-write=${permission}; исходный API; текст сохранён, выделено [0,${selection.end}].`);
   } finally { await context.close(); }
 });

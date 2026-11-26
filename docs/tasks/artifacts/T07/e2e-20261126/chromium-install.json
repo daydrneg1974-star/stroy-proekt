@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-26",
+  "version": "156.0.8078.108",
+  "packageVersion": "156.0.8078.108-1~deb13u1",
+  "runtimeDirectory": "/workspace/scratch/3eba2c4fa735/chromium-runtime",
+  "packages": [
+    {
+      "name": "chromium",
+      "downloadUrl": "https://security.debian.org/debian-security/pool/updates/main/c/chromium/chromium_156.0.8078.108-1~deb13u1_amd64.deb",
+      "sourcePage": "https://packages.debian.org/trixie/amd64/chromium/download",
+      "sha256": "38eb20bcd7ab672f92ac5214ade9cb12e5537c28c17eb53d8fb7c3429cbc86a8",
+      "checksumVerifiedBeforeExtract": true,
+      "downloadedBytes": 91724328
+    },
+    {
+      "name": "chromium-common",
+      "downloadUrl": "https://security.debian.org/debian-security/pool/updates/main/c/chromium/chromium-common_156.0.8078.108-1~deb13u1_amd64.deb",
+      "sourcePage": "https://packages.debian.org/trixie/amd64/chromium-common/download",
+      "sha256": "f829dd3e11eca4b9163af4fd134003a056ba37ee9dccd282bdd480a9a83040dc",
+      "checksumVerifiedBeforeExtract": true,
+      "downloadedBytes": 31706952
+    },
+    {
+      "name": "chromium-headless-shell",
+      "downloadUrl": "https://security.debian.org/debian-security/pool/updates/main/c/chromium/chromium-headless-shell_156.0.8078.108-1~deb13u1_amd64.deb",
+      "sourcePage": "https://packages.debian.org/trixie/amd64/chromium-headless-shell/download",
+      "sha256": "7e062463d4db328a3d543445451fc18cf5a1555486caa5fb8f80f550873232cd",
+      "checksumVerifiedBeforeExtract": true,
+      "downloadedBytes": 69342228
+    }
+  ],
+  "playwrightCdn": "HTTP 403",
+  "systemApt": "not usable in this environment; no system changes",
+  "fullChromiumVersionCheck": "PASS",
+  "fullChromiumE2eLaunch": "BLOCKED: process_singleton_posix.cc socket Operation not permitted",
+  "headlessShellVersionCheck": "PASS",
+  "headlessShellE2e": {
+    "pass": 4,
+    "fail": 0,
+    "skipped": 0,
+    "durationMs": 41934.07013
+  },
+  "environmentPermissionsChanged": false,
+  "launchArgumentsChanged": false,
+  "phoneAccess": {
+    "adbAvailable": false,
+    "usbDeviceDirectoryPresent": false,
+    "sysUsbDevices": [],
+    "windowsMountPresent": false,
+    "result": "NOT RUN; user reports connected phone, not exposed to this cloud environment"
+  }
+}
