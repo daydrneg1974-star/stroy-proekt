@@ -22,7 +22,7 @@ async function fixture(t) {
   t.after(() => rm(temporary, { recursive: true, force: true }));
   const source = join(temporary, 'source');
   await mkdir(source);
-  for (const name of ['scripts', 'assets', 'index.html', 'privacy.html', 'project.js', 'site.js', '.htaccess', 'robots.txt', 'contacts.json', 'package.json']) {
+  for (const name of ['scripts', 'assets', 'server', 'styles.css', 'privacy.css', 'navigation.js', 'request.php', 'request.js', 'request.css', 'index.html', 'privacy.html', 'project.js', 'site.js', '.htaccess', 'robots.txt', 'contacts.json', 'package.json']) {
     await cp(join(project, name), join(source, name), { recursive: true });
   }
   const run = (...args) => spawnSync(process.execPath, args, { cwd: source, encoding: 'utf8' });
@@ -32,7 +32,7 @@ async function fixture(t) {
 test('CLI: загрязнённые исходники не текут в релиз; CRLF и повторы воспроизводимы; нарушение байтов/состава обнаруживается', async t => {
   const { temporary, source, run } = await fixture(t);
   await mkdir(join(source, 'docs'));
-  for (const name of ['.env', 'private-backup.zip', 'README.md', 'assets/private.txt', 'docs/note.txt']) {
+  for (const name of ['.env', 'private-backup.zip', 'README.md', 'assets/private.txt', 'docs/note.txt', 'server/config.php', 'server/debug.log']) {
     await writeFile(join(source, name), 'VERIFIER_PRIVATE_CANARY_MUST_NEVER_BE_PUBLISHED');
   }
   const before = await snapshot(source);
@@ -40,10 +40,14 @@ test('CLI: загрязнённые исходники не текут в рел
   const first = run('scripts/build.mjs', release);
   assert.equal(first.status, 0, first.stderr);
   assert.deepEqual(await snapshot(source), before, 'build must not rewrite any source, contact configuration or canary');
+  const privateFiles = await snapshot(join(release,'private'));
+  assert.equal(Object.keys(privateFiles).length, 11);
+  assert.ok(!Object.keys(privateFiles).includes('config.php'));
+  assert.ok(!Object.keys(privateFiles).includes('debug.log'));
   const published = await snapshot(join(release, 'public_html'));
-  assert.equal(Object.keys(published).length, 26);
+  assert.equal(Object.keys(published).length, 32);
   assert.equal(Object.keys(published).filter(name => name.startsWith('assets/')).length, 20);
-  assert.deepEqual(Object.keys(published).filter(name => !name.startsWith('assets/')).sort(), ['.htaccess', 'index.html', 'privacy.html', 'project.js', 'robots.txt', 'site.js']);
+  assert.deepEqual(Object.keys(published).filter(name => !name.startsWith('assets/')).sort(), ['.htaccess', 'index.html', 'navigation.js', 'privacy.css', 'privacy.html', 'project.js', 'request.css', 'request.js', 'request.php', 'robots.txt', 'site.js', 'styles.css']);
   for (const name of Object.keys(published)) {
     assert.equal((await readFile(join(release, 'public_html', name))).includes('VERIFIER_PRIVATE_CANARY'), false, name);
   }

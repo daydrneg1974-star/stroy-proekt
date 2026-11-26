@@ -5,7 +5,13 @@ export const PUBLIC_FILES = Object.freeze([
   'robots.txt',
   'index.html',
   'privacy.html',
+  'styles.css',
+  'privacy.css',
   'site.js',
+  'navigation.js',
+  'request.php',
+  'request.js',
+  'request.css',
   'project.js',
   'assets/favicon.svg',
   'assets/image-1.webp',
@@ -27,4 +33,14 @@ export const PUBLIC_FILES = Object.freeze([
   'assets/dzit-colours.webp',
   'assets/dzit-colours-360.webp',
   'assets/promo.mp4',
+]);
+
+// Только серверные файлы, размещаемые рядом с public_html, никогда внутри него.
+export const PRIVATE_FILES = Object.freeze([
+  "app.php", "bootstrap.php", "form.php", "transport.php", "config.example.php",
+  "composer.json", "composer.lock",
+  "vendor/phpmailer/phpmailer/src/Exception.php",
+  "vendor/phpmailer/phpmailer/src/PHPMailer.php",
+  "vendor/phpmailer/phpmailer/src/SMTP.php",
+  "vendor/phpmailer/phpmailer/LICENSE",
 ]);

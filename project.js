@@ -21,8 +21,8 @@ export const EXTRAS = Object.freeze({
 
 export function createProject({ area, kit, wall, extras = [] }) {
   const numericArea = Number(area);
-  if (!Number.isFinite(numericArea) || numericArea < 60 || numericArea > 400) {
-    throw new RangeError('Площадь должна быть от 60 до 400 м².');
+  if (!Number.isFinite(numericArea) || numericArea < 60 || numericArea > 400 || numericArea % 5 !== 0) {
+    throw new RangeError('Площадь должна быть от 60 до 400 м² с шагом 5 м².');
   }
   if (!Object.hasOwn(KITS, kit) || !Object.hasOwn(WALLS, wall)) {
     throw new RangeError('Неизвестная комплектация или материал.');
@@ -47,6 +47,7 @@ export function describeProject(project) {
     `Материал стен: ${WALLS[project.wall]}`,
     `Дополнительно: ${project.extras.length ? project.extras.map(key => EXTRAS[key]).join('; ') : 'не выбрано'}`,
     'Стоимость и сроки не рассчитаны.',
+    'Предварительный список пожеланий, не смета и не договор.',
   ].join('\n');
 }
 

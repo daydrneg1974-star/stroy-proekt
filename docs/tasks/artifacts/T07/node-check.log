@@ -1,0 +1,75 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> stroyengineering-spaceweb@0.1.0 check
+> node --check navigation.js && node --check request.js && node --check site.js && node --check project.js && node --check scripts/build.mjs && node --check scripts/contacts.mjs && node --check scripts/verify-release.mjs && node --test
+
+✔ сборка отклоняет опасную цель parent до удаления исходных файлов (67.073956ms)
+ℹ {"destination":"parent","error":"Сборка не может перезаписать исходники или их родительский каталог.","sourcePresent":true,"assetPresent":true,"neighbourPresent":true}
+✔ сборка отклоняет опасную цель assets до удаления исходных файлов (36.545155ms)
+ℹ {"destination":"assets","error":"Для сборки вне dist нужен пустой или новый каталог.","sourcePresent":true,"assetPresent":true,"neighbourPresent":true}
+✔ сборка отклоняет опасную цель index.html до удаления исходных файлов (51.455892ms)
+ℹ {"destination":"index.html","error":"Каталог сборки не может быть файлом или символической ссылкой.","sourcePresent":true,"assetPresent":true,"neighbourPresent":true}
+✔ обычная повторная сборка очищает dist от посторонних файлов и сохраняет исходники (87.336ms)
+ℹ {"count":32,"hasQAPage":false,"hasEnv":false,"sourcePreserved":true,"neighbourPreserved":true}
+✔ сборка воспроизводима в новых и пустых каталогах, публикуется только allowlist (190.295116ms)
+✔ корень проекта и корень файловой системы отклоняются до любых операций сборки (1.840644ms)
+✔ внешний непустой каталог и симлинк отклоняются, чужой текст остаётся цел (2.295519ms)
+✔ каждая локальная ссылка, картинка, srcset и импорт имеют цель, лишних публичных файлов нет (3.245581ms)
+✔ главная не собирает контакты, не отправляет данные через API и не создаёт скрытое хранилище (1.804569ms)
+✔ без JavaScript доступны подтверждённый WhatsApp и ручное копирование; ссылка безопасно открывается отдельно (1.483716ms)
+✔ информация о данных доступна без JS из контактов и подвала, публичная страница не обещает юридическую готовность (1.346509ms)
+✔ сборка рассчитывает обе версии после нормализации текстовых файлов, исходники не меняются (143.951117ms)
+✔ неуказанные каналы не создают кнопок или инструкций; один и два канала дают прямые ссылки (12.049846ms)
+✔ конфигурация отклоняет текст в URL, чужие адреса и городской Telegram (1.676306ms)
+✔ серверная форма использует тот же список мессенджеров (2.470853ms)
+✔ контроллер сохраняет отдельную инженерию при смене комплектации и переносит актуальные границы площади (19.248553ms)
+ℹ {"engineeringChecked":false,"areaOutput":"400 м²","draft":"Состав проекта\nПлощадь дома: 60 м²\nКомплектация: Коробка: фундамент, стены, кровля\nМатериал стен: Газобетон D400\nДополнительно: не выбрано\nСтоимость и сроки не рассчитаны.\nПредварительный список пожеланий, не смета и не договор.\n\nСостав проекта\nПлощадь дома: 400 м²\nКомплектация: Коробка: фундамент, стены, кровля\nМатериал стен: Газобетон D400\nДополнительно: не выбрано\nСтоимость и сроки не рассчитаны.\nПредварительный список пожеланий, не смета и не договор."}
+✔ повтор переноса и карточки не стирает ручные записи и не добавляет второй такой же блок (11.901413ms)
+ℹ {"manualPrefixPreserved":true,"repeatsUnchanged":true,"draft":"  Сохранить яблоню.\r\nПожелание: <script>не исполнять</script>\n\nСостав проекта\nПлощадь дома: 160 м²\nКомплектация: Под ключ: коробка, инженерия, сети и отделка\nМатериал стен: Газобетон D400\nДополнительно: не выбрано\nСтоимость и сроки не рассчитаны.\nПредварительный список пожеланий, не смета и не договор.\n\nИдея: Дом с нуля"}
+✔ отсутствующий Clipboard выделяет весь черновик и сообщает реальную ошибку; очистка блокирует действия (11.239806ms)
+ℹ {"clipboard":"absent","draft":"Кириллица: ё, м².\n  Дополнение\n","selected":[0,31],"status":"Не удалось скопировать автоматически. Текст выделен: скопируйте его вручную или скачайте TXT."}
+✔ отказ Clipboard не даёт ложного успеха, после повторной попытки копируется точный текущий текст (4.248572ms)
+ℹ {"clipboard":"recovered after rejection","writes":["Сохранить деревья.\nТерраса с южной стороны."],"status":"Черновик скопирован."}
+✔ скачивание передаёт UTF-8 TXT с ручным текстом и освобождает Blob URL при повторах (6.837943ms)
+ℹ {"type":"text/plain;charset=utf-8","utf8Bytes":"efbbbf2e2e2f0a3c7363726970743e616c6572742831293c2f7363726970743e0a3d53554d2841313a4132290ad081d0bbd0bad0b02c20d0bcc2b22e","clicks":[{"href":"blob:test-1","download":"stroyengineering-project.txt"},{"href":"blob:test-2","download":"stroyengineering-project.txt"}],"revoked":["blob:test-1","blob:test-2"]}
+✔ ошибка подготовки файла не теряет черновик и не выдаётся за успешное скачивание (10.503145ms)
+ℹ {"draft":"Личный текст","downloads":0,"status":"Не удалось подготовить файл. Скопируйте текст черновика."}
+✔ пустая страница не предупреждает об уходе, ручной текст запрашивает предупреждение (6.599073ms)
+ℹ {"beforeUnloadPrevented":1,"draft":"Несохранённая заметка"}
+✔ ссылки чатов неизменны после ввода, переноса, карточки и восстановления; переход не копирует текст (12.486324ms)
+ℹ {"directChats":["https://wa.me/74991306616"],"navigationPrevented":false}
+✔ длинная заявка остаётся целой: подсказка, прямые чаты, полный Clipboard/TXT и ручное копирование при отказе (5.165453ms)
+ℹ {"fullDraftLength":7400,"copiedLength":7400,"manualSelectionEnd":7400,"shortenedDraftUsesDirectChat":true}
+✔ сброс возвращает начальный состав и сохраняет ручной черновик (5.226545ms)
+✔ полный диапазон площади, все комплектации, материалы и опции дают актуальный состав (12.487125ms)
+✔ инженерия не дублируется, опции сохраняют порядок и не повторяются (1.915597ms)
+✔ невалидные площадь, комплектация и материал не превращаются в состав (0.750741ms)
+✔ перенос и карточки сохраняют ручные записи, новый состав добавляется, повтор не размножается (0.410007ms)
+✔ экспорт — UTF-8 TXT с фиксированным именем, любой пользовательский текст остаётся текстом (0.337298ms)
+✔ копирование передаёт точный текст и сообщает ошибки разрешений или недоступного API (1.463205ms)
+✔ без переноса через URL копирование и TXT сохраняют полный текст независимо от длины и символов (0.347393ms)
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+✔ основная команда собирает SpaceWeb: полный манифест, контакты, единые тексты и noindex (666.335966ms)
+✔ отключённая форма не регистрирует отправку (2.649202ms)
+✔ двойное нажатие создаёт один POST, успех только после accepted (4.658239ms)
+✔ ответ 422/validation сохраняет поля (0.99575ms)
+✔ ответ 429/rate сохраняет поля (0.836901ms)
+✔ ответ 503/transport сохраняет поля (2.888482ms)
+✔ ответ 200/unexpected сохраняет поля (1.616706ms)
+✔ сбой сети сохраняет текст, не повторяет запрос и не показывает успех (0.931173ms)
+✔ клиентский таймаут прерывает ожидание без автоматического повтора (1.06215ms)
+✔ ошибка разбора ответа не очищает поля (2.175498ms)
+✔ три исходные цитаты клиентов сохранены дословно и в прежнем порядке (7.295038ms)
+✔ CLI: загрязнённые исходники не текут в релиз; CRLF и повторы воспроизводимы; нарушение байтов/состава обнаруживается (731.566784ms)
+ℹ {"files":[".htaccess","assets/dzit-colours-360.webp","assets/dzit-colours.webp","assets/dzit-playground-360.webp","assets/dzit-playground.webp","assets/dzit-sport-360.webp","assets/dzit-sport.webp","assets/favicon.svg","assets/image-1-480.webp","assets/image-1-960.webp","assets/image-1.webp","assets/image-2-480.webp","assets/image-2-960.webp","assets/image-2.webp","assets/image-3-480.webp","assets/image-3-960.webp","assets/image-3.webp","assets/image-4-480.webp","assets/image-4-960.webp","assets/image-4.webp","assets/promo.mp4","index.html","navigation.js","privacy.css","privacy.html","project.js","request.css","request.js","request.php","robots.txt","site.js","styles.css"],"sourceUnchanged":true,"canariesPublished":false,"crlfReleaseIdentical":true,"manifestSha256":"11157bf2095dc9816b4b94483f49e8e46df65fc5be470815234b09d9e938b9c2","sameLengthTamperRejected":true,"extraArchiveRejected":true}
+✔ CLI: ошибка входных данных и симлинк назначения не уничтожают последний релиз или соседние файлы (385.050894ms)
+ℹ {"invalidContactsRejectedBeforeDeletion":true,"missingSourceRejectedBeforeDeletion":true,"symlinkAncestorRejected":true,"unrelatedDirectoryUntouched":true,"lastGoodReleaseUnchanged":true}
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1446.618099

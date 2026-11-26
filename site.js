@@ -1,36 +1,5 @@
 import { appendDraft, copyDraft, createProject, createTextExport, describeProject } from './project.js';
 
-const root = document.documentElement;
-const header = document.querySelector('header');
-const menu = document.querySelector('#menu-toggle');
-const navigation = document.querySelector('#navigation');
-const narrowScreen = window.matchMedia('(max-width: 1100px)');
-
-function measureHeader() {
-  root.style.setProperty('--header-height', `${Math.ceil(header.getBoundingClientRect().height)}px`);
-}
-
-function setMenu(open, returnFocus = false) {
-  menu.setAttribute('aria-expanded', String(open));
-  menu.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-  menu.textContent = open ? 'Закрыть' : 'Меню';
-  navigation.classList.toggle('is-open', open);
-  measureHeader();
-  if (returnFocus) menu.focus();
-}
-
-menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
-navigation.addEventListener('click', event => {
-  if (event.target.closest('a')) setMenu(false);
-});
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') setMenu(false, true);
-});
-document.addEventListener('click', event => {
-  if (!header.contains(event.target) && menu.getAttribute('aria-expanded') === 'true') setMenu(false);
-});
-narrowScreen.addEventListener('change', () => setMenu(false));
-
 const config = document.querySelector('#calc');
 const area = document.querySelector('#area');
 const areaOutput = document.querySelector('#areaOut');
@@ -56,12 +25,13 @@ function updateProject() {
     extras: Array.from(config.querySelectorAll('[name="extras"]:checked'), input => input.value),
   });
   areaOutput.value = `${project.area} м²`;
+  area.setAttribute('aria-valuetext', `${project.area} квадратных метров`);
   summary.textContent = describeProject(project);
 }
 
 config.addEventListener('input', event => {
   if (event.target === engineering) separateEngineering = engineering.checked;
-  updateProject();
+  try { updateProject(); } catch { summary.textContent = 'Не удалось обновить состав. Проверьте выбранные параметры.'; }
 });
 
 function updateDraftActions() {
@@ -71,7 +41,7 @@ function updateDraftActions() {
 }
 
 // После восстановления страницы доступность копирования зависит от черновика.
-window.addEventListener('pageshow', updateDraftActions);
+window.addEventListener('pageshow', () => { updateDraftActions(); updateProject(); });
 
 function addToDraft(text) {
   const result = appendDraft(draft.value, text);
@@ -134,7 +104,15 @@ document.querySelectorAll('[data-js-label]').forEach(element => {
   element.textContent = element.dataset.jsLabel;
 });
 document.querySelectorAll('[data-js-only]').forEach(element => { element.hidden = false; });
-root.classList.add('js-enabled');
-measureHeader();
-if ('ResizeObserver' in window) new ResizeObserver(measureHeader).observe(header);
-else window.addEventListener('resize', measureHeader);
+
+
+const reset = document.querySelector('#reset-project');
+reset.addEventListener('click', () => {
+  area.value = '160';
+  config.querySelectorAll('[name="kit"]').forEach(input => { input.checked = input.value === 'turnkey'; });
+  config.querySelectorAll('[name="wall"]').forEach(input => { input.checked = input.value === 'aerated'; });
+  config.querySelectorAll('[name="extras"]').forEach(input => { input.checked = false; });
+  separateEngineering = false;
+  updateProject();
+  status.textContent = 'Выбор сброшен. Ваш черновик сохранён.';
+});

@@ -43,3 +43,10 @@ test('конфигурация отклоняет текст в URL, чужие 
   ]) assert.throws(() => validateContacts(contacts));
   assert.deepEqual(validateContacts({ whatsapp: null, telegram: 'https://t.me/+79990000000' }), { whatsapp: null, telegram: 'https://t.me/+79990000000' });
 });
+
+test('серверная форма использует тот же список мессенджеров', async () => {
+  const template = await readFile(new URL('../server/form.php', import.meta.url), 'utf8');
+  const noChannels = renderContacts(template, {whatsapp:null,telegram:null});
+  assert.doesNotMatch(noChannels,/wa\.me|t\.me|\{\{/);
+  assert.match(renderContacts(template,{whatsapp:'https://wa.me/74991306616',telegram:null}),/https:\/\/wa\.me\/74991306616/);
+});

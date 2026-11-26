@@ -33,7 +33,7 @@ test('инженерия не дублируется, опции сохраня�
 
 test('невалидные площадь, комплектация и материал не превращаются в состав', () => {
   const valid = { area: 160, kit: 'shell', wall: 'aerated' };
-  for (const area of [0, 59, 401, Infinity, 'не число']) assert.throws(() => createProject({ ...valid, area }), RangeError);
+  for (const area of [0, 59, 61, 160.5, 401, Infinity, 'не число']) assert.throws(() => createProject({ ...valid, area }), RangeError);
   assert.throws(() => createProject({ ...valid, kit: '__proto__' }), RangeError);
   assert.throws(() => createProject({ ...valid, wall: '<script>' }), RangeError);
   assert.deepEqual(createProject({ ...valid, extras: ['<script>', 'gas'] }).extras, ['gas']);

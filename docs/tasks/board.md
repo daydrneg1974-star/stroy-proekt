@@ -10,5 +10,6 @@
 | [T04](T04-messenger-requests.md) | in_progress |
 | [T05](T05-privacy-minimization.md) | done |
 | [T06](T06-contact-release.md) | needs_human |
+| [T07](T07-reliability-local.md) | local_review; sending_disabled; not_published |
 
 Телефон и WhatsApp опубликованы. Полная приёмка T06 и контакт Telegram остаются открытыми; подробности в docs/status.md.

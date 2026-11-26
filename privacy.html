@@ -3,51 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Данные и конфиденциальность — демоверсия СТРОЙИНЖИНИРИНГ</title>
-<meta name="description" content="Как работают локальный черновик, копирование, скачивание и связь с исполнителем в демоверсии СТРОЙИНЖИНИРИНГ. Технические данные инфраструктуры и ограничения этого описания.">
+<title>Данные и конфиденциальность — СТРОЙИНЖИНИРИНГ</title>
+<meta name="description" content="Как работают локальный черновик, копирование, скачивание и связь с исполнителем на сайте СТРОЙИНЖИНИРИНГ. Технические данные инфраструктуры и ограничения этого описания.">
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://stroyinzh-dom.ru/privacy.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<style>
-:root{--bg:#0b0b0c;--bg2:#141416;--line:#34343a;--text:#f4f4f1;--muted:#c4c4bd;--accent:#f5a31a;--focus:#fff;color-scheme:dark}
-@media(prefers-color-scheme:light){:root{--bg:#faf8f3;--bg2:#efebe1;--line:#cfc8b8;--text:#1a1812;--muted:#4d4a40;--accent:#9d5900;--focus:#000;color-scheme:light}}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:400 18px/1.65 "Segoe UI",Arial,sans-serif;overflow-wrap:break-word;-webkit-text-size-adjust:100%}
-a{color:inherit;text-underline-offset:4px}
-a:hover{color:var(--accent)}
-:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-header{border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;min-height:88px;padding-block:16px}
-.logo{font-weight:800;font-size:20px;line-height:1.2;text-decoration:none}
-.logo small{display:block;font-weight:400;font-size:14px;color:var(--muted);margin-top:6px}
-.back,.phone{display:inline-flex;align-items:center;min-height:48px;padding:8px 0}
-.phone{font-weight:700;white-space:nowrap}
-main.wrap{max-width:880px;padding-block:48px 64px}
-h1,h2{line-height:1.15;letter-spacing:-.02em}
-h1{font-size:clamp(34px,5vw,52px);margin:16px 0 24px}
-h2{font-size:clamp(24px,3vw,30px);margin:36px 0 16px}
-p{margin:0 0 16px}
-ol,ul{padding-left:24px;margin:0 0 20px}
-li+li{margin-top:8px}
-.notice{border-left:3px solid var(--accent);padding:18px 22px;background:var(--bg2);color:var(--muted)}
-.notice p:last-child{margin-bottom:0}
-code{font-size:.95em}
-footer{border-top:1px solid var(--line);color:var(--muted);padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));font-size:16px}
-footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
-.skip-link{position:fixed;left:12px;top:12px;padding:12px 18px;background:var(--text);color:var(--bg);transform:translateY(-180%)}
-.skip-link:focus{transform:translateY(0)}
-@media(max-width:560px){.wrap{padding-inline:18px}.logo{font-size:17px}main.wrap{padding-top:28px}.notice{padding:16px}h1{font-size:clamp(24px,7.5vw,34px)}}
-</style>
+<link rel="stylesheet" href="privacy.css">
 </head>
 <body>
 <a class="skip-link" href="#content">К содержимому</a>
-<header><div class="wrap bar"><a class="logo" href="index.html">СТРОЙИНЖИНИРИНГ<small>Демоверсия</small></a><a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a></div></header>
+<header><div class="wrap bar"><a class="logo" href="index.html">СТРОЙИНЖИНИРИНГ<small>Дом и участок</small></a><a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a></div></header>
 <main class="wrap" id="content">
  <a class="back" href="index.html#contact">К черновику проекта</a>
  <h1>Данные и конфиденциальность</h1>
- <div class="notice"><p>Это техническое описание текущей демоверсии. Полная политика обработки персональных данных с реквизитами оператора будет опубликована после их подтверждения.</p><p>Описание технических функций не подтверждает полное соответствие требованиям законодательства.</p></div>
+ <div class="notice"><p>Это техническое описание текущего сайта. Полная политика обработки персональных данных с реквизитами оператора будет опубликована после их подтверждения.</p><p>Описание технических функций не подтверждает полное соответствие требованиям законодательства.</p></div>
 
  <h2>Черновик на странице</h2>
  <p>Поле предназначено для состава работ и общих пожеланий. Не указывайте в нём ФИО, телефон, точный адрес, данные документов и другие персональные сведения.</p>
@@ -56,8 +26,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
  {{MESSENGER_PRIVACY}}
 
+ <h2>Отправка через сайт</h2>
+ <p>Серверная отправка отключена. В текущей версии обращения через форму не принимаются. Связаться можно по телефону или через доступный мессенджер. Перед включением серверной формы это описание и полная политика должны быть обновлены с учётом фактического получателя и условий обработки.</p>
+
  <h2>Технические данные и cookies</h2>
- <p>В коде демоверсии нет аналитики, рекламных cookies, сторонних форм и серверного приёма текста черновика. Это не означает, что при посещении сайта не обрабатываются никакие данные или cookies.</p>
+ <p>В коде сайта нет аналитики, рекламных cookies, сторонних форм и серверного приёма текста черновика. Это не означает, что при посещении сайта не обрабатываются никакие данные или cookies.</p>
  <p>При загрузке страниц и файлов инфраструктура сайта получает IP-адрес и технические параметры HTTP-запроса, например адрес запрашиваемого файла и сведения о браузере. Инфраструктура может вести технические журналы.</p>
  <p>Сайт размещён на виртуальном хостинге SpaceWeb. При проверке 23 ноября 2026 года в панели для stroyinzh-dom.ru были отключены журналы посещений, ошибок и AWStats. Это не подтверждает отсутствие служебных журналов провайдера. Их сроки хранения и условия обработки отдельно не подтверждены.</p>
  <p>Сроки хранения технических данных, настройки защиты и журналов, география баз данных и журналов, а также условия обработки у хостинга отдельно не подтверждены. Из локальной работы черновика нельзя сделать вывод о российской локализации данных или полном выполнении требований к их обработке.</p>
@@ -66,6 +39,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
  <p>Обсудить состав работ и выезд инженера со СтройИнжинирингом можно по телефону <a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a>. Реквизиты фактического исполнителя и оператора, а также отдельный порядок обращений по персональным данным ещё не подтверждены и будут указаны в полной политике.</p>
  <a class="back" href="index.html#privacy">Вернуться на сайт</a>
 </main>
-<footer><div class="wrap"><span>© 2026 СТРОЙИНЖИНИРИНГ · демоверсия</span><a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a></div></footer>
+<footer><div class="wrap"><span>© 2026 СТРОЙИНЖИНИРИНГ</span><a class="phone" href="tel:+74991306616">+7 (499) 130-66-16</a></div></footer>
 </body>
 </html>

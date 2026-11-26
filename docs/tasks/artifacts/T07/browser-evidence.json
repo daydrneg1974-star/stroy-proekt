@@ -1,0 +1,186 @@
+{
+  "mainAndPrivacyWidths": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "index.html",
+      "width": 375,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "index.html",
+      "width": 900,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "index.html",
+      "width": 1024,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "nodes": 349
+    },
+    {
+      "page": "privacy.html",
+      "width": 320,
+      "overflow": false,
+      "nodes": 41
+    },
+    {
+      "page": "privacy.html",
+      "width": 375,
+      "overflow": false,
+      "nodes": 41
+    },
+    {
+      "page": "privacy.html",
+      "width": 390,
+      "overflow": false,
+      "nodes": 41
+    },
+    {
+      "page": "privacy.html",
+      "width": 768,
+      "overflow": false,
+      "nodes": 41
+    },
+    {
+      "page": "privacy.html",
+      "width": 900,
+      "overflow": false,
+      "nodes": 41
+    },
+    {
+      "page": "privacy.html",
+      "width": 1024,
+      "overflow": false,
+      "nodes": 41
+    },
+    {
+      "page": "privacy.html",
+      "width": 1440,
+      "overflow": false,
+      "nodes": 41
+    }
+  ],
+  "formWidths": [
+    {
+      "width": 320,
+      "overflow": false,
+      "outside": []
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "outside": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "outside": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "outside": []
+    },
+    {
+      "width": 900,
+      "overflow": false,
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "outside": []
+    }
+  ],
+  "shortMenu": {
+    "width": 320,
+    "height": 320,
+    "menu": {
+      "rect": {
+        "x": 18,
+        "y": 118.53125,
+        "width": 269,
+        "height": 150
+      },
+      "scroll": 232,
+      "position": "auto"
+    },
+    "overflow": false
+  },
+  "landscape": {
+    "width": 900,
+    "height": 320,
+    "menu": {
+      "rect": {
+        "x": 24,
+        "y": 70,
+        "width": 837,
+        "height": 150
+      },
+      "scroll": 206,
+      "position": "auto"
+    },
+    "overflow": false
+  },
+  "disabledHttp": {
+    "GET": 503,
+    "POST": 503,
+    "PUT": 405,
+    "cache": "no-store",
+    "cookieAbsent": true,
+    "falseSuccess": false
+  },
+  "noJs": {
+    "mainNavigation": true,
+    "draftEditable": true,
+    "downloadDisabled": true,
+    "formValidation": "422, text preserved",
+    "fakeTransport": "accepted once, no email sent"
+  },
+  "clipboard": {
+    "exactMatch": true
+  },
+  "reset": {
+    "area": 160,
+    "manualDraftPreserved": true
+  },
+  "txtDownload": {
+    "uiPrepared": true,
+    "fileCompletionObserved": false
+  },
+  "limits": [
+    "Widths are desktop Chrome iframe CSS viewports, not physical phones",
+    "200% browser zoom not verified",
+    "Actual SMTP and email receipt not tested"
+  ]
+}

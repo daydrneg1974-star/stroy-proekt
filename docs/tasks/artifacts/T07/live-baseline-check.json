@@ -1,0 +1,35 @@
+{
+  "base": "02c5cddc5d6d79942f4b22ecdda916751e94e4af",
+  "files": [
+    {
+      "file": "index.html",
+      "http": 200,
+      "sha256": "494165b44cc736d4feeeb54e0821b4b5dd772f5adac8f430852650194f988764",
+      "matchesBase": true
+    },
+    {
+      "file": "privacy.html",
+      "http": 200,
+      "sha256": "0feab87ca7fef7301acb221f3b7f396a67ff21c93c7c7ca62192b51e6aeeb5b3",
+      "matchesBase": true
+    },
+    {
+      "file": "site.js",
+      "http": 200,
+      "sha256": "79a85e7ead3591412ff5e547a4dbb55479c1dad7083559fe143ebb393e42d2bb",
+      "matchesBase": true
+    },
+    {
+      "file": "project.js",
+      "http": 200,
+      "sha256": "39a60082d0fb328b5f1a28cc563fa64662d9d0fb9539e6f7c07a2a2a21a9eac0",
+      "matchesBase": true
+    },
+    {
+      "file": "robots.txt",
+      "http": 200,
+      "sha256": "efdb5938a9736727f5cce2b60355588e4fa541d19d022d222d8a09b8efd5dcce",
+      "matchesBase": true
+    }
+  ]
+}

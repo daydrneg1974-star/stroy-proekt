@@ -11,7 +11,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 // Browser checks are explicit: npm run e2e. Missing Playwright/Chromium is an
 // error, never a passing or silently skipped browser check. No external network.
 const root = fileURLToPath(new URL('..', import.meta.url));
-const artifacts = resolve(process.env.STROY_E2E_ARTIFACTS || join(root, 'docs/tasks/artifacts/T06'));
+const artifacts = resolve(process.env.STROY_E2E_ARTIFACTS || join(root, 'docs/tasks/artifacts/T07'));
 const evidence = { browser: '', localOnly: true, tests: [] };
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 let browser, server, release, origin;
@@ -38,7 +38,7 @@ before(async () => {
       if (!filename.startsWith(publicRoot + '/') || !(await stat(filename)).isFile()) {
         response.writeHead(404).end(); return;
       }
-      const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.mp4': 'video/mp4', '.txt': 'text/plain; charset=utf-8' };
+      const types = { '.css': 'text/css; charset=utf-8', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.mp4': 'video/mp4', '.txt': 'text/plain; charset=utf-8' };
       response.writeHead(200, { 'Content-Type': types[extname(filename)] || 'application/octet-stream' });
       response.end(await readFile(filename));
     } catch { response.writeHead(404).end(); }

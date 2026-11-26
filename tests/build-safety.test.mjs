@@ -4,7 +4,7 @@ import { copyFile, mkdir, mkdtemp, readFile, readdir, rm, stat, writeFile } from
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { PUBLIC_FILES } from '../scripts/public-files.mjs';
+import { PUBLIC_FILES, PRIVATE_FILES } from '../scripts/public-files.mjs';
 
 // Exercise unsafe destinations against an isolated copy of the actual builder.
 // Placeholder public files satisfy the same lstat validation, without ever
@@ -21,7 +21,12 @@ async function fixture(t) {
     await mkdir(dirname(join(root, name)), { recursive: true });
     await writeFile(join(root, name), `original public source: ${name}`);
   }
-  await writeFile(join(root, 'index.html'), '<script src="site.js" type="module"></script>');
+  await writeFile(join(root, 'index.html'), '<link rel="stylesheet" href="styles.css"><script src="navigation.js" defer></script><script src="site.js" type="module"></script>');
+  await writeFile(join(root, 'privacy.html'), '<link rel="stylesheet" href="privacy.css">');
+  for (const name of PRIVATE_FILES) {
+    await mkdir(dirname(join(root,'server',name)), {recursive:true});
+    await writeFile(join(root,'server',name), name==='form.php'?'<link href="styles.css"><link href="request.css"><script src="request.js"></script>':`private source ${name}`);
+  }
   await writeFile(join(root, 'site.js'), "import {} from './project.js';\n");
   await writeFile(join(root, 'contacts.json'), '{"whatsapp":null,"telegram":null}');
   for (const name of ['build.mjs', 'public-files.mjs', 'contacts.mjs']) {
@@ -46,7 +51,7 @@ for (const destination of ['parent', 'assets', 'index.html']) {
     assert.equal(sourcePresent, true, 'source HTML must survive a rejected build');
     assert.equal(assetPresent, true, 'source assets must survive a rejected build');
     assert.equal(neighbourPresent, true, 'neighbouring files must survive a rejected build');
-    assert.equal(await readFile(join(root, 'index.html'), 'utf8'), '<script src="site.js" type="module"></script>');
+    assert.equal(await readFile(join(root, 'index.html'), 'utf8'), '<link rel="stylesheet" href="styles.css"><script src="navigation.js" defer></script><script src="site.js" type="module"></script>');
   });
 }
 
@@ -61,7 +66,7 @@ test('обычная повторная сборка очищает dist от п
     .filter(entry => entry.isFile())
     .map(entry => join(entry.parentPath, entry.name).slice(output.length + 1)).sort();
   assert.deepEqual(actual, [...PUBLIC_FILES].sort());
-  assert.equal(await readFile(join(root, 'index.html'), 'utf8'), '<script src="site.js" type="module"></script>');
+  assert.equal(await readFile(join(root, 'index.html'), 'utf8'), '<link rel="stylesheet" href="styles.css"><script src="navigation.js" defer></script><script src="site.js" type="module"></script>');
   assert.equal(await readFile(sentinel, 'utf8'), 'unrelated neighbouring file');
   t.diagnostic(JSON.stringify({ count: actual.length, hasQAPage: actual.includes('__qa.html'), hasEnv: actual.includes('.env'), sourcePreserved: true, neighbourPreserved: true }));
 });

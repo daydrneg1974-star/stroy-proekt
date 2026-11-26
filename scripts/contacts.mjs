@@ -30,6 +30,7 @@ export function renderContacts(html, config) {
   const names = channels.map(channel => channel.label).join(' или ');
   const active = channels.length > 0;
   const replacements = {
+    MESSENGER_INLINE: channels.map(channel => ` · <a href="${contacts[channel.key]}" target="_blank" rel="noopener noreferrer">Открыть ${channel.label}</a>`).join(''),
     CONTACT_LEAD: active
       ? `Подготовьте состав работ и пожелания. Скопируйте текст, откройте ${names}, вставьте и отправьте сообщение. Или позвоните, чтобы обсудить проект и выезд инженера.`
       : 'Позвоните, чтобы обсудить проект и выезд инженера. Состав работ и пожелания можно записать в черновик и сохранить на своём устройстве.',

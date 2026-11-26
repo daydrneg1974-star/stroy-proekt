@@ -28,8 +28,8 @@ test('сборка воспроизводима в новых и пустых к
       assert.equal(await hash(first), await hash(second), name);
     }
     assert.equal(await readFile(join(firstRelease, 'release-manifest.json'), 'utf8'), await readFile(join(secondRelease, 'release-manifest.json'), 'utf8'));
-    assert.deepEqual((await readdir(firstRelease)).sort(), ['public_html', 'release-manifest.json']);
-    assert.ok(!actual.some(name => /(?:php|\.env|app\.js|style\.css|README|docs\/)/.test(name)));
+    assert.deepEqual((await readdir(firstRelease)).sort(), ['private', 'public_html', 'release-manifest.json']);
+    assert.ok(!actual.some(name => /(?:\.env|app\.php|bootstrap\.php|config\.php|README|docs\/)/.test(name)));
   } finally {
     await rm(temporary, { recursive: true, force: true });
   }
@@ -60,7 +60,7 @@ test('внешний непустой каталог и симлинк откл�
 });
 
 test('каждая локальная ссылка, картинка, srcset и импорт имеют цель, лишних публичных файлов нет', async () => {
-  const used = new Set(['index.html', '.htaccess', 'robots.txt']);
+  const used = new Set(['index.html', '.htaccess', 'robots.txt', 'request.php', 'request.css', 'request.js']);
   for (const page of PUBLIC_FILES.filter(name => name.endsWith('.html'))) {
     const html = await readPage(page);
     const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
@@ -111,7 +111,7 @@ test('каждая локальная ссылка, картинка, srcset и 
   assert.deepEqual([...used].sort(), [...PUBLIC_FILES].sort());
 });
 
-test('демо не собирает контакты, не отправляет данные через API и не создаёт скрытое хранилище', async () => {
+test('главная не собирает контакты, не отправляет данные через API и не создаёт скрытое хранилище', async () => {
   const html = await readPage('index.html');
   const script = await readFile(join(ROOT, 'site.js'), 'utf8');
   const model = await readFile(join(ROOT, 'project.js'), 'utf8');
@@ -120,16 +120,17 @@ test('демо не собирает контакты, не отправляет
   assert.doesNotMatch(interfaceHtml, /Рассчитать смету|Калькулятор/);
   assert.doesNotMatch(html, /fonts\.googleapis|preconnect/);
   assert.doesNotMatch(script + model, /\bfetch\s*\(|XMLHttpRequest|sendBeacon|WebSocket|localStorage|sessionStorage|indexedDB|document\.cookie|innerHTML\s*=|\.readText\s*\(/);
-  assert.match(html, /<title>[^<]*демоверсия/i);
+  assert.match(html, /<title>[^<]*строительство домов/i);
+  assert.doesNotMatch(html, /демоверси/i);
   assert.match(html, /<meta name="robots" content="noindex,nofollow">/);
-  assert.match(html, /<meta property="og:title"[^>]*демоверсия/i);
+  assert.match(html, /<meta property="og:title"[^>]*дом и участок/i);
   assert.match(html, /<video\b[^>]*preload="none"/);
   assert.match(html, /<noscript>/);
   assert.match(html, /id="navigation"/);
   assert.match(html, /data-js-only hidden/);
   assert.match(html, /<meta name="referrer" content="no-referrer">/);
   assert.match(html, /<textarea\b[^>]*spellcheck="false"/);
-  assert.ok(html.indexOf('Демоверсия ·') < html.indexOf('<input'));
+  assert.ok(html.includes('Предварительный') || html.includes('предварительный'));
 });
 
 test('без JavaScript доступны подтверждённый WhatsApp и ручное копирование; ссылка безопасно открывается отдельно', async () => {

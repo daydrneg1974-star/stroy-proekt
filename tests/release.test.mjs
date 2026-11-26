@@ -40,7 +40,7 @@ test('основная команда собирает SpaceWeb: полный м
     assert.match(page, /SpaceWeb/);
     assert.match(page, /реквизитами оператора будет опубликована после их подтверждения/);
     const source = await readFile(join(rootProject, name), 'utf8');
-    assert.equal(page.replace(/site\.js\?v=[a-f0-9]{64}/, 'site.js'), renderContacts(source.replace(/\r\n?/g, '\n').trimEnd(), contacts), 'Одинаковые тексты и конфигурация дают один вариант страницы');
+    assert.equal(page.replace(/(site\.js|navigation\.js|styles\.css|privacy\.css)\?v=[a-f0-9]{64}/g, '$1'), renderContacts(source.replace(/\r\n?/g, '\n').trimEnd(), contacts), 'Одинаковые тексты и конфигурация дают один вариант страницы');
     assert.doesNotMatch(page, /\{\{[A-Z_]+\}\}|Telegram|аккаунт.*не подтвержд/);
   }
   const index = await readFile(join(root, 'index.html'), 'utf8');

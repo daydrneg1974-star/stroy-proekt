@@ -9,3 +9,8 @@ docs/tasks/artifacts/**/*.png
 docs/tasks/artifacts/**/*.jpg
 docs/tasks/artifacts/**/*.webp
 docs/tasks/artifacts/**/*.mp4
+
+/.qa-preview/
+/server/vendor/
+/server/config.php
+/server/runtime/

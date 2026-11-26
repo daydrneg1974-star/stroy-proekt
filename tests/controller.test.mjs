@@ -64,7 +64,7 @@ async function page(t, { clipboard, exportError = false, contacts = actualContac
   header.contains = element => element.offset >= header.offset && element.offset < html.indexOf('</header>');
   const selected = name => elements.filter(element => element.tag === 'input' && element.attrs.name === name && element.checked);
   byId('calc').querySelector = selector => selected(selector.match(/name="([^"]+)"/)[1])[0];
-  byId('calc').querySelectorAll = selector => selected(selector.match(/name="([^"]+)"/)[1]);
+  byId('calc').querySelectorAll = selector => { const name = selector.match(/name="([^"]+)"/)[1]; return selector.includes(':checked') ? selected(name) : elements.filter(e => e.attrs.name === name); };
   document.documentElement = elements.find(element => element.tag === 'html');
   document.querySelector = selector => selector === 'header' ? header : byId(selector.slice(1));
   document.querySelectorAll = selector => elements.filter(element => selector.slice(1, -1) in element.attrs);
@@ -94,7 +94,9 @@ async function page(t, { clipboard, exportError = false, contacts = actualContac
       else delete globalThis[key];
     }
   });
-  await import(`../site.js?controller-test=${++loadNumber}`);
+  loadNumber++;
+  await import(`../navigation.js?controller-test=${loadNumber}`);
+  await import(`../site.js?controller-test=${loadNumber}`);
   return {
     byId, document, window, media, exports, clicks, timers, revoked, elements,
     async choose(name, value) {
@@ -303,4 +305,17 @@ test('длинная заявка остаётся целой: подсказк�
   assert.equal(p.byId('open-whatsapp').href, 'https://wa.me/74991306616');
   assert.equal(p.byId('open-telegram'), undefined);
   t.diagnostic(JSON.stringify({ fullDraftLength: draft.length, copiedLength: writes[0].length, manualSelectionEnd: draft.length, shortenedDraftUsesDirectChat: true }));
+});
+
+test('сброс возвращает начальный состав и сохраняет ручной черновик', async t => {
+ const p = await page(t);
+ await p.write('Сохранить яблоню');
+ await p.choose('kit','shell');
+ await p.choose('extras','pond');
+ p.byId('area').value='400';
+ await p.byId('reset-project').fire('click');
+ assert.equal(p.byId('areaOut').value,'160 м²');
+ assert.match(p.byId('project-summary').textContent,/Под ключ/);
+ assert.match(p.byId('project-summary').textContent,/Дополнительно: не выбрано/);
+ assert.equal(p.byId('draft').value,'Сохранить яблоню');
 });
